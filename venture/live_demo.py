@@ -1,0 +1,76 @@
+"""
+venture/live_demo.py — full LIVE integration:
+  1) real Binance OHLCV (ccxt) replayed through the LangGraph debate,
+  2) live RSS news (keyless) ingested into a TF-IDF RAG store,
+  3) a statistical Quant vote + Bull/Bear/Judge debate per bar,
+  4) a buy-and-hold benchmark, and
+  5) ONE local-Claude-brain qualitative read on the latest bar.
+
+Run:  python venture/live_demo.py                 (BTC/USDT 1h, with brain)
+      python venture/live_demo.py --no-brain ETH/USDT
+      python venture/live_demo.py AAPL             (equity via yfinance)
+"""
+from __future__ import annotations
+
+import sys
+
+from brain.claude_brain import ClaudeBrain
+from data.providers import CCXTDataProvider, YFinanceDataProvider
+from graph.debate import build_debate_runner
+from news.providers import RSSNewsProvider
+from rag.tfidf_store import TfidfKnowledgeStore
+
+
+def _make_provider(symbol: str, news):
+    if "/" in symbol:                      # crypto pair -> ccxt/Binance
+        return CCXTDataProvider(symbol, exchange="binance", timeframe="1h",
+                                limit=200, news_provider=news)
+    return YFinanceDataProvider(symbol, period="6mo", interval="1d",
+                                news_provider=news)        # equity -> yfinance
+
+
+def main(symbol: str = "BTC/USDT", use_brain: bool = True) -> None:
+    news = RSSNewsProvider()
+    headlines = news(symbol)
+    print(f"Live news for {symbol}: {len(headlines)} headlines"
+          + (f'  e.g. "{headlines[0]["title"]}"' if headlines else ""))
+
+    print(f"Fetching market data for {symbol}...")
+    data = _make_provider(symbol, news)
+    closes = data._closes
+    print(f"  {len(closes)} bars (latest ${closes[-1]:,.2f})")
+
+    runner = build_debate_runner(data, knowledge_store=TfidfKnowledgeStore())
+    results = runner.run(symbol)
+    m = results[-1]["update"].metrics
+    trades = sum(1 for r in results if r["fill"].executed)
+    bh = (closes[-1] / closes[0] - 1) * 100
+
+    print("\n" + "=" * 56)
+    print(f"LIVE DEBATE RUN - {symbol}")
+    print("=" * 56)
+    print(f"  Bars / trades    : {len(results)} / {trades}")
+    print(f"  Strategy return  : {m['return_pct']:+.2f}%   (equity ${m['equity']})")
+    print(f"  Buy & hold       : {bh:+.2f}%")
+    print(f"  Max drawdown     : {m['drawdown_pct']:.2f}%")
+    print(f"  Risk state       : {runner.risk.state.value} "
+          f"(armed={runner.risk.armed}, floor=${runner.risk.effective_floor})")
+    print(f"  RAG docs ingested: {len(runner.knowledge)}")
+    print(f"  Latest quant vote: {results[-1]['quant']}")
+    print(f"  Latest judge     : {results[-1]['judge_note']}")
+    print("=" * 56)
+
+    if use_brain:
+        print("\nLocal Claude brain read on the latest bar (~30s, no API key)...")
+        read = ClaudeBrain()(results[-1]["snapshot"])
+        print(f"  Sentiment : {read['sentiment']}  (score {read['score']:+.2f})")
+        print(f"  Rationale : {read['rationale']}")
+        if read.get("key_factors"):
+            print(f"  Factors   : {', '.join(read['key_factors'])}")
+
+
+if __name__ == "__main__":
+    args = sys.argv[1:]
+    use_brain = "--no-brain" not in args
+    syms = [a for a in args if not a.startswith("--")]
+    main(symbol=syms[0] if syms else "BTC/USDT", use_brain=use_brain)

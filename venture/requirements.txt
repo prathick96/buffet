@@ -1,0 +1,66 @@
+# =============================================================================
+# venture/requirements.txt — approved stack (Python 3.11)
+# Install PER PHASE, not all at once. Heavy/optional items are flagged.
+# License posture governs how we may use each (see BLUEPRINT.md §2).
+#   EMBED   = permissive (MIT/Apache/BSD) — safe to vendor into the product
+#   API     = call as a hosted service / SDK client only
+#   RESEARCH= copyleft (AGPL) — internal research only, do NOT embed in product
+# =============================================================================
+
+# --- Data feeds / exchange layer (EMBED) -------------------------------------
+ccxt                 # MIT  — unified crypto exchange API (already used)
+yfinance             # Apache-2 — equities/ETF history
+alpaca-py            # Apache-2 — US equity broker (already used)
+
+# --- Indicators (EMBED) ------------------------------------------------------
+pandas-ta            # MIT
+# TA-Lib             # BSD — needs the TA-Lib C library first on Windows.
+#                      Install a prebuilt wheel, then `pip install TA-Lib`.
+
+# --- Backtest / quant / RL (EMBED) -------------------------------------------
+vectorbt             # Apache-2 — fast vectorized backtests (PRO is separate/closed)
+stable-baselines3    # MIT — PPO etc. (already used)
+gymnasium            # MIT (already used)
+shimmy               # MIT (already used)
+# finrl              # MIT — DRL trading envs. HEAVY (pulls torch). Phase 3.
+# nautilus_trader    # LGPL-3.0 — event-driven engine. OPTIONAL; link, don't fork.
+gs-quant             # Apache-2 — Goldman institutional quant/risk toolkit
+
+# --- Portfolio optimization / risk (EMBED) -----------------------------------
+PyPortfolioOpt       # MIT
+Riskfolio-Lib        # BSD-3
+
+# --- Agent orchestration + multi-agent (EMBED) -------------------------------
+langgraph            # MIT — agent debate graph (our orchestration CORE)
+langchain            # MIT (already used)
+langchain-community  # MIT (already used)
+langchain-core       # MIT
+crewai               # MIT — role-based multi-agent (optional alt path)
+crewai-tools         # MIT
+pyautogen            # MIT/CC — Microsoft AutoGen (optional alt path)
+# TradingAgents (Tauric, Apache-2) — install from source, KEEP per decision:
+#   pip install git+https://github.com/TauricResearch/TradingAgents.git
+
+# --- Web / news ingestion (Scout) --------------------------------------------
+crawl4ai             # Apache-2 (EMBED) — primary self-hosted scraper
+firecrawl-py         # MIT SDK (API) — client to Firecrawl's hosted service
+newsapi-python       # MIT (already used)
+# openbb             # AGPL-3.0 (RESEARCH only) — institutional data, internal use
+
+# --- Finance LLM / sentiment -------------------------------------------------
+# FinGPT  (MIT)   — clone AI4Finance-Foundation/FinGPT (Phase 3 LoRA sentiment)
+# FinRobot        — verify license at wire-in; AI4Finance multi-agent finance
+sentence-transformers  # Apache-2 — embeddings (already used)
+faiss-cpu              # MIT — vector store (already used)
+
+# --- Portfolio tracking UI (EMBED) -------------------------------------------
+# Wealthfolio (afadil) — separate React+Rust app; verify license at wire-in.
+# Or build a Streamlit/Dash dashboard in-repo.
+
+# --- Persistence / infra (already used) --------------------------------------
+supabase
+python-dotenv
+schedule
+cryptography
+
+# LLM brain = local Claude Code CLI (no API key, no API billing) — no pip dep.
