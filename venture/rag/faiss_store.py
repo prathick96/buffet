@@ -19,7 +19,10 @@ class FaissKnowledgeStore:
         self._model = SentenceTransformer(model_name)
         self._faiss = faiss
         self._index = None
-        self._dim = self._model.get_sentence_embedding_dimension()
+        # sentence-transformers renamed this method; support both.
+        _dim_fn = (getattr(self._model, "get_embedding_dimension", None)
+                   or self._model.get_sentence_embedding_dimension)
+        self._dim = _dim_fn()
         self.docs: list = []
         self._seen: set = set()
 

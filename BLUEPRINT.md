@@ -144,15 +144,19 @@ cautionary tales, not templates — the conviction goes into precision, the line
 - [x] News/web ingestion LIVE via keyless **RSS** (Cointelegraph/CoinDesk/Yahoo) → RAG;
       NewsAPI optional; crawl4ai/Firecrawl/OpenBB stubs for deeper sources. Verified: the
       Claude brain reasons over scraped headlines (cited BitGo layoffs, options hedging…).
-- [x] RAG upgraded to **TF-IDF cosine** (stdlib, default); **FAISS adapter written**
-      (`rag/faiss_store.py`), pending `sentence-transformers`/`faiss-cpu` install.
+- [x] RAG upgraded to **TF-IDF cosine** (stdlib) AND **FAISS semantic (MiniLM) LIVE**
+      (`rag/faiss_store.py`) — verified semantic match ("ETF" ⇄ "exchange-traded fund").
 
 **Phase 2 — Multi-agent debate.**
 - [x] LangGraph debate live: Scout→Analyst→**Quant→Bull→Bear→Judge**→Decision→Execution
       →Learning (`graph/debate.py`). Quant = statistical voice (`engines/quant.py`); Bull/Bear
       pluggable to Claude personas. RiskEngine floor still overrides. Tests 2/2.
-- [ ] Port real PPO as `RLQuantEngine` (needs stable-baselines3 + trained model);
-      add Controller as an explicit node; enable Claude Bull/Bear personas in live mode.
+- [x] Tunable **Judge** (`JudgeConfig`, conservative/assertive presets) — testable.
+- [x] Claude **Bull/Bear personas** wired (`bull_brain()`/`bear_brain()`, `--debate-llm`).
+- [x] `RLQuantEngine` (graceful fallback) + `train/train_rl.py` PPO pipeline.
+- [x] **PPO TRAINED** on 1000h real BTC/USDT (`models/ppo_quant_BTCUSDT.zip`) and LIVE as the
+      Quant (`source=rl_ppo`). A/B (`compare_quants.py`): PPO -0.53% vs stat -0.72% vs B&H -10.69%.
+- [ ] Scale RL (more steps/features/symbols); add Controller as an explicit debate node.
 
 **Phase 3 — Train & tune.** FinRL/PPO retraining; LoRA sentiment fine-tune; walk-forward
 validation; paper-trade the $50 journey and measure edge.
@@ -222,9 +226,36 @@ Supporting: `contracts.py` (messages), `portfolio.py` (clean paper portfolio),
 (**RSS live + keyless**; NewsAPI; crawl4ai/Firecrawl stubs), `rag/` (`store.py` keyword,
 **`tfidf_store.py` cosine (default)**, `faiss_store.py` lazy semantic), `brain/claude_brain.py`
 (local Claude reasoning), `workflow.py` (simple loop), `graph/debate.py` (LangGraph debate),
-`live_demo.py`. **Status: 23/23 tests pass** (risk 8, backtest 3, workflow 3, debate 2,
-news 2, tfidf 2, quant 3).
+`live_demo.py`. **Status: 28/28 tests pass** (risk 8, backtest 3, workflow 3, debate 2,
+news 2, tfidf 2, quant 3, judge 3, rl_quant 2).
+
+Added: `engines/rl_quant.py` (`RLQuantEngine` — PPO policy with graceful fallback to the
+stat quant), `train/train_rl.py` (PPO training on real ccxt data), tunable `JudgeConfig`
+(`CONSERVATIVE_JUDGE`/`ASSERTIVE_JUDGE`), and Claude `bull_brain()`/`bear_brain()` personas
+(`live_demo.py --debate-llm`).
 
 Engines are decoupled, so **LangGraph drives these exact nodes** without changing them.
-Seams still open: `DecisionEngine(rl_action=…)` for the PPO model (port as `RLQuantEngine`);
-FAISS store (needs `sentence-transformers`); Claude Bull/Bear personas in live mode.
+**FULLY LIVE:** real data (ccxt/yfinance) · RSS news · FAISS semantic RAG · PPO quant ·
+Claude brain · tunable Judge · LLM Bull/Bear personas. One command runs the whole stack:
+`python venture/live_demo.py BTC/USDT --rl --faiss --debate-llm`.
+Open: scale RL training, explicit Controller node, crawl4ai deep scraping, n8n scheduling (parked).
+
+---
+
+## 10. Validation findings (honest)
+
+`eval/walk_forward.py` does rolling train→OOS-test folds — the real test for edge vs
+overfitting. Shared RL feature/observation contract lives in `rl/features.py` (train and
+inference import the same `build_observation`, so they can't drift).
+
+**First result (BTC/USDT, 5 folds, 1h bars, 8k steps): NO out-of-sample edge.**
+Avg OOS strategy −4.49% vs buy-hold −1.26% (edge −3.23%; 1/5 folds beat B&H). The harness
+correctly refuses to flatter a weak policy.
+
+**Strategic implication (important):** pure price-action RL on 1h bars is near-efficient-
+market territory and rarely yields durable edge — more steps mostly overfit the train
+window. So the venture's edge thesis should NOT rest on price-only RL. The likely edge:
+the **information layer** (live news/catalysts via Scout + FAISS RAG + the Claude brain) and
+**disciplined risk** (the floor / capital preservation already proven: ~flat vs −7…−11% B&H).
+RL is best used as a **risk-aware position-sizer**, not the primary alpha. Validate every
+new signal through walk-forward before trusting it.

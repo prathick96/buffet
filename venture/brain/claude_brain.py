@@ -87,3 +87,15 @@ class ClaudeBrain:
 def make_claude_brain(**kwargs) -> ClaudeBrain:
     """Convenience factory: `AnalystEngine(llm_brain=make_claude_brain())`."""
     return ClaudeBrain(**kwargs)
+
+
+def bull_brain(**kwargs) -> ClaudeBrain:
+    """An aggressive long-side advocate for the debate's Bull node."""
+    return ClaudeBrain(persona="an aggressive, opportunistic BULL who builds the "
+                       "strongest possible long case (still honest about real risks)", **kwargs)
+
+
+def bear_brain(**kwargs) -> ClaudeBrain:
+    """A skeptical short-seller for the debate's Bear node."""
+    return ClaudeBrain(persona="a ruthless, skeptical BEAR / short-seller who hunts "
+                       "every downside risk and overstretched valuation", **kwargs)
