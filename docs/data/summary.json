@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03T20:53:26+00:00",
+  "updated": "2026-07-03T21:57:02+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -11,16 +11,16 @@
   "forward_test": {
     "scored": 4,
     "directional": 4,
-    "pending": 34,
+    "pending": 38,
     "hit_rate": 0.5,
     "avg_signal_return_pct": 0.457,
     "sample": 4,
     "verdict": "insufficient sample (4/20) \u2014 keep accumulating"
   },
   "counts": {
-    "predictions": 38,
+    "predictions": 42,
     "scored": 4,
-    "pending": 34
+    "pending": 38
   },
   "billing": {
     "model": "claude-opus-4-8",
