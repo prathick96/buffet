@@ -1,5 +1,57 @@
 [
   {
+    "id": 46,
+    "time": "2026-07-03T22:57:49+00:00",
+    "symbol": "TCS.NS",
+    "price": 2068.10009765625,
+    "action": "SELL",
+    "conviction": 0.481,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 45,
+    "time": "2026-07-03T22:57:48+00:00",
+    "symbol": "RELIANCE.BO",
+    "price": 1318.25,
+    "action": "BUY",
+    "conviction": 0.269,
+    "sentiment": "BULLISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 44,
+    "time": "2026-07-03T22:57:46+00:00",
+    "symbol": "NVDA",
+    "price": 194.8300018310547,
+    "action": "SELL",
+    "conviction": 0.778,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 43,
+    "time": "2026-07-03T22:57:46+00:00",
+    "symbol": "AAPL",
+    "price": 308.6300048828125,
+    "action": "BUY",
+    "conviction": 0.79,
+    "sentiment": "BULLISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 42,
     "time": "2026-07-03T21:57:01+00:00",
     "symbol": "TCS.NS",
