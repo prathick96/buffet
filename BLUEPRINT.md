@@ -344,3 +344,13 @@ edge → forward-test live (no historical-news backtest).
 `ANTHROPIC_API_KEY`, `ANTHROPIC_MODEL`, `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`. **Cost:** Opus-4.8
 API on a $50 book ≈ $3–4/mo daily; set `ANTHROPIC_MODEL=claude-haiku-4-5` to slash it. **Free-host
 note:** GitHub Actions (not n8n) is the reliable free scheduler; n8n → self-host/cloud-free-tier later.
+
+**Online mode — DONE (2026-07-03, chosen config):** hourly cron; **Opus 4.8** LLM brain gated to
+**equities during market hours only, never crypto** (`scout_cycle.py` via `markets.is_market_open`);
+free heuristic otherwise. **Cost control** = `venture/billing/`: `pricing.py` (token→$), `tracker.py`
+(`UsageTracker` logs tokens+$ per call to journal `api_usage`; `BudgetGuard` hard-caps
+`ANTHROPIC_MONTHLY_BUDGET`, default $20 → brain degrades to heuristic when hit), `console.py`
+(optional Admin `cost_report` reconcile via `ANTHROPIC_ADMIN_KEY`). Dashboard has a **billing card**
+(MTD $, calls, tokens, budget bar). Projected ~$5–7/mo on Opus. **n8n verdict: skip** — crontab/Actions
+is simpler. Deploy: `DEPLOY.md` (GitHub Actions cron `0 * * * *`, or Oracle Always-Free VM crontab).
+**80/80 tests** (billing 6). New secrets: `ANTHROPIC_MONTHLY_BUDGET`, optional `ANTHROPIC_ADMIN_KEY`.

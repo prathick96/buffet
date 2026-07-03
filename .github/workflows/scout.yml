@@ -1,12 +1,19 @@
 name: scout-cycle
 
-# Free serverless scheduler: runs the paper scout cycle, commits evidence +
+# Free serverless scheduler: runs the paper scout cycle hourly, commits evidence +
 # dashboard JSON back to the repo, and (optionally) pushes a Telegram update.
-# Secrets live in repo Settings -> Secrets and variables -> Actions (never public).
+# The script self-gates the Opus LLM to EQUITY symbols during their MARKET HOURS
+# (never crypto), and enforces ANTHROPIC_MONTHLY_BUDGET. Secrets live in
+# repo Settings -> Secrets and variables -> Actions (never public).
+#
+# Note: hourly 24/7 is ~1,400 Actions min/mo (near the 2,000 free tier). To save
+# minutes, narrow the cron to market-relevant UTC hours, e.g.:
+#   - cron: "0 3-20 * * 1-5"   # ~covers NSE/BSE (03:45-10:00 UTC) + NASDAQ (13:30-20:00 UTC)
+# or run it on an Oracle Cloud Always-Free VM crontab (no minute cap) — see DEPLOY.md.
 
 on:
   schedule:
-    - cron: "30 21 * * 1-5"      # 21:30 UTC on weekdays (~after US close). Adjust as needed.
+    - cron: "0 * * * *"           # top of every hour
   workflow_dispatch: {}          # manual "Run workflow" button
 
 permissions:
@@ -15,6 +22,14 @@ permissions:
 concurrency:
   group: scout-cycle
   cancel-in-progress: false
+
+env:
+  ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+  ANTHROPIC_MODEL: ${{ secrets.ANTHROPIC_MODEL }}          # e.g. claude-opus-4-8
+  ANTHROPIC_MONTHLY_BUDGET: ${{ secrets.ANTHROPIC_MONTHLY_BUDGET }}   # e.g. 20
+  ANTHROPIC_ADMIN_KEY: ${{ secrets.ANTHROPIC_ADMIN_KEY }}  # optional: console cost reconcile
+  TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+  TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
 
 jobs:
   run:
@@ -30,15 +45,10 @@ jobs:
       - name: Install deps
         run: pip install -r venture/requirements-cloud.txt
 
-      - name: Run scout cycle (paper only)
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          ANTHROPIC_MODEL: ${{ secrets.ANTHROPIC_MODEL }}
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      - name: Run scout cycle (paper only; LLM gated to market-hours equities)
         run: python venture/scout_cycle.py
 
-      - name: Export dashboard JSON
+      - name: Export dashboard JSON (incl. billing)
         run: python venture/dashboard/export.py
 
       - name: Commit evidence + dashboard data

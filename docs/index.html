@@ -116,6 +116,10 @@
         <div id="status"></div>
       </div>
     </div>
+    <div class="card neu">
+      <h2>API billing · month-to-date</h2>
+      <div id="billing"></div>
+    </div>
   </section>
 
   <!-- TRADES -->
@@ -196,6 +200,21 @@ function renderSummary(s){
      <div>Verdict &nbsp;${tag(n>0&&ft.hit_rate>0.5?'g':'n', ft.verdict||'—')}</div>
      <div class="muted">Mode &nbsp;<b class="a">${s.mode}</b> · live trading is hard-blocked until explicitly enabled.</div>
      <div class="muted">Pending predictions &nbsp;<b>${s.counts.pending}</b></div></div>`;
+
+  // billing — API spend, month-to-date
+  const b = s.billing;
+  if(b){
+    const cost=(b.cost_usd||0), cap=(b.budget_usd||0);
+    const pct = cap>0? Math.min(100, cost/cap*100) : 0;
+    const barColor = pct>=90?'var(--bad)':pct>=70?'var(--warn)':'var(--accent)';
+    const con = b.console_cost_usd!=null? ` · console $${b.console_cost_usd.toFixed(4)}` : '';
+    $("#billing").innerHTML = `
+      <div class="val" style="font-size:24px;font-weight:750">$${cost.toFixed(4)}
+        <span class="muted" style="font-size:13px">/ ${cap>0?'$'+cap.toFixed(0):'unlimited'} budget</span></div>
+      <div class="gauge neu-in" style="margin:12px 0"><div class="fill" style="width:${pct}%;background:${barColor}"></div></div>
+      <div class="muted" style="font-size:12.5px">${b.calls||0} calls · ${fmtNum(b.input_tokens)}→${fmtNum(b.output_tokens)} tok · model <b class="a">${(b.model||'').replace('claude-','')}</b>${con}</div>
+      <div class="muted" style="font-size:11.5px;margin-top:4px">Opus for equities in market hours · none for crypto · budget cap → heuristic fallback</div>`;
+  } else { $("#billing").innerHTML = `<div class="muted">No API spend yet (heuristic-only).</div>`; }
 }
 
 function renderTrades(list){

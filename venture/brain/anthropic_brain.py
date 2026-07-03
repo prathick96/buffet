@@ -27,11 +27,14 @@ DEFAULT_MODEL = "claude-opus-4-8"
 
 class AnthropicBrain:
     def __init__(self, model: str | None = None, max_tokens: int = 600,
-                 persona: str = "ruthless but disciplined", timeout: int = 60):
+                 persona: str = "ruthless but disciplined", timeout: int = 60,
+                 tracker=None, budget=None):
         self.persona = persona
         self.max_tokens = max_tokens
         self.model = model or get_secret("ANTHROPIC_MODEL", default=DEFAULT_MODEL)
         self.timeout = timeout
+        self.tracker = tracker      # UsageTracker: logs tokens+$ per call
+        self.budget = budget        # BudgetGuard: hard monthly cap -> heuristic fallback
         self._cache: dict = {}
         self._client = None
 
@@ -40,6 +43,10 @@ class AnthropicBrain:
         key = f"{self.persona}|{snap.symbol}|{datetime.now(timezone.utc):%Y%m%d_%H}"
         if key in self._cache:
             return self._cache[key]
+        if self.budget is not None and not self.budget.allow():   # cost control
+            return {"sentiment": "NEUTRAL", "score": 0.0,
+                    "rationale": "monthly API budget reached — heuristic fallback",
+                    "key_factors": ["budget"]}
         try:
             data = self._parse(self._call(snap))
         except Exception as e:                       # never crash the loop
@@ -84,6 +91,12 @@ class AnthropicBrain:
                      "cache_control": {"type": "ephemeral"}}],
             messages=[{"role": "user", "content": self._user(snap)}],
         )
+        if self.tracker is not None:                 # log tokens + $ for this call
+            try:
+                self.tracker.record(self.model, resp.usage,
+                                    symbol=getattr(snap, "symbol", "-"))
+            except Exception:
+                pass
         return "".join(b.text for b in resp.content
                        if getattr(b, "type", None) == "text").strip()
 

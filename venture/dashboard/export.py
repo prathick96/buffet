@@ -79,6 +79,35 @@ def _logs(journal_db: str) -> list:
     return out
 
 
+def _billing(journal_db: str) -> dict:
+    """Month-to-date API spend for the dashboard (self-tracked + optional console)."""
+    from billing.tracker import month_to_date
+    from persistence.journal import Journal
+    from security.secrets import get_secret
+
+    cap = float(get_secret("ANTHROPIC_MONTHLY_BUDGET", default="20") or 20)
+    model = get_secret("ANTHROPIC_MODEL", default="claude-opus-4-8")
+    mtd = {"month": None, "calls": 0, "cost_usd": 0.0,
+           "input_tokens": 0, "output_tokens": 0}
+    if Path(journal_db).exists():
+        j = Journal(journal_db)
+        try:
+            mtd = month_to_date(j)
+        finally:
+            j.close()
+    out = {"model": model, "budget_usd": cap, "month": mtd["month"],
+           "cost_usd": mtd["cost_usd"], "calls": mtd["calls"],
+           "input_tokens": mtd["input_tokens"], "output_tokens": mtd["output_tokens"],
+           "remaining_usd": round(max(0.0, cap - mtd["cost_usd"]), 4) if cap > 0 else None,
+           "pct_used": round(mtd["cost_usd"] / cap * 100, 1) if cap > 0 else None}
+    try:  # authoritative console figure if an admin key is configured
+        from billing.console import console_month_to_date_usd
+        out["console_cost_usd"] = console_month_to_date_usd()
+    except Exception:
+        out["console_cost_usd"] = None
+    return out
+
+
 def export(forward_db: str = "venture/forward_test.db",
            journal_db: str = "venture/journal.db",
            out_dir: str = "docs/data") -> dict:
@@ -104,6 +133,7 @@ def export(forward_db: str = "venture/forward_test.db",
         "counts": {"predictions": len(preds),
                    "scored": report.get("scored", 0),
                    "pending": report.get("pending", 0)},
+        "billing": _billing(journal_db),
     }
 
     _write(out_dir, "summary.json", summary)
