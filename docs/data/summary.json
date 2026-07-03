@@ -1,0 +1,22 @@
+{
+  "updated": "2026-07-02T21:58:32+00:00",
+  "mode": "paper",
+  "goal": {
+    "start": 20.0,
+    "target": 250000.0,
+    "doublings_total": 13.6,
+    "current_square": 0,
+    "current_capital": 20.0
+  },
+  "forward_test": {
+    "scored": 0,
+    "directional": 0,
+    "pending": 6,
+    "verdict": "no scored directional predictions yet \u2014 let it run"
+  },
+  "counts": {
+    "predictions": 6,
+    "scored": 0,
+    "pending": 6
+  }
+}

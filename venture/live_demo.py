@@ -40,10 +40,12 @@ def main(symbol: str = "BTC/USDT", use_brain: bool = True, debate_llm: bool = Fa
     print(f"Live news for {symbol}: {len(headlines)} headlines"
           + (f'  e.g. "{headlines[0]["title"]}"' if headlines else ""))
 
-    print(f"Fetching market data for {symbol}...")
+    from markets.registry import resolve
+    cur = resolve(symbol).currency_symbol or "$"
+    print(f"Fetching market data for {symbol} [{resolve(symbol).exchange}]...")
     data = _make_provider(symbol, news)
     closes = data._closes
-    print(f"  {len(closes)} bars (latest ${closes[-1]:,.2f})")
+    print(f"  {len(closes)} bars (latest {cur}{closes[-1]:,.2f})")
 
     # Optional upgrades: semantic FAISS RAG and the trained PPO quant.
     if use_faiss:
@@ -70,7 +72,7 @@ def main(symbol: str = "BTC/USDT", use_brain: bool = True, debate_llm: bool = Fa
     print(f"LIVE DEBATE RUN - {symbol}")
     print("=" * 56)
     print(f"  Bars / trades    : {len(results)} / {trades}")
-    print(f"  Strategy return  : {m['return_pct']:+.2f}%   (equity ${m['equity']})")
+    print(f"  Strategy return  : {m['return_pct']:+.2f}%   (equity {cur}{m['equity']})")
     print(f"  Buy & hold       : {bh:+.2f}%")
     print(f"  Max drawdown     : {m['drawdown_pct']:.2f}%")
     print(f"  Risk state       : {runner.risk.state.value} "
@@ -104,6 +106,10 @@ def main(symbol: str = "BTC/USDT", use_brain: bool = True, debate_llm: bool = Fa
 
 
 if __name__ == "__main__":
+    try:
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")   # ₹ / — safe on Windows
+    except Exception:
+        pass
     args = sys.argv[1:]
     use_brain = "--no-brain" not in args
     debate_llm = "--debate-llm" in args

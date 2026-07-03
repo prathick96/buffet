@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Venture · AI Trading Desk</title>
+<style>
+  :root{
+    --bg:#1b1e24; --surface:#20242b; --sh-dark:#141619; --sh-light:#2a2f38;
+    --ink:#e7ebf2; --muted:#8b93a2; --line:#2c313a;
+    --accent:#2dd4bf; --good:#22c55e; --bad:#ef4444; --warn:#f59e0b; --neutral:#94a3b8;
+    --r:18px; --r-sm:12px;
+  }
+  html[data-theme="light"]{
+    --bg:#e6e9ef; --surface:#e6e9ef; --sh-dark:#c5cad3; --sh-light:#ffffff;
+    --ink:#2b303b; --muted:#6a7284; --line:#d3d8e0; --accent:#0d9488;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased}
+  .wrap{max-width:1080px;margin:0 auto;padding:22px 18px 60px}
+  .neu{background:var(--surface);border-radius:var(--r);
+    box-shadow:6px 6px 13px var(--sh-dark),-6px -6px 13px var(--sh-light)}
+  .neu-in{background:var(--surface);border-radius:var(--r-sm);
+    box-shadow:inset 4px 4px 8px var(--sh-dark),inset -4px -4px 8px var(--sh-light)}
+  header{display:flex;align-items:center;gap:14px;margin-bottom:22px;flex-wrap:wrap}
+  header h1{font-size:19px;margin:0;letter-spacing:.2px}
+  header h1 span{color:var(--accent)}
+  .grow{flex:1}
+  .badge{font-size:11px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;
+    padding:5px 10px;border-radius:999px;color:var(--bg);background:var(--warn)}
+  .muted{color:var(--muted)}
+  .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+  button.icon{border:0;cursor:pointer;color:var(--ink);width:40px;height:40px;border-radius:50%;
+    background:var(--surface);box-shadow:5px 5px 10px var(--sh-dark),-5px -5px 10px var(--sh-light);font-size:16px}
+  button.icon:active{box-shadow:inset 3px 3px 6px var(--sh-dark),inset -3px -3px 6px var(--sh-light)}
+  nav{display:flex;gap:10px;margin:0 0 20px;flex-wrap:wrap}
+  nav button{border:0;cursor:pointer;color:var(--muted);font-weight:600;font-size:13.5px;
+    padding:10px 16px;border-radius:999px;background:var(--surface);
+    box-shadow:5px 5px 10px var(--sh-dark),-5px -5px 10px var(--sh-light)}
+  nav button.on{color:var(--accent);
+    box-shadow:inset 3px 3px 7px var(--sh-dark),inset -3px -3px 7px var(--sh-light)}
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:16px;margin-bottom:18px}
+  .kpi{padding:16px 18px}
+  .kpi .lab{font-size:11px;text-transform:uppercase;letter-spacing:.6px;color:var(--muted)}
+  .kpi .val{font-size:23px;font-weight:750;margin-top:6px}
+  .kpi .sub{font-size:12px;color:var(--muted);margin-top:2px}
+  .card{padding:20px 20px;margin-bottom:18px}
+  .card h2{font-size:13px;text-transform:uppercase;letter-spacing:.7px;color:var(--muted);margin:0 0 16px}
+  .ladder{display:flex;gap:7px;flex-wrap:wrap}
+  .pip{flex:1;min-width:16px;height:26px;border-radius:7px;
+    box-shadow:inset 3px 3px 6px var(--sh-dark),inset -3px -3px 6px var(--sh-light)}
+  .pip.done{background:var(--accent);box-shadow:3px 3px 6px var(--sh-dark),-3px -3px 6px var(--sh-light)}
+  .pip.cur{background:var(--warn);box-shadow:0 0 0 2px var(--warn) inset,3px 3px 6px var(--sh-dark)}
+  .gauge{height:16px;border-radius:999px;position:relative;overflow:hidden}
+  .gauge .fill{height:100%;background:var(--accent);border-radius:999px;transition:width .5s}
+  .gauge .base{position:absolute;top:-4px;bottom:-4px;left:50%;width:2px;background:var(--muted)}
+  .row2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media(max-width:640px){.row2{grid-template-columns:1fr}}
+  .scroll{overflow-x:auto}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;min-width:560px}
+  th{text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);
+    padding:0 12px 10px;font-weight:700}
+  td{padding:11px 12px;border-top:1px solid var(--line)}
+  .tag{display:inline-flex;align-items:center;gap:5px;font-weight:700;font-size:12px}
+  .g{color:var(--good)} .r{color:var(--bad)} .n{color:var(--neutral)} .a{color:var(--accent)}
+  .cbar{height:8px;border-radius:999px;background:var(--line);width:70px;display:inline-block;vertical-align:middle;overflow:hidden}
+  .cbar>i{display:block;height:100%;background:var(--accent)}
+  .agents{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+  .agent{padding:16px 18px}
+  .agent .nm{font-weight:750;display:flex;align-items:center;gap:8px}
+  .dot{width:9px;height:9px;border-radius:50%;background:var(--good);box-shadow:0 0 8px var(--good)}
+  .agent .rl{font-size:12.5px;color:var(--muted);margin-top:6px}
+  .feed{display:flex;flex-direction:column;gap:2px}
+  .log{display:flex;gap:12px;padding:10px 12px;border-radius:10px;align-items:baseline}
+  .log:nth-child(odd){background:rgba(127,127,127,.05)}
+  .log .t{font-size:11.5px;color:var(--muted);min-width:118px}
+  .log .k{font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;min-width:58px}
+  .hide{display:none}
+  footer{margin-top:26px;font-size:12px;color:var(--muted);text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Venture <span>·</span> AI Trading Desk</h1>
+    <span class="badge" id="mode">paper</span>
+    <div class="grow"></div>
+    <span class="muted mono" id="updated">—</span>
+    <button class="icon" id="theme" title="Toggle theme">◐</button>
+  </header>
+
+  <nav>
+    <button class="on" data-tab="overview">Overview</button>
+    <button data-tab="trades">Trades</button>
+    <button data-tab="agents">Agents</button>
+    <button data-tab="logs">Logs</button>
+  </nav>
+
+  <!-- OVERVIEW -->
+  <section id="tab-overview">
+    <div class="kpis" id="kpis"></div>
+    <div class="card neu">
+      <h2>Progress to goal · chessboard ladder ($20 → $250,000)</h2>
+      <div class="ladder" id="ladder"></div>
+      <div class="sub muted" id="ladderNote" style="margin-top:12px;font-size:12.5px"></div>
+    </div>
+    <div class="row2">
+      <div class="card neu">
+        <h2>Edge — forward test</h2>
+        <div id="edge"></div>
+      </div>
+      <div class="card neu">
+        <h2>Status</h2>
+        <div id="status"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRADES -->
+  <section id="tab-trades" class="hide">
+    <div class="card neu">
+      <h2>Signals captured (most recent)</h2>
+      <div class="scroll"><table id="tradesTable">
+        <thead><tr><th>Time</th><th>Symbol</th><th>Signal</th><th>Conviction</th>
+          <th>Sentiment</th><th>Price</th><th>Outcome</th></tr></thead>
+        <tbody id="tradesBody"></tbody>
+      </table></div>
+    </div>
+  </section>
+
+  <!-- AGENTS -->
+  <section id="tab-agents" class="hide">
+    <div class="card neu"><h2>The desk — agent roster</h2>
+      <div class="agents" id="agents"></div>
+    </div>
+  </section>
+
+  <!-- LOGS -->
+  <section id="tab-logs" class="hide">
+    <div class="card neu"><h2>Activity log</h2>
+      <div class="feed" id="feed"></div>
+    </div>
+  </section>
+
+  <footer>Paper trading · updates on each scout cycle · <span id="foot">—</span></footer>
+</div>
+
+<script>
+const $ = s => document.querySelector(s);
+const fmtNum = n => n==null? "—" : (Math.abs(n)>=1000? n.toLocaleString(undefined,{maximumFractionDigits:0}) : n);
+const ACT = {BUY:{c:"g",i:"▲"}, SELL:{c:"r",i:"▼"}, HOLD:{c:"n",i:"●"}};
+const SENT = {BULLISH:"g", BEARISH:"r", NEUTRAL:"n"};
+
+async function getJSON(f){ try{ const r=await fetch("./data/"+f,{cache:"no-store"}); return await r.json(); }catch(e){ return null; } }
+
+function tag(cls,txt){ return `<span class="tag ${cls}">${txt}</span>`; }
+
+function renderSummary(s){
+  if(!s){ $("#updated").textContent="no data yet — run a scout cycle"; return; }
+  $("#mode").textContent = s.mode || "paper";
+  $("#updated").textContent = "updated " + (s.updated? s.updated.replace("T"," ").replace("+00:00"," UTC") : "—");
+  $("#foot").textContent = s.updated || "";
+  const g=s.goal, ft=s.forward_test||{};
+  $("#kpis").innerHTML = [
+    ["Goal", "$"+fmtNum(g.start)+" → $"+fmtNum(g.target), (g.doublings_total)+" doublings"],
+    ["Square", (g.current_square)+" / "+Math.round(g.doublings_total), "current capital $"+fmtNum(g.current_capital)],
+    ["Predictions", fmtNum(s.counts.predictions), "captured"],
+    ["Pending", fmtNum(s.counts.pending), "awaiting horizon"],
+    ["Scored", fmtNum(s.counts.scored), (ft.hit_rate!=null? (ft.hit_rate*100).toFixed(0)+"% hit-rate":"no verdict yet")],
+  ].map(([l,v,sub])=>`<div class="kpi neu"><div class="lab">${l}</div><div class="val">${v}</div><div class="sub">${sub}</div></div>`).join("");
+
+  // ladder
+  const total=Math.round(g.doublings_total), cur=g.current_square;
+  $("#ladder").innerHTML = Array.from({length:total},(_,i)=>
+    `<div class="pip ${i<cur?'done':(i===cur?'cur':'')}" title="square ${i+1}: $${fmtNum(g.start*Math.pow(2,i+1))}"></div>`).join("");
+  $("#ladderNote").textContent = `Each square = one doubling, earned by proven edge before advancing. On square ${cur} — capital preservation + edge-evidence phase.`;
+
+  // edge
+  const n = ft.directional||0;
+  let edge;
+  if(n>0){
+    const hit=(ft.hit_rate*100), pos=Math.min(100,Math.max(0,hit));
+    edge = `<div class="val" style="font-size:26px;font-weight:750">${hit.toFixed(0)}% <span class="muted" style="font-size:14px">hit-rate</span></div>
+      <div class="gauge neu-in" style="margin:14px 0"><div class="base"></div><div class="fill" style="width:${pos}%"></div></div>
+      <div class="muted" style="font-size:12.5px">signal return ${ft.avg_signal_return_pct>=0?'+':''}${ft.avg_signal_return_pct}% · n=${n} · vs 50% baseline</div>`;
+  } else {
+    const need=20, have=ft.scored||0, pct=Math.min(100, have/need*100);
+    edge = `<div class="val" style="font-size:20px;font-weight:700">Gathering evidence</div>
+      <div class="gauge neu-in" style="margin:14px 0"><div class="fill" style="width:${pct}%"></div></div>
+      <div class="muted" style="font-size:12.5px">${have}/${need} scored predictions needed before an honest verdict.</div>`;
+  }
+  $("#edge").innerHTML = edge;
+  $("#status").innerHTML = `<div style="font-size:14px;line-height:1.9">
+     <div>Verdict &nbsp;${tag(n>0&&ft.hit_rate>0.5?'g':'n', ft.verdict||'—')}</div>
+     <div class="muted">Mode &nbsp;<b class="a">${s.mode}</b> · live trading is hard-blocked until explicitly enabled.</div>
+     <div class="muted">Pending predictions &nbsp;<b>${s.counts.pending}</b></div></div>`;
+}
+
+function renderTrades(list){
+  const b=$("#tradesBody");
+  if(!list||!list.length){ b.innerHTML=`<tr><td colspan="7" class="muted">No signals captured yet.</td></tr>`; return; }
+  b.innerHTML = list.map(p=>{
+    const a=ACT[p.action]||ACT.HOLD, sc=SENT[p.sentiment]||"n";
+    const conv=Math.round((p.conviction||0)*100);
+    const out = p.correct==null? '<span class="muted">pending</span>'
+      : (p.correct? tag("g","✓ "+(p.fwd_return_pct>=0?'+':'')+p.fwd_return_pct+"%")
+                  : tag("r","✗ "+(p.fwd_return_pct>=0?'+':'')+p.fwd_return_pct+"%"));
+    return `<tr>
+      <td class="muted mono" style="font-size:12px">${(p.time||'').replace('T',' ').replace('+00:00','')}</td>
+      <td class="mono">${p.symbol}</td>
+      <td>${tag(a.c, a.i+" "+p.action)}</td>
+      <td><span class="cbar"><i style="width:${conv}%"></i></span> <span class="muted">${conv}%</span></td>
+      <td>${tag(sc, p.sentiment)}</td>
+      <td class="mono">${fmtNum(p.price)}</td>
+      <td>${out}</td></tr>`;
+  }).join("");
+}
+
+function renderAgents(d){
+  const list=(d&&d.agents)||[];
+  $("#agents").innerHTML = list.map(a=>
+    `<div class="agent neu"><div class="nm"><span class="dot"></span>${a.name}</div>
+      <div class="rl">${a.role}</div></div>`).join("");
+}
+
+function renderLogs(list){
+  const KIND={signal:"a",cycle:"g",error:"r"};
+  const f=$("#feed");
+  if(!list||!list.length){ f.innerHTML=`<div class="muted" style="padding:12px">No activity yet.</div>`; return; }
+  f.innerHTML = list.map(l=>{
+    const d=l.detail||{}; let msg;
+    if(l.kind==='signal') msg=`${l.symbol}: <b class="${(ACT[d.action]||{c:'n'}).c}">${d.action}</b> conv=${(d.conviction||0).toFixed?.(2)??d.conviction} (${d.sentiment})`;
+    else if(l.kind==='cycle') msg=`cycle · captured ${d.captured}, scored ${d.scored} — ${d.verdict||''}`;
+    else if(l.kind==='error') msg=`<span class="r">${l.symbol}: ${d.error||'error'}</span>`;
+    else msg=JSON.stringify(d);
+    return `<div class="log"><span class="t mono">${(l.time||'').replace('T',' ').replace('+00:00','')}</span>
+      <span class="k ${KIND[l.kind]||'n'}">${l.kind}</span><span>${msg}</span></div>`;
+  }).join("");
+}
+
+// tabs
+document.querySelectorAll("nav button").forEach(btn=>btn.onclick=()=>{
+  document.querySelectorAll("nav button").forEach(b=>b.classList.toggle("on",b===btn));
+  ["overview","trades","agents","logs"].forEach(t=>$("#tab-"+t).classList.toggle("hide",t!==btn.dataset.tab));
+});
+// theme
+$("#theme").onclick=()=>{ const h=document.documentElement;
+  const t=h.getAttribute("data-theme")==="dark"?"light":"dark"; h.setAttribute("data-theme",t);
+  try{localStorage.setItem("venture-theme",t);}catch(e){} };
+try{ const sv=localStorage.getItem("venture-theme"); if(sv) document.documentElement.setAttribute("data-theme",sv); }catch(e){}
+
+// load — inline __DATA__ (preview/Artifact) if present, else fetch ./data/ (hosted)
+(async()=>{
+  let s,preds,agents,logs;
+  if(window.__DATA__){ s=__DATA__.summary; preds=__DATA__.predictions; agents=__DATA__.agents; logs=__DATA__.logs; }
+  else { [s,preds,agents,logs] = await Promise.all(
+    ["summary.json","predictions.json","agents.json","logs.json"].map(getJSON)); }
+  renderSummary(s); renderTrades(preds); renderAgents(agents); renderLogs(logs);
+})();
+</script>
+</body>
+</html>

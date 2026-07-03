@@ -63,4 +63,5 @@ python-dotenv
 schedule
 cryptography
 
-# LLM brain = local Claude Code CLI (no API key, no API billing) — no pip dep.
+# LLM brain — local Claude Code CLI (no key, no billing) is the default (no pip dep).
+anthropic            # MIT — cloud brain via API (brain/anthropic_brain.py), for hosting where the CLI isn't available

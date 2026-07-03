@@ -12,10 +12,15 @@ watches markets like a hawk, reasons like a quant desk, and compounds a tiny sta
 **paper** with disciplined risk control. If it proves edge on paper, it may become a
 **commercial venture** — so license-cleanliness is a hard constraint from day one.
 
-**Operative target (current brief, authoritative):** start **$50**, grow toward
-**$100,000** on paper; **back out at the $50 floor**; never zero out.
-*(An earlier exploration chat framed this as $20 → $250k — same spirit, different numbers.
-We use $50 → $100k as the eval target and treat the prior figures as non-binding.)*
+**Operative target (updated 2026-07-02):** the **chessboard ladder** — $20 → $250,000
+over ~5 years (equivalently $50 → $625k; both ≈ **12,500× ≈ 13.6 doublings**). One square
+= one doubling, **earned by proven edge before advancing**, ≈ one doubling per ~4.4 months
+if on schedule. Floor rule unchanged: back out at the initial-capital floor; never zero out.
+Honest math: 12,500×/5yr ≈ +17%/month sustained — beyond any documented track record
+(Medallion ≈ 39–66%/yr). We treat the ladder as the *training structure* and the floor as
+law; the venture's commercial value is the proven infrastructure + verified track record,
+whatever multiplier is actually achieved. After ~5 years of personal training/trading, the
+goal is to market the app commercially as a trustworthy AI-trading venture.
 
 **Honest KPI.** $50 → $100k is ~**2,000×**. No system guarantees that, and "guaranteed
 revenue" does not exist. The real success metric is **demonstrable, risk-adjusted edge +
@@ -226,8 +231,27 @@ Supporting: `contracts.py` (messages), `portfolio.py` (clean paper portfolio),
 (**RSS live + keyless**; NewsAPI; crawl4ai/Firecrawl stubs), `rag/` (`store.py` keyword,
 **`tfidf_store.py` cosine (default)**, `faiss_store.py` lazy semantic), `brain/claude_brain.py`
 (local Claude reasoning), `workflow.py` (simple loop), `graph/debate.py` (LangGraph debate),
-`live_demo.py`. **Status: 28/28 tests pass** (risk 8, backtest 3, workflow 3, debate 2,
-news 2, tfidf 2, quant 3, judge 3, rl_quant 2).
+`live_demo.py`. **Status: 53/53 tests pass** (+ guard 5, indicators 2, legends 2, journal 2, markets 4).
+
+**Phase C LIVE (forward-test):** `venture/mode.py` — paper-only gate; live trading raises
+`LiveTradingBlocked` with the rotate-keys reminder unless `VENTURE_LIVE_TRADING=true`.
+`eval/forward_test.py` — timestamped prediction capture + horizon scoring vs realized
+prices (look-ahead-free). `scout_cycle.py` — the daily driver: full debate on the
+multi-market watchlist → capture → score matured → scorecard (`venture/forward_test.db`).
+First live cycle captured 6 predictions across binance/NASDAQ/BSE/NSE. Run it daily;
+edge verdict forms at n≥20 scored directional predictions. **60/60 tests.**
+
+**BSE/NSE first-class (Phase B core):** `markets/registry.py` (resolve symbol -> exchange/
+currency ₹|$ / market-hours / provider), `markets/watchlist.py`, Indian RSS feeds (Economic
+Times / LiveMint) routed for `.BO`/`.NS`, currency-aware live demo. Verified live on RELIANCE.BO.
+Open refinement: cross-currency portfolio (₹ journey vs the USD $50 floor) — needs FX or
+per-market journeys.
+
+**Legacy fully migrated + deleted.** `tradingagent.py` + `TradingAgent_week1.ipynb` ported into
+`venture/` and removed (in git history as backup). See `COVERAGE.md` for the component matrix.
+Ported gaps: `security/guard.py` (rate limiter / circuit breaker / response validator),
+`features/indicators.py` (RSI/MACD/BB/EMA/ATR, pure pandas), `rag/legends.py` (Trading Legends
+KB), `persistence/journal.py` (local SQLite, replaces Supabase logging).
 
 Added: `engines/rl_quant.py` (`RLQuantEngine` — PPO policy with graceful fallback to the
 stat quant), `train/train_rl.py` (PPO training on real ccxt data), tunable `JudgeConfig`
@@ -259,3 +283,64 @@ the **information layer** (live news/catalysts via Scout + FAISS RAG + the Claud
 **disciplined risk** (the floor / capital preservation already proven: ~flat vs −7…−11% B&H).
 RL is best used as a **risk-aware position-sizer**, not the primary alpha. Validate every
 new signal through walk-forward before trusting it.
+
+---
+
+## 11. Security — the Vault (Phase A, done)
+
+**Incident:** live secrets (Alpaca key+secret, master password, NewsAPI/Supabase keys) were
+committed to the PUBLIC repo `github.com/prathick96/buffet`. See `SECURITY.md`.
+
+**Built (code side):**
+- `.gitignore` (secrets/.env/*.enc/models/caches) + 29 artifact files untracked from the index.
+- `venture/security/vault.py` — hardened vault: **scrypt + random salt**, master password from
+  `$VENTURE_MASTER_PASSWORD` (never in code), vault file outside repo (`~/.venture/`, chmod 600).
+- `venture/security/secrets.py` — unified loader, precedence **env → .env → vault**;
+  `require_secret()` for fail-fast.
+- `venture/security/scan.py` + `.githooks/pre-commit` (activated via `core.hooksPath`) — blocks
+  commits containing likely secrets. ASCII-safe on Windows.
+- Legacy `tradingagent.py` + notebook secret literals **purged to `""`** (scanner-clean).
+- `SECURITY.md` runbook; `.env.example` template. **Tests 7/7.**
+
+**Still required (human-only):** rotate/revoke Alpaca + Supabase + NewsAPI keys + master
+password at the providers, and flip the repo to **private**. Code can't un-expose history.
+
+**Decisions (locked):** repo → make-private + .gitignore · secrets → .env + hardened vault ·
+edge → forward-test live (no historical-news backtest).
+
+---
+
+## 12. Going online (hosting · cloud brain · n8n · Telegram · dashboard)
+
+**Feasibility (all possible, with honest caveats):**
+- ✅ **Cloud brain** — `brain/anthropic_brain.py` (Anthropic API, drop-in for local ClaudeBrain;
+  key via `.env`/vault; `ANTHROPIC_MODEL` overr., default `claude-opus-4-8`). Done, tested.
+- ✅ **Telegram updates** — `notify/telegram.py`, wired into `scout_cycle.py` (no-op unless
+  `TELEGRAM_*` set). Done, tested.
+- ⚠️ **Free hosting** — a persistent free server that runs n8n 24/7 is the hard part (free web
+  hosts sleep). **Recommended free architecture:** GitHub Actions **cron** runs `scout_cycle.py`
+  on schedule (2000 free min/mo) → commits the journal/forward-test JSON + pushes Telegram →
+  a **static dashboard** on GitHub Pages reads the committed JSON. No always-on server, keys stay
+  in Actions **secrets** (never in the public/Pages layer). n8n can drive it too when self-hosted.
+- ✅ **n8n** — usable via n8n Cloud (limited free tier) or self-host; for *free reliable* cron,
+  GitHub Actions is the pragmatic pick. Offer both.
+- ✅ **Dashboard** — neumorphism/minimalist/responsive. `ui-ux-pro-max` (design-intelligence
+  CLI) + the `dataviz` method guide the look; `ui-neumorphism` (React) is the component lib if we
+  go React. Simplest: static HTML/CSS neumorphic shell + charts built via the dataviz validator,
+  reading `forward_test.db`/`journal.db` exported to JSON. Pages: equity/progress-to-goal, trade
+  log, agent status, live logs.
+
+**Built (2026-07-03, 68/68 tests, 21 suites):**
+- [x] (A) `dashboard/export.py` — DBs → `docs/data/*.json` (summary/predictions/agents/logs). Tested.
+- [x] (B) `.github/workflows/scout.yml` — cron (weekdays 21:30 UTC) + manual dispatch: runs
+      `scout_cycle.py`, exports JSON, commits `forward_test.db`+`journal.db`+`docs/data` back
+      (evidence persists serverlessly); secrets from Actions. `requirements-cloud.txt` (no torch/faiss).
+- [x] (C) `docs/index.html` — self-contained neumorphic dashboard (4 tabs: Overview/Trades/
+      Agents/Logs), dark+light, responsive, reads `./data/*.json` (or inline `window.__DATA__`).
+- [x] `scout_cycle.py` logs to `journal.db` + Telegram push wired.
+- [ ] (D) wire AnthropicBrain into the *hosted* debate (currently heuristic bull/bear for speed/cost).
+
+**Deploy (user):** Settings → Pages → source = `main` /docs. Add repo Actions **secrets**:
+`ANTHROPIC_API_KEY`, `ANTHROPIC_MODEL`, `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`. **Cost:** Opus-4.8
+API on a $50 book ≈ $3–4/mo daily; set `ANTHROPIC_MODEL=claude-haiku-4-5` to slash it. **Free-host
+note:** GitHub Actions (not n8n) is the reliable free scheduler; n8n → self-host/cloud-free-tier later.

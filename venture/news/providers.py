@@ -74,11 +74,17 @@ class RSSNewsProvider:
         "https://www.coindesk.com/arc/outboundfeeds/rss/?outputType=xml",
     ]
     EQUITY_TMPL = "https://feeds.finance.yahoo.com/rss/2.0/headline?s={ticker}&region=US&lang=en-US"
+    INDIA_FEEDS = [   # BSE/NSE (.BO/.NS) symbols route here
+        "https://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms",
+        "https://www.livemint.com/rss/markets",
+    ]
 
     def __init__(self, crypto_feeds: list | None = None, equity_tmpl: str | None = None,
+                 india_feeds: list | None = None,
                  max_items: int = 8, timeout: int = 12, ttl: int = 300):
         self.crypto_feeds = crypto_feeds or self.CRYPTO_FEEDS
         self.equity_tmpl = equity_tmpl or self.EQUITY_TMPL
+        self.india_feeds = india_feeds or self.INDIA_FEEDS
         self.max_items = max_items
         self.timeout = timeout
         self._cache = _TTLCache(ttl)
@@ -98,9 +104,12 @@ class RSSNewsProvider:
         return items
 
     def _feeds_for(self, symbol: str) -> list:
-        if "/" in symbol:                                  # crypto pair (BTC/USDT)
+        s = symbol.upper()
+        if "/" in s:                                       # crypto pair (BTC/USDT)
             return self.crypto_feeds
-        return [self.equity_tmpl.format(ticker=symbol)]    # equity ticker (AAPL)
+        if s.endswith(".BO") or s.endswith(".NS"):         # BSE / NSE (India)
+            return self.india_feeds
+        return [self.equity_tmpl.format(ticker=symbol)]    # US equity ticker (AAPL)
 
     @staticmethod
     def _host(url: str) -> str:

@@ -1,0 +1,8 @@
+#!/bin/sh
+# Blocks commits containing likely secrets. Activated via:
+#   git config core.hooksPath .githooks
+python venture/security/scan.py --staged
+if [ $? -ne 0 ]; then
+  echo "Commit aborted by secret scanner."
+  exit 1
+fi

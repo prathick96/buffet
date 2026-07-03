@@ -1,0 +1,41 @@
+{
+  "updated": "2026-07-02T21:58:32+00:00",
+  "agents": [
+    {
+      "name": "Scout",
+      "role": "gather price + live news, RAG ingest/retrieve"
+    },
+    {
+      "name": "Analyst",
+      "role": "technical + sentiment -> conviction"
+    },
+    {
+      "name": "Quant",
+      "role": "trend + mean-reversion z-score (PPO seam)"
+    },
+    {
+      "name": "Bull",
+      "role": "long-side advocate"
+    },
+    {
+      "name": "Bear",
+      "role": "short-side skeptic"
+    },
+    {
+      "name": "Judge",
+      "role": "weigh the debate -> final conviction"
+    },
+    {
+      "name": "Risk",
+      "role": "$ floor / position sizing / drawdown halt"
+    },
+    {
+      "name": "Execution",
+      "role": "paper orders"
+    },
+    {
+      "name": "Learning",
+      "role": "running scorecard + adaptation"
+    }
+  ]
+}

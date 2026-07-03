@@ -1,0 +1,9 @@
+# Lightweight deps for the hosted scout cycle (CI / free hosting).
+# Deliberately NO torch/faiss/stable-baselines3 — the daily cycle uses the
+# statistical Quant + TF-IDF RAG (stdlib), so CI stays fast and free.
+ccxt
+yfinance
+pandas
+langgraph
+langchain-core
+anthropic          # cloud brain (optional; only used if ANTHROPIC_API_KEY is set)
