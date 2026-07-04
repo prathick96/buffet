@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-04T16:00:27+00:00",
+  "updated": "2026-07-04T17:11:07+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -11,16 +11,16 @@
   "forward_test": {
     "scored": 24,
     "directional": 24,
-    "pending": 54,
+    "pending": 58,
     "hit_rate": 0.083,
     "avg_signal_return_pct": -0.159,
     "sample": 24,
     "verdict": "no edge yet \u2014 signal not beating chance"
   },
   "counts": {
-    "predictions": 78,
+    "predictions": 82,
     "scored": 24,
-    "pending": 54
+    "pending": 58
   },
   "billing": {
     "model": "claude-opus-4-8",
