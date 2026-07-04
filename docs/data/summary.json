@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-04T18:56:55+00:00",
+  "updated": "2026-07-04T20:06:11+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,17 +9,17 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 27,
-    "directional": 27,
+    "scored": 30,
+    "directional": 30,
     "pending": 58,
-    "hit_rate": 0.074,
-    "avg_signal_return_pct": -0.141,
-    "sample": 27,
+    "hit_rate": 0.067,
+    "avg_signal_return_pct": -0.168,
+    "sample": 30,
     "verdict": "no edge yet \u2014 signal not beating chance"
   },
   "counts": {
-    "predictions": 85,
-    "scored": 27,
+    "predictions": 88,
+    "scored": 30,
     "pending": 58
   },
   "billing": {
