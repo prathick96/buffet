@@ -1,5 +1,57 @@
 [
   {
+    "id": 101,
+    "time": "2026-07-05T02:05:26+00:00",
+    "symbol": "TCS.NS",
+    "price": 2093.5,
+    "action": "BUY",
+    "conviction": 0.693,
+    "sentiment": "BULLISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 100,
+    "time": "2026-07-05T02:05:26+00:00",
+    "symbol": "RELIANCE.BO",
+    "price": 1318.25,
+    "action": "BUY",
+    "conviction": 0.359,
+    "sentiment": "BULLISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 99,
+    "time": "2026-07-05T02:05:24+00:00",
+    "symbol": "NVDA",
+    "price": 194.8300018310547,
+    "action": "SELL",
+    "conviction": 0.778,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 98,
+    "time": "2026-07-05T02:05:24+00:00",
+    "symbol": "AAPL",
+    "price": 308.6300048828125,
+    "action": "BUY",
+    "conviction": 0.79,
+    "sentiment": "BULLISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 97,
     "time": "2026-07-04T23:53:41+00:00",
     "symbol": "TCS.NS",
@@ -618,10 +670,10 @@
     "action": "SELL",
     "conviction": 0.481,
     "sentiment": "BEARISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 2093.5,
+    "fwd_return_pct": 1.228,
+    "correct": false
   },
   {
     "id": 49,
@@ -631,10 +683,10 @@
     "action": "BUY",
     "conviction": 0.269,
     "sentiment": "BULLISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 1318.25,
+    "fwd_return_pct": 0.0,
+    "correct": false
   },
   {
     "id": 48,
@@ -644,10 +696,10 @@
     "action": "SELL",
     "conviction": 0.778,
     "sentiment": "BEARISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 194.8300018310547,
+    "fwd_return_pct": 0.0,
+    "correct": false
   },
   {
     "id": 47,
@@ -657,10 +709,10 @@
     "action": "BUY",
     "conviction": 0.79,
     "sentiment": "BULLISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 308.6300048828125,
+    "fwd_return_pct": 0.0,
+    "correct": false
   },
   {
     "id": 46,
@@ -683,10 +735,10 @@
     "action": "BUY",
     "conviction": 0.269,
     "sentiment": "BULLISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 1318.25,
+    "fwd_return_pct": 0.0,
+    "correct": false
   },
   {
     "id": 44,
@@ -735,10 +787,10 @@
     "action": "BUY",
     "conviction": 0.269,
     "sentiment": "BULLISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 1318.25,
+    "fwd_return_pct": 0.0,
+    "correct": false
   },
   {
     "id": 40,
@@ -787,10 +839,10 @@
     "action": "BUY",
     "conviction": 0.269,
     "sentiment": "BULLISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 1318.25,
+    "fwd_return_pct": 0.0,
+    "correct": false
   },
   {
     "id": 36,
@@ -839,10 +891,10 @@
     "action": "BUY",
     "conviction": 0.269,
     "sentiment": "BULLISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 1318.25,
+    "fwd_return_pct": 0.0,
+    "correct": false
   },
   {
     "id": 32,
@@ -891,10 +943,10 @@
     "action": "SELL",
     "conviction": 0.651,
     "sentiment": "BEARISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 1318.25,
+    "fwd_return_pct": 1.073,
+    "correct": false
   },
   {
     "id": 28,
