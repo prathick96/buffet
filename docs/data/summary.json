@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-05T21:52:15+00:00",
+  "updated": "2026-07-05T22:53:05+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,18 +9,18 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 89,
-    "directional": 89,
-    "pending": 56,
+    "scored": 92,
+    "directional": 92,
+    "pending": 57,
     "hit_rate": 0.022,
-    "avg_signal_return_pct": -0.219,
-    "sample": 89,
+    "avg_signal_return_pct": -0.212,
+    "sample": 92,
     "verdict": "no edge yet \u2014 signal not beating chance"
   },
   "counts": {
-    "predictions": 145,
-    "scored": 89,
-    "pending": 56
+    "predictions": 149,
+    "scored": 92,
+    "pending": 57
   },
   "billing": {
     "model": "claude-opus-4-8",
