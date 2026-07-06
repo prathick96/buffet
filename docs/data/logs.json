@@ -1,5 +1,94 @@
 [
   {
+    "time": "2026-07-06T15:13:23+00:00",
+    "kind": "cycle",
+    "symbol": "-",
+    "detail": {
+      "symbols": 6,
+      "captured": 4,
+      "scored": 8,
+      "verdict": "no edge yet \u2014 signal not beating chance",
+      "llm_symbols": 0,
+      "model": "claude-opus-4-8"
+    }
+  },
+  {
+    "time": "2026-07-06T15:13:23+00:00",
+    "kind": "signal",
+    "symbol": "TCS.NS",
+    "detail": {
+      "symbol": "TCS.NS",
+      "exchange": "NSE",
+      "currency": "INR",
+      "price": 2057.60009765625,
+      "action": "SELL",
+      "conviction": 0.482,
+      "sentiment": "BULLISH",
+      "brain": "heuristic"
+    }
+  },
+  {
+    "time": "2026-07-06T15:13:22+00:00",
+    "kind": "signal",
+    "symbol": "RELIANCE.BO",
+    "detail": {
+      "symbol": "RELIANCE.BO",
+      "exchange": "BSE",
+      "currency": "INR",
+      "price": 1321.4000244140625,
+      "action": "BUY",
+      "conviction": 1.0,
+      "sentiment": "BULLISH",
+      "brain": "heuristic"
+    }
+  },
+  {
+    "time": "2026-07-06T15:13:21+00:00",
+    "kind": "signal",
+    "symbol": "NVDA",
+    "detail": {
+      "symbol": "NVDA",
+      "exchange": "NASDAQ",
+      "currency": "USD",
+      "price": 195.72000122070312,
+      "action": "SELL",
+      "conviction": 0.0,
+      "sentiment": "NEUTRAL",
+      "brain": "heuristic"
+    }
+  },
+  {
+    "time": "2026-07-06T15:13:20+00:00",
+    "kind": "signal",
+    "symbol": "AAPL",
+    "detail": {
+      "symbol": "AAPL",
+      "exchange": "NASDAQ",
+      "currency": "USD",
+      "price": 313.1299133300781,
+      "action": "BUY",
+      "conviction": 1.0,
+      "sentiment": "BULLISH",
+      "brain": "heuristic"
+    }
+  },
+  {
+    "time": "2026-07-06T15:13:19+00:00",
+    "kind": "error",
+    "symbol": "ETH/USDT",
+    "detail": {
+      "error": "ExchangeNotAvailable: binance GET https://api.binance.com/api/v3/exchangeInfo 451  {\n  \"code\": 0,\n  \"m"
+    }
+  },
+  {
+    "time": "2026-07-06T15:13:18+00:00",
+    "kind": "error",
+    "symbol": "BTC/USDT",
+    "detail": {
+      "error": "ExchangeNotAvailable: binance GET https://api.binance.com/api/v3/exchangeInfo 451  {\n  \"code\": 0,\n  \"m"
+    }
+  },
+  {
     "time": "2026-07-06T11:55:54+00:00",
     "kind": "cycle",
     "symbol": "-",
@@ -2422,95 +2511,6 @@
       "action": "SELL",
       "conviction": 0.0,
       "sentiment": "BEARISH",
-      "brain": "heuristic"
-    }
-  },
-  {
-    "time": "2026-07-04T10:00:04+00:00",
-    "kind": "signal",
-    "symbol": "AAPL",
-    "detail": {
-      "symbol": "AAPL",
-      "exchange": "NASDAQ",
-      "currency": "USD",
-      "price": 308.6300048828125,
-      "action": "BUY",
-      "conviction": 1.0,
-      "sentiment": "BULLISH",
-      "brain": "heuristic"
-    }
-  },
-  {
-    "time": "2026-07-04T10:00:03+00:00",
-    "kind": "error",
-    "symbol": "ETH/USDT",
-    "detail": {
-      "error": "ExchangeNotAvailable: binance GET https://api.binance.com/api/v3/exchangeInfo 451  {\n  \"code\": 0,\n  \"m"
-    }
-  },
-  {
-    "time": "2026-07-04T10:00:02+00:00",
-    "kind": "error",
-    "symbol": "BTC/USDT",
-    "detail": {
-      "error": "ExchangeNotAvailable: binance GET https://api.binance.com/api/v3/exchangeInfo 451  {\n  \"code\": 0,\n  \"m"
-    }
-  },
-  {
-    "time": "2026-07-04T07:37:36+00:00",
-    "kind": "cycle",
-    "symbol": "-",
-    "detail": {
-      "symbols": 6,
-      "captured": 4,
-      "scored": 0,
-      "verdict": "insufficient sample (4/20) \u2014 keep accumulating",
-      "llm_symbols": 0,
-      "model": "claude-opus-4-8"
-    }
-  },
-  {
-    "time": "2026-07-04T07:37:36+00:00",
-    "kind": "signal",
-    "symbol": "TCS.NS",
-    "detail": {
-      "symbol": "TCS.NS",
-      "exchange": "NSE",
-      "currency": "INR",
-      "price": 2093.5,
-      "action": "BUY",
-      "conviction": 0.77,
-      "sentiment": "BULLISH",
-      "brain": "heuristic"
-    }
-  },
-  {
-    "time": "2026-07-04T07:37:35+00:00",
-    "kind": "signal",
-    "symbol": "RELIANCE.BO",
-    "detail": {
-      "symbol": "RELIANCE.BO",
-      "exchange": "BSE",
-      "currency": "INR",
-      "price": 1318.25,
-      "action": "BUY",
-      "conviction": 0.292,
-      "sentiment": "BULLISH",
-      "brain": "heuristic"
-    }
-  },
-  {
-    "time": "2026-07-04T07:37:34+00:00",
-    "kind": "signal",
-    "symbol": "NVDA",
-    "detail": {
-      "symbol": "NVDA",
-      "exchange": "NASDAQ",
-      "currency": "USD",
-      "price": 194.8300018310547,
-      "action": "SELL",
-      "conviction": 0.0,
-      "sentiment": "NEUTRAL",
       "brain": "heuristic"
     }
   }
