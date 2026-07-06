@@ -1,5 +1,57 @@
 [
   {
+    "id": 157,
+    "time": "2026-07-06T02:58:07+00:00",
+    "symbol": "TCS.NS",
+    "price": 2093.5,
+    "action": "BUY",
+    "conviction": 0.693,
+    "sentiment": "BULLISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 156,
+    "time": "2026-07-06T02:58:06+00:00",
+    "symbol": "RELIANCE.BO",
+    "price": 1304.25,
+    "action": "SELL",
+    "conviction": 0.39,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 155,
+    "time": "2026-07-06T02:58:05+00:00",
+    "symbol": "NVDA",
+    "price": 194.8300018310547,
+    "action": "SELL",
+    "conviction": 0.778,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 154,
+    "time": "2026-07-06T02:58:04+00:00",
+    "symbol": "AAPL",
+    "price": 308.6300048828125,
+    "action": "BUY",
+    "conviction": 0.79,
+    "sentiment": "BULLISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 153,
     "time": "2026-07-05T23:58:12+00:00",
     "symbol": "TCS.NS",
@@ -683,10 +735,10 @@
     "action": "BUY",
     "conviction": 0.693,
     "sentiment": "BULLISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 2093.5,
+    "fwd_return_pct": 0.0,
+    "correct": false
   },
   {
     "id": 100,
@@ -696,10 +748,10 @@
     "action": "BUY",
     "conviction": 0.359,
     "sentiment": "BULLISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 1304.25,
+    "fwd_return_pct": -1.062,
+    "correct": false
   },
   {
     "id": 99,
@@ -709,10 +761,10 @@
     "action": "SELL",
     "conviction": 0.778,
     "sentiment": "BEARISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 194.8300018310547,
+    "fwd_return_pct": 0.0,
+    "correct": false
   },
   {
     "id": 98,
@@ -722,10 +774,10 @@
     "action": "BUY",
     "conviction": 0.79,
     "sentiment": "BULLISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 308.6300048828125,
+    "fwd_return_pct": 0.0,
+    "correct": false
   },
   {
     "id": 97,
