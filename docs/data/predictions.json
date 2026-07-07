@@ -1,5 +1,57 @@
 [
   {
+    "id": 189,
+    "time": "2026-07-07T03:17:42+00:00",
+    "symbol": "TCS.NS",
+    "price": 2057.60009765625,
+    "action": "SELL",
+    "conviction": 0.579,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 188,
+    "time": "2026-07-07T03:17:42+00:00",
+    "symbol": "RELIANCE.BO",
+    "price": 1304.25,
+    "action": "SELL",
+    "conviction": 0.48,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 187,
+    "time": "2026-07-07T03:17:41+00:00",
+    "symbol": "NVDA",
+    "price": 195.5500030517578,
+    "action": "SELL",
+    "conviction": 0.688,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 186,
+    "time": "2026-07-07T03:17:40+00:00",
+    "symbol": "AAPL",
+    "price": 312.6600036621094,
+    "action": "BUY",
+    "conviction": 0.7,
+    "sentiment": "NEUTRAL",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 185,
     "time": "2026-07-06T23:58:42+00:00",
     "symbol": "TCS.NS",
@@ -371,10 +423,10 @@
     "action": "BUY",
     "conviction": 0.693,
     "sentiment": "BULLISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 2057.60009765625,
+    "fwd_return_pct": -1.715,
+    "correct": false
   },
   {
     "id": 156,
@@ -384,10 +436,10 @@
     "action": "SELL",
     "conviction": 0.39,
     "sentiment": "BEARISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 1304.25,
+    "fwd_return_pct": 0.0,
+    "correct": false
   },
   {
     "id": 155,
@@ -397,10 +449,10 @@
     "action": "SELL",
     "conviction": 0.778,
     "sentiment": "BEARISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 195.5500030517578,
+    "fwd_return_pct": 0.37,
+    "correct": false
   },
   {
     "id": 154,
@@ -410,10 +462,10 @@
     "action": "BUY",
     "conviction": 0.79,
     "sentiment": "BULLISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 312.6600036621094,
+    "fwd_return_pct": 1.306,
+    "correct": true
   },
   {
     "id": 153,
