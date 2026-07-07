@@ -1,5 +1,57 @@
 [
   {
+    "id": 213,
+    "time": "2026-07-07T20:45:22+00:00",
+    "symbol": "TCS.NS",
+    "price": 2057.60009765625,
+    "action": "SELL",
+    "conviction": 0.669,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 212,
+    "time": "2026-07-07T20:45:21+00:00",
+    "symbol": "RELIANCE.BO",
+    "price": 1304.25,
+    "action": "SELL",
+    "conviction": 0.57,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 211,
+    "time": "2026-07-07T20:45:20+00:00",
+    "symbol": "NVDA",
+    "price": 196.92999267578125,
+    "action": "BUY",
+    "conviction": 0.342,
+    "sentiment": "BULLISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 210,
+    "time": "2026-07-07T20:45:19+00:00",
+    "symbol": "AAPL",
+    "price": 310.6600036621094,
+    "action": "BUY",
+    "conviction": 0.88,
+    "sentiment": "BULLISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 209,
     "time": "2026-07-07T18:54:55+00:00",
     "symbol": "TCS.NS",
@@ -2545,58 +2597,6 @@
     "scored": true,
     "exit_price": 2093.5,
     "fwd_return_pct": 0.0,
-    "correct": false
-  },
-  {
-    "id": 13,
-    "time": "2026-07-03T10:27:33+00:00",
-    "symbol": "RELIANCE.BO",
-    "price": 1304.25,
-    "action": "SELL",
-    "conviction": 0.741,
-    "sentiment": "BEARISH",
-    "scored": true,
-    "exit_price": 1318.25,
-    "fwd_return_pct": 1.073,
-    "correct": false
-  },
-  {
-    "id": 12,
-    "time": "2026-07-03T10:27:32+00:00",
-    "symbol": "NVDA",
-    "price": 194.8300018310547,
-    "action": "SELL",
-    "conviction": 0.588,
-    "sentiment": "NEUTRAL",
-    "scored": true,
-    "exit_price": 194.8300018310547,
-    "fwd_return_pct": 0.0,
-    "correct": false
-  },
-  {
-    "id": 11,
-    "time": "2026-07-03T10:27:31+00:00",
-    "symbol": "AAPL",
-    "price": 308.6300048828125,
-    "action": "BUY",
-    "conviction": 0.79,
-    "sentiment": "BULLISH",
-    "scored": true,
-    "exit_price": 308.6300048828125,
-    "fwd_return_pct": 0.0,
-    "correct": false
-  },
-  {
-    "id": 10,
-    "time": "2026-07-03T07:55:51+00:00",
-    "symbol": "TCS.NS",
-    "price": 2099.0,
-    "action": "BUY",
-    "conviction": 0.577,
-    "sentiment": "NEUTRAL",
-    "scored": true,
-    "exit_price": 2093.5,
-    "fwd_return_pct": -0.262,
     "correct": false
   }
 ]
