@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-07T22:50:03+00:00",
+  "updated": "2026-07-07T23:03:13+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -12,13 +12,13 @@
     "scored": 0,
     "directional": 0,
     "ties": 0,
-    "pending": 0,
+    "pending": 6,
     "verdict": "no scored directional predictions yet \u2014 let it run"
   },
   "counts": {
-    "predictions": 0,
+    "predictions": 6,
     "scored": 0,
-    "pending": 0
+    "pending": 6
   },
   "billing": {
     "model": "claude-opus-4-8",
