@@ -1,5 +1,57 @@
 [
   {
+    "id": 209,
+    "time": "2026-07-07T18:54:55+00:00",
+    "symbol": "TCS.NS",
+    "price": 2057.60009765625,
+    "action": "SELL",
+    "conviction": 0.669,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 208,
+    "time": "2026-07-07T18:54:54+00:00",
+    "symbol": "RELIANCE.BO",
+    "price": 1304.25,
+    "action": "SELL",
+    "conviction": 0.57,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 207,
+    "time": "2026-07-07T18:54:53+00:00",
+    "symbol": "NVDA",
+    "price": 196.77499389648438,
+    "action": "BUY",
+    "conviction": 0.21,
+    "sentiment": "BULLISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 206,
+    "time": "2026-07-07T18:54:52+00:00",
+    "symbol": "AAPL",
+    "price": 312.25,
+    "action": "BUY",
+    "conviction": 0.97,
+    "sentiment": "BULLISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 205,
     "time": "2026-07-07T16:18:40+00:00",
     "symbol": "TCS.NS",
@@ -423,10 +475,10 @@
     "action": "SELL",
     "conviction": 0.489,
     "sentiment": "BEARISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 2057.60009765625,
+    "fwd_return_pct": 0.0,
+    "correct": false
   },
   {
     "id": 172,
@@ -436,10 +488,10 @@
     "action": "BUY",
     "conviction": 0.611,
     "sentiment": "BULLISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 1304.25,
+    "fwd_return_pct": -1.298,
+    "correct": false
   },
   {
     "id": 171,
@@ -449,10 +501,10 @@
     "action": "SELL",
     "conviction": 0.545,
     "sentiment": "BULLISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 196.77499389648438,
+    "fwd_return_pct": 0.406,
+    "correct": false
   },
   {
     "id": 170,
@@ -462,10 +514,10 @@
     "action": "BUY",
     "conviction": 0.79,
     "sentiment": "BULLISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 312.25,
+    "fwd_return_pct": -0.102,
+    "correct": false
   },
   {
     "id": 169,
@@ -2545,58 +2597,6 @@
     "scored": true,
     "exit_price": 2093.5,
     "fwd_return_pct": -0.262,
-    "correct": false
-  },
-  {
-    "id": 9,
-    "time": "2026-07-03T07:55:50+00:00",
-    "symbol": "RELIANCE.BO",
-    "price": 1304.0,
-    "action": "SELL",
-    "conviction": 0.656,
-    "sentiment": "BEARISH",
-    "scored": true,
-    "exit_price": 1318.25,
-    "fwd_return_pct": 1.093,
-    "correct": false
-  },
-  {
-    "id": 8,
-    "time": "2026-07-03T07:55:50+00:00",
-    "symbol": "NVDA",
-    "price": 194.8300018310547,
-    "action": "SELL",
-    "conviction": 0.588,
-    "sentiment": "NEUTRAL",
-    "scored": true,
-    "exit_price": 194.8300018310547,
-    "fwd_return_pct": 0.0,
-    "correct": false
-  },
-  {
-    "id": 7,
-    "time": "2026-07-03T07:55:49+00:00",
-    "symbol": "AAPL",
-    "price": 308.6300048828125,
-    "action": "BUY",
-    "conviction": 0.88,
-    "sentiment": "BULLISH",
-    "scored": true,
-    "exit_price": 308.6300048828125,
-    "fwd_return_pct": 0.0,
-    "correct": false
-  },
-  {
-    "id": 6,
-    "time": "2026-07-01T22:50:50+00:00",
-    "symbol": "TCS.NS",
-    "price": 2031.5,
-    "action": "SELL",
-    "conviction": 0.88,
-    "sentiment": "BEARISH",
-    "scored": true,
-    "exit_price": 2099.0,
-    "fwd_return_pct": 3.323,
     "correct": false
   }
 ]
