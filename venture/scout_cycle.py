@@ -19,7 +19,7 @@ import sys
 from billing.tracker import BudgetGuard, UsageTracker, month_to_date
 from brain.anthropic_brain import AnthropicBrain
 from data.providers import CCXTDataProvider, YFinanceDataProvider
-from eval.forward_test import ForwardTester
+from eval.forward_test import ForwardTester, deadband_from_closes
 from graph.debate import build_debate_runner
 from markets.registry import format_money, is_market_open, resolve
 from news.providers import RSSNewsProvider
@@ -36,15 +36,18 @@ DB_PATH = "venture/forward_test.db"
 def make_provider(symbol: str, news=None, limit: int = 200):
     m = resolve(symbol)
     if m.provider == "ccxt":
-        return CCXTDataProvider(symbol, exchange=m.exchange.lower(),
-                                timeframe="1h", limit=limit, news_provider=news)
+        # No forced exchange -> CCXTDataProvider falls back across venues
+        # (Kraken/Coinbase/... before geo-blocked Binance).
+        return CCXTDataProvider(symbol, timeframe="1h", limit=limit, news_provider=news)
     return YFinanceDataProvider(symbol, period="6mo", interval="1d",
                                 news_provider=news)
 
 
-def latest_price(symbol: str) -> float:
-    """Fresh price fetch used to score matured predictions."""
-    return make_provider(symbol, limit=10)._closes[-1]
+def recent_bars(symbol: str) -> list:
+    """Fresh (timestamp, close) bars used to score matured predictions on a
+    DATED basis — the exit is a bar strictly after the entry bar, never the
+    entry price compared to itself."""
+    return make_provider(symbol, limit=200).bars()
 
 
 def run_cycle(symbols=None, db_path: str = DB_PATH, horizon_hours: float = 24) -> None:
@@ -67,6 +70,7 @@ def run_cycle(symbols=None, db_path: str = DB_PATH, horizon_hours: float = 24) -
     tracker = UsageTracker(journal)
     budget = BudgetGuard(journal, budget_cap)
     llm_symbols = 0
+    dups = 0
 
     for sym in symbols:
         m = resolve(sym)
@@ -81,28 +85,42 @@ def run_cycle(symbols=None, db_path: str = DB_PATH, horizon_hours: float = 24) -
             runner = build_debate_runner(data, knowledge_store=kb, llm_brain=brain)
             last = runner.run(sym)[-1]
             snap, report = last["snapshot"], last["report"]
-            ft.capture_from_cycle(sym, snap, report)
-            row = {"symbol": sym, "exchange": m.exchange, "currency": m.currency,
+            # Anchor the prediction to the bar the desk actually saw, and set a
+            # volatility-scaled dead-band so a flat tape isn't scored as a miss.
+            bar_ts = data.latest_bar_ts()
+            band = deadband_from_closes(getattr(data, "_closes", []), ft.horizon,
+                                        getattr(data, "bar_seconds", None))
+            pid = ft.capture_from_cycle(sym, snap, report, bar_ts=bar_ts, deadband=band)
+            captured = pid != -1
+            dups += 0 if captured else 1
+            venue = getattr(data, "source_exchange", m.exchange)   # actual crypto venue
+            row = {"symbol": sym, "exchange": venue, "currency": m.currency,
                    "price": snap.price, "action": report.suggested_action,
                    "conviction": round(last["judged_conviction"], 3),
-                   "sentiment": report.sentiment, "brain": model if use_llm else "heuristic"}
-            rows.append(row)
+                   "sentiment": report.sentiment, "brain": model if use_llm else "heuristic",
+                   "captured": captured}
+            if captured:
+                rows.append(row)
             journal.log("signal", sym, row)
-            print(f"  {sym:12} [{m.exchange:6}] {format_money(snap.price, m):>14} "
+            mark = "[LLM]" if use_llm else "[heuristic]"
+            mark += "" if captured else " [dup-skip]"
+            print(f"  {sym:12} [{venue:8}] {format_money(snap.price, m):>14} "
                   f"-> {report.suggested_action:4} conv={last['judged_conviction']:.2f} "
-                  f"({report.sentiment})  {'[LLM]' if use_llm else '[heuristic]'}")
+                  f"({report.sentiment}) band={band*100:.2f}%  {mark}")
         except Exception as e:
             journal.log("error", sym, {"error": f"{type(e).__name__}: {str(e)[:80]}"})
             print(f"  {sym:12} SKIPPED ({type(e).__name__}: {str(e)[:60]})")
 
-    # 2) Score matured predictions against realized prices.
-    scored = ft.score_due(price_fn=latest_price)
-    print(f"\nScored {scored} matured prediction(s).")
+    # 2) Score matured predictions against realized DATED bars (look-ahead-free).
+    scored = ft.score_due(bars_fn=recent_bars)
+    print(f"\nCaptured {len(rows)} new signal(s) ({dups} dup-skip), "
+          f"scored {scored} matured prediction(s).")
 
     # 3) The accumulating verdict.
     verdict = ft.report()
     journal.log("cycle", "-", {"symbols": len(symbols), "captured": len(rows),
-                               "scored": scored, "verdict": verdict.get("verdict", ""),
+                               "dups": dups, "scored": scored,
+                               "verdict": verdict.get("verdict", ""),
                                "llm_symbols": llm_symbols, "model": model})
     print("\n" + ft.summary())
 
