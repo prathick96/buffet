@@ -83,10 +83,14 @@ def _billing(journal_db: str) -> dict:
     """Month-to-date API spend for the dashboard (self-tracked + optional console)."""
     from billing.tracker import month_to_date
     from persistence.journal import Journal
-    from security.secrets import get_secret
+    from security.secrets import get_secret_clean
 
-    cap = float(get_secret("ANTHROPIC_MONTHLY_BUDGET", default="20") or 20)
-    model = get_secret("ANTHROPIC_MODEL", default="claude-opus-4-8")
+    try:
+        cap = float(get_secret_clean("ANTHROPIC_MONTHLY_BUDGET", default="20") or 20)
+    except (TypeError, ValueError):
+        cap = 20.0
+    model = get_secret_clean("ANTHROPIC_MODEL", default="claude-opus-4-8") \
+        or "claude-opus-4-8"
     mtd = {"month": None, "calls": 0, "cost_usd": 0.0,
            "input_tokens": 0, "output_tokens": 0}
     if Path(journal_db).exists():

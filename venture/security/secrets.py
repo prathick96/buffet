@@ -31,7 +31,16 @@ def _parse_dotenv(path: str) -> dict:
         if not s or s.startswith("#") or "=" not in s:
             continue
         k, v = s.split("=", 1)
-        out[k.strip()] = v.strip().strip('"').strip("'")
+        v = v.strip()
+        if len(v) >= 2 and v[0] in "\"'" and v[-1] == v[0]:
+            v = v[1:-1]                       # quoted value -> keep contents verbatim
+        else:                                 # unquoted -> drop any inline "# comment"
+            for sep in (" #", "\t#"):
+                i = v.find(sep)
+                if i != -1:
+                    v = v[:i]
+            v = v.strip().strip('"').strip("'")
+        out[k.strip()] = v
     return out
 
 
@@ -49,6 +58,23 @@ def get_secret(name: str, default=None, vault=None, dotenv_path: str | None = No
         if v:
             return v
     return default
+
+
+def get_secret_clean(name: str, default=None, **kw):
+    """get_secret() with any inline '# comment' stripped from the value.
+
+    For config-style secrets (a model id, a dollar budget) that must never carry
+    a trailing comment even if one leaks in from a .env template OR a pasted
+    GitHub Actions secret — a commented model id silently breaks every API call,
+    and a commented number crashes float()."""
+    v = get_secret(name, default=default, **kw)
+    if isinstance(v, str):
+        for sep in (" #", "\t#"):
+            i = v.find(sep)
+            if i != -1:
+                v = v[:i]
+        v = v.strip()
+    return v if v not in ("", None) else default
 
 
 def require_secret(name: str, vault=None, dotenv_path: str | None = None) -> str:

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-07T22:20:17+00:00",
+  "updated": "2026-07-07T22:50:03+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -21,7 +21,7 @@
     "pending": 0
   },
   "billing": {
-    "model": "claude-opus-4-8   # or claude-sonnet-5 / claude-haiku-4-5 to cut cost",
+    "model": "claude-opus-4-8",
     "budget_usd": 20.0,
     "month": "2026-07",
     "cost_usd": 0.0,

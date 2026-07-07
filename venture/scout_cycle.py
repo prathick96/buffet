@@ -27,7 +27,7 @@ from notify.telegram import TelegramNotifier, format_cycle_summary
 from persistence.journal import Journal
 from rag.legends import load_legends
 from rag.tfidf_store import TfidfKnowledgeStore
-from security.secrets import get_secret
+from security.secrets import get_secret, get_secret_clean
 
 DEFAULT_SYMBOLS = ["BTC/USDT", "ETH/USDT", "AAPL", "NVDA", "RELIANCE.BO", "TCS.NS"]
 DB_PATH = "venture/forward_test.db"
@@ -65,8 +65,12 @@ def run_cycle(symbols=None, db_path: str = DB_PATH, horizon_hours: float = 24) -
     # Cost policy: Opus LLM brain only for EQUITIES while their market is OPEN;
     # never for crypto (noisy 24/7, poor $/signal). Hard monthly budget cap.
     api_key = get_secret("ANTHROPIC_API_KEY")
-    model = get_secret("ANTHROPIC_MODEL", default="claude-opus-4-8")
-    budget_cap = float(get_secret("ANTHROPIC_MONTHLY_BUDGET", default="20") or 20)
+    model = get_secret_clean("ANTHROPIC_MODEL", default="claude-opus-4-8") \
+        or "claude-opus-4-8"
+    try:
+        budget_cap = float(get_secret_clean("ANTHROPIC_MONTHLY_BUDGET", default="20") or 20)
+    except (TypeError, ValueError):
+        budget_cap = 20.0
     tracker = UsageTracker(journal)
     budget = BudgetGuard(journal, budget_cap)
     llm_symbols = 0

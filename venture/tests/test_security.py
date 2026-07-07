@@ -8,7 +8,8 @@ import tempfile
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from security.scan import scan_text  # noqa: E402
-from security.secrets import MissingSecret, get_secret, require_secret  # noqa: E402
+from security.secrets import (MissingSecret, get_secret,  # noqa: E402
+                              get_secret_clean, require_secret)
 from security.vault import Vault, VaultLocked  # noqa: E402
 
 
@@ -77,6 +78,31 @@ def test_dotenv_then_vault_then_missing():
         except MissingSecret:
             pass
     print("PASS dotenv_then_vault_then_missing")
+
+
+def test_dotenv_strips_inline_comment():
+    # A commented model id must NOT leak into the value (would break every API call).
+    with tempfile.TemporaryDirectory() as d:
+        envp = os.path.join(d, ".env")
+        with open(envp, "w") as f:
+            f.write("ANTHROPIC_MODEL=claude-opus-4-8   # or sonnet/haiku to cut cost\n")
+            f.write('QUOTED_HASH="a#b value"   # keep the inner hash\n')
+            f.write("BUDGET=20  # dollars\n")
+        assert get_secret("ANTHROPIC_MODEL", dotenv_path=envp) == "claude-opus-4-8"
+        assert get_secret("QUOTED_HASH", dotenv_path=envp) == "a#b value"
+        assert float(get_secret("BUDGET", dotenv_path=envp)) == 20.0
+    print("PASS dotenv_strips_inline_comment")
+
+
+def test_get_secret_clean_strips_env_comment():
+    # Defends the env-var / pasted-GitHub-secret path too (parse fix can't reach it).
+    os.environ["W_TEST_MODEL"] = "claude-opus-4-8   # pasted with a comment"
+    try:
+        assert get_secret_clean("W_TEST_MODEL") == "claude-opus-4-8"
+    finally:
+        del os.environ["W_TEST_MODEL"]
+    assert get_secret_clean("W_MISSING", default="claude-opus-4-8") == "claude-opus-4-8"
+    print("PASS get_secret_clean_strips_env_comment")
 
 
 # ---------------------------------------------------------------- scanner
