@@ -1,5 +1,18 @@
 [
   {
+    "id": 7,
+    "time": "2026-07-07T23:47:46+00:00",
+    "symbol": "TCS.NS",
+    "price": 2096.10009765625,
+    "action": "HOLD",
+    "conviction": 0.578,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 6,
     "time": "2026-07-07T23:03:13+00:00",
     "symbol": "TCS.NS",
@@ -7,10 +20,10 @@
     "action": "SELL",
     "conviction": 0.669,
     "sentiment": "BEARISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 2096.10009765625,
+    "fwd_return_pct": 1.871,
+    "correct": false
   },
   {
     "id": 5,
