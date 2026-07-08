@@ -1,5 +1,99 @@
 [
   {
+    "time": "2026-07-08T07:31:34+00:00",
+    "kind": "cycle",
+    "symbol": "-",
+    "detail": {
+      "symbols": 6,
+      "captured": 2,
+      "dups": 2,
+      "scored": 0,
+      "verdict": "insufficient sample (2/20) \u2014 keep accumulating",
+      "llm_symbols": 0,
+      "model": "claude-opus-4-8"
+    }
+  },
+  {
+    "time": "2026-07-08T07:31:34+00:00",
+    "kind": "signal",
+    "symbol": "TCS.NS",
+    "detail": {
+      "symbol": "TCS.NS",
+      "exchange": "NSE",
+      "currency": "INR",
+      "price": 2080.10009765625,
+      "action": "BUY",
+      "conviction": 0.833,
+      "sentiment": "BULLISH",
+      "brain": "heuristic",
+      "captured": false
+    }
+  },
+  {
+    "time": "2026-07-08T07:31:33+00:00",
+    "kind": "signal",
+    "symbol": "RELIANCE.BO",
+    "detail": {
+      "symbol": "RELIANCE.BO",
+      "exchange": "BSE",
+      "currency": "INR",
+      "price": 1289.449951171875,
+      "action": "SELL",
+      "conviction": 0.586,
+      "sentiment": "BULLISH",
+      "brain": "heuristic",
+      "captured": false
+    }
+  },
+  {
+    "time": "2026-07-08T07:31:32+00:00",
+    "kind": "error",
+    "symbol": "NVDA",
+    "detail": {
+      "error": "CertificateVerifyError: Failed to perform, curl: (60) SSL: no alternative certificate subject name match"
+    }
+  },
+  {
+    "time": "2026-07-08T07:31:32+00:00",
+    "kind": "error",
+    "symbol": "AAPL",
+    "detail": {
+      "error": "CertificateVerifyError: Failed to perform, curl: (60) SSL: no alternative certificate subject name match"
+    }
+  },
+  {
+    "time": "2026-07-08T07:31:32+00:00",
+    "kind": "signal",
+    "symbol": "ETH/USDT",
+    "detail": {
+      "symbol": "ETH/USDT",
+      "exchange": "kraken",
+      "currency": "USD",
+      "price": 1753.41,
+      "action": "SELL",
+      "conviction": 0.369,
+      "sentiment": "BEARISH",
+      "brain": "heuristic",
+      "captured": true
+    }
+  },
+  {
+    "time": "2026-07-08T07:31:28+00:00",
+    "kind": "signal",
+    "symbol": "BTC/USDT",
+    "detail": {
+      "symbol": "BTC/USDT",
+      "exchange": "kraken",
+      "currency": "USD",
+      "price": 62817.1,
+      "action": "SELL",
+      "conviction": 0.346,
+      "sentiment": "BEARISH",
+      "brain": "heuristic",
+      "captured": true
+    }
+  },
+  {
     "time": "2026-07-08T05:00:30+00:00",
     "kind": "cycle",
     "symbol": "-",
