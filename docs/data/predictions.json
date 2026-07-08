@@ -1,5 +1,31 @@
 [
   {
+    "id": 25,
+    "time": "2026-07-08T17:19:55+00:00",
+    "symbol": "ETH/USDT",
+    "price": 1736.08,
+    "action": "SELL",
+    "conviction": 0.302,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 24,
+    "time": "2026-07-08T17:19:52+00:00",
+    "symbol": "BTC/USDT",
+    "price": 62068.6,
+    "action": "BUY",
+    "conviction": 0.142,
+    "sentiment": "NEUTRAL",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 23,
     "time": "2026-07-08T15:10:02+00:00",
     "symbol": "NVDA",
