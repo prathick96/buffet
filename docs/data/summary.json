@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-08T19:08:01+00:00",
+  "updated": "2026-07-08T20:40:43+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -18,6 +18,27 @@
     "sample": 2,
     "verdict": "insufficient sample (2/20) \u2014 keep accumulating"
   },
+  "by_horizon": {
+    "86400": {
+      "horizon_days": 1.0,
+      "scored": 0,
+      "directional": 0,
+      "ties": 0
+    },
+    "259200": {
+      "horizon_days": 3.0,
+      "scored": 0,
+      "directional": 0,
+      "ties": 0
+    },
+    "604800": {
+      "horizon_days": 7.0,
+      "scored": 0,
+      "directional": 0,
+      "ties": 0
+    }
+  },
+  "calibration": [],
   "counts": {
     "predictions": 29,
     "scored": 5,

@@ -119,10 +119,15 @@ def export(forward_db: str = "venture/forward_test.db",
 
     preds: list = []
     report = {"scored": 0, "directional": 0, "pending": 0, "verdict": "no data yet"}
+    by_horizon: dict = {}
+    calibration: list = []
     if Path(forward_db).exists():
         from eval.forward_test import ForwardTester
+        from learn.calibration import Calibrator
         ft = ForwardTester(forward_db)
         report = ft.report()
+        by_horizon = ft.report_by_horizon()
+        calibration = Calibrator(ft.conn).table(sizing_only=True)   # read-only
         preds = _predictions(ft.conn)
         ft.close()
 
@@ -134,6 +139,8 @@ def export(forward_db: str = "venture/forward_test.db",
                  "current_square": 0,
                  "current_capital": GOAL["start"]},
         "forward_test": report,
+        "by_horizon": by_horizon,
+        "calibration": calibration,
         "counts": {"predictions": len(preds),
                    "scored": report.get("scored", 0),
                    "pending": report.get("pending", 0)},

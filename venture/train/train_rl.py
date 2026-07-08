@@ -23,7 +23,7 @@ def main(symbol: str = "BTC/USDT", steps: int = 50000, limit: int = 1000):
     from stable_baselines3 import PPO
 
     print(f"Fetching {limit} x 1h bars for {symbol}...")
-    closes = CCXTDataProvider(symbol, exchange="binance", timeframe="1h", limit=limit)._closes
+    closes = CCXTDataProvider(symbol, timeframe="1h", limit=limit)._closes  # resilient venue
     print(f"  {len(closes)} bars. Training PPO for {steps} steps (window={DEFAULT_WINDOW})...")
 
     model = PPO("MlpPolicy", make_env(closes), verbose=0)

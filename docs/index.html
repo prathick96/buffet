@@ -117,6 +117,10 @@
       </div>
     </div>
     <div class="card neu">
+      <h2>Learning · edge by horizon &amp; size calibration</h2>
+      <div id="learning"></div>
+    </div>
+    <div class="card neu">
       <h2>API billing · month-to-date</h2>
       <div id="billing"></div>
     </div>
@@ -215,6 +219,37 @@ function renderSummary(s){
       <div class="muted" style="font-size:12.5px">${b.calls||0} calls · ${fmtNum(b.input_tokens)}→${fmtNum(b.output_tokens)} tok · model <b class="a">${(b.model||'').replace('claude-','')}</b>${con}</div>
       <div class="muted" style="font-size:11.5px;margin-top:4px">Opus for equities in market hours · none for crypto · budget cap → heuristic fallback</div>`;
   } else { $("#billing").innerHTML = `<div class="muted">No API spend yet (heuristic-only).</div>`; }
+
+  // learning — edge by horizon + per-symbol learned size multiplier
+  const bh = s.by_horizon||{}, cal = s.calibration||[];
+  const hz = Object.values(bh);
+  let lh = "";
+  if(hz.length){
+    lh += `<div class="muted" style="font-size:11px;margin-bottom:8px">HIT-RATE BY HORIZON · directional only (flat/dead-band moves excluded)</div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px">` + hz.map(d=>{
+      const hr = d.hit_rate!=null? (d.hit_rate*100).toFixed(0)+"%" : "—";
+      const col = d.hit_rate==null?"n":(d.hit_rate>0.5?"g":"r");
+      const ar = d.avg_signal_return_pct!=null? (d.avg_signal_return_pct>=0?"+":"")+d.avg_signal_return_pct+"%" : "—";
+      return `<div class="neu-in" style="padding:11px 15px;border-radius:12px;min-width:98px">
+        <div style="font-weight:750">${d.horizon_days}d</div>
+        <div class="tag ${col}" style="font-size:17px;margin:2px 0">${hr}</div>
+        <div class="muted" style="font-size:11px">n=${d.directional} · ${ar}</div></div>`;
+    }).join("") + `</div>`;
+  }
+  if(cal.length){
+    lh += `<div class="muted" style="font-size:11px;margin-bottom:8px">LEARNED SIZE MULTIPLIER · 1d (throttles unproven symbols; needs n≥30 to leave the 0.5 default)</div>
+      <div class="scroll"><table style="min-width:440px"><thead><tr><th>Symbol</th><th>n</th>
+        <th>shrunk hit</th><th>avg signal</th><th>× size</th></tr></thead><tbody>` +
+      cal.map(c=>`<tr><td class="mono">${c.symbol}</td><td>${c.n}</td>
+        <td>${(c.hit_shrunk*100).toFixed(0)}%</td>
+        <td>${c.avg_signed_return_pct>=0?"+":""}${c.avg_signed_return_pct}%</td>
+        <td><span class="cbar"><i style="width:${Math.round(c.multiplier*100)}%"></i></span>
+          <span class="muted">${c.multiplier.toFixed(2)}</span></td></tr>`).join("") +
+      `</tbody></table></div>`;
+  }
+  if(!hz.length && !cal.length)
+    lh = `<div class="muted">No scored horizons yet — accumulating honest evidence. Calibration activates at n≥30 per symbol.</div>`;
+  const learnEl = $("#learning"); if(learnEl) learnEl.innerHTML = lh;
 }
 
 function renderTrades(list){

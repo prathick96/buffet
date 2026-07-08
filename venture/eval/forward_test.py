@@ -30,6 +30,9 @@ import time
 from pathlib import Path
 import sqlite3
 
+# Horizons scored in parallel so we can see WHERE edge lives (1 / 3 / 7 trading-ish days).
+DEFAULT_HORIZONS = (86400.0, 259200.0, 604800.0)
+
 
 def deadband_from_closes(closes, horizon_sec: float, bar_seconds: float | None,
                          k: float = 0.25, floor: float = 0.001,
@@ -62,8 +65,9 @@ def deadband_from_closes(closes, horizon_sec: float, bar_seconds: float | None,
 
 class ForwardTester:
     def __init__(self, path: str = "venture/forward_test.db",
-                 horizon_sec: float = 86400, clock=time.time):
+                 horizon_sec: float = 86400, clock=time.time, horizons=None):
         self.horizon = horizon_sec
+        self.horizons = tuple(horizons) if horizons else DEFAULT_HORIZONS
         self._clock = clock
         if path != ":memory:":
             Path(path).parent.mkdir(parents=True, exist_ok=True)
@@ -74,6 +78,13 @@ class ForwardTester:
             "price REAL, action TEXT, conviction REAL, sentiment TEXT, rationale TEXT, "
             "horizon_sec REAL, deadband REAL DEFAULT 0, scored INTEGER DEFAULT 0, "
             "scored_ts REAL, exit_ts REAL, exit_price REAL, fwd_return REAL, correct INTEGER)")
+        # Multi-horizon evidence (one row per prediction x horizon), additive to the
+        # single-horizon `predictions` scoring that drives the dashboard headline.
+        self.conn.execute(
+            "CREATE TABLE IF NOT EXISTS horizon_scores("
+            "pred_id INTEGER, horizon_sec REAL, scored_ts REAL, exit_ts REAL, "
+            "exit_price REAL, fwd_return REAL, correct INTEGER, "
+            "PRIMARY KEY(pred_id, horizon_sec))")
         self.conn.commit()
         self._migrate()
 
@@ -214,6 +225,65 @@ class ForwardTester:
         if action == "BUY":
             return fwd > 0
         return fwd < 0                           # SELL
+
+    # ------------------------------------------------------- multi-horizon
+    def score_horizons(self, bars_fn, now: float | None = None) -> int:
+        """Score every prediction at each configured horizon (1/3/7d) as it
+        matures, into `horizon_scores`. Idempotent (skips already-scored pairs),
+        dated + dead-band aware — the richer evidence the calibrator learns from."""
+        now = now if now is not None else self._clock()
+        done = set(self.conn.execute(
+            "SELECT pred_id,horizon_sec FROM horizon_scores").fetchall())
+        preds = self.conn.execute(
+            "SELECT id,ts,bar_ts,symbol,price,action,deadband FROM predictions").fetchall()
+        cache: dict = {}
+        scored = 0
+        for pid, ts, bar_ts, symbol, price, action, band in preds:
+            anchor = bar_ts if bar_ts is not None else ts
+            for h in self.horizons:
+                if (pid, h) in done or now < anchor + h:
+                    continue
+                if symbol not in cache:
+                    try:
+                        cache[symbol] = bars_fn(symbol) or []
+                    except Exception:
+                        cache[symbol] = []
+                target = anchor + h
+                exit_bar = next(((bts, bc) for bts, bc in cache[symbol]
+                                 if bts >= target and bts > anchor), None)
+                if exit_bar is None:
+                    continue
+                exit_ts, exit_price = exit_bar
+                if not exit_price or not price:
+                    continue
+                fwd = exit_price / price - 1
+                correct = self._classify(action, fwd, band)
+                self.conn.execute(
+                    "INSERT OR REPLACE INTO horizon_scores(pred_id,horizon_sec,scored_ts,"
+                    "exit_ts,exit_price,fwd_return,correct) VALUES(?,?,?,?,?,?,?)",
+                    (pid, h, now, exit_ts, exit_price, fwd,
+                     None if correct is None else int(correct)))
+                scored += 1
+        self.conn.commit()
+        return scored
+
+    def report_by_horizon(self) -> dict:
+        out = {}
+        for h in self.horizons:
+            rows = self.conn.execute(
+                "SELECT hs.correct, hs.fwd_return, p.action FROM horizon_scores hs "
+                "JOIN predictions p ON p.id=hs.pred_id WHERE hs.horizon_sec=?", (h,)).fetchall()
+            directional = [(c, f, a) for c, f, a in rows if c is not None]
+            n = len(directional)
+            d = {"horizon_days": round(h / 86400, 2), "scored": len(rows),
+                 "directional": n, "ties": len(rows) - n}
+            if n:
+                wins = sum(1 for c, _, _ in directional if c)
+                signed = [f if a == "BUY" else -f for _, f, a in directional]
+                d["hit_rate"] = round(wins / n, 3)
+                d["avg_signal_return_pct"] = round(sum(signed) / len(signed) * 100, 3)
+            out[str(int(h))] = d
+        return out
 
     # ---------------------------------------------------------------- report
     def report(self, min_sample: int = 20) -> dict:

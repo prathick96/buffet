@@ -21,6 +21,7 @@ from brain.anthropic_brain import AnthropicBrain
 from data.providers import CCXTDataProvider, YFinanceDataProvider
 from eval.forward_test import ForwardTester, deadband_from_closes
 from graph.debate import build_debate_runner
+from learn.calibration import Calibrator
 from markets.registry import format_money, is_market_open, resolve
 from news.providers import RSSNewsProvider
 from notify.telegram import TelegramNotifier, format_cycle_summary
@@ -116,17 +117,40 @@ def run_cycle(symbols=None, db_path: str = DB_PATH, horizon_hours: float = 24) -
             print(f"  {sym:12} SKIPPED ({type(e).__name__}: {str(e)[:60]})")
 
     # 2) Score matured predictions against realized DATED bars (look-ahead-free).
-    scored = ft.score_due(bars_fn=recent_bars)
+    #    One fetch per symbol, shared between single- and multi-horizon scoring.
+    _bars_cache: dict = {}
+
+    def cached_bars(symbol):
+        if symbol not in _bars_cache:
+            _bars_cache[symbol] = recent_bars(symbol)
+        return _bars_cache[symbol]
+
+    scored = ft.score_due(bars_fn=cached_bars)
+    hz_scored = ft.score_horizons(bars_fn=cached_bars)   # 1d/3d/7d evidence
     print(f"\nCaptured {len(rows)} new signal(s) ({dups} dup-skip), "
-          f"scored {scored} matured prediction(s).")
+          f"scored {scored} matured prediction(s) (+{hz_scored} horizon scores).")
+
+    # 2b) Learn: recompute the per-symbol edge multiplier from realized outcomes
+    #     (Bayesian-shrunk, gated at n>=30, frozen between evals -> stable).
+    calib = Calibrator(ft.conn)
+    calib_summary = calib.recompute()
 
     # 3) The accumulating verdict.
     verdict = ft.report()
+    by_h = ft.report_by_horizon()
     journal.log("cycle", "-", {"symbols": len(symbols), "captured": len(rows),
-                               "dups": dups, "scored": scored,
+                               "dups": dups, "scored": scored, "hz_scored": hz_scored,
                                "verdict": verdict.get("verdict", ""),
-                               "llm_symbols": llm_symbols, "model": model})
+                               "llm_symbols": llm_symbols, "model": model,
+                               "calibration": calib_summary})
     print("\n" + ft.summary())
+    edge_line = " | ".join(f"{d['horizon_days']:.0f}d n={d['directional']} "
+                           f"hit={d.get('hit_rate', '—')}" for d in by_h.values())
+    print("  edge by horizon: " + edge_line)
+    if calib_summary:
+        cal_line = "  ".join(f"{s}:x{v['multiplier']:.2f}(n{v['n']})"
+                             for s, v in sorted(calib_summary.items()))
+        print("  size multiplier (1d): " + cal_line)
 
     # Billing readout (month-to-date, self-tracked from response.usage).
     mtd = month_to_date(journal)

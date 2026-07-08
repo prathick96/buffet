@@ -107,13 +107,18 @@ class RiskEngine:
     # --------------------------------------------------------------- sizing
     def assess_trade(self, equity: float, conviction: float,
                      price: Optional[float] = None,
-                     stop_price: Optional[float] = None) -> RiskDecision:
+                     stop_price: Optional[float] = None,
+                     edge_multiplier: float = 1.0) -> RiskDecision:
         """
         Decide whether to open a new long position and how big.
 
         conviction: 0..1 blended confidence from the agent debate.
         price/stop_price: if both given (long), size is additionally capped so the
                           stop-loss can lose at most `max_risk_per_trade_pct` of equity.
+        edge_multiplier: learned, DEMONSTRATED-edge scaler from the calibrator
+                         (venture/learn/calibration.py). Clamped to [0, 1] so it can
+                         only throttle unproven/weak symbols — it can never enlarge a
+                         position past the caps below (capital preservation first).
         """
         c = self.config
         self.update_equity(equity)  # refresh state against the latest equity first
@@ -131,6 +136,10 @@ class RiskEngine:
         conv_norm = min(1.0, max(0.0, (conviction - c.min_conviction) / span))
         size_pct = c.max_position_pct * conv_norm
 
+        # Learned edge multiplier — throttle only (never amplify past the caps).
+        em = max(0.0, min(1.0, edge_multiplier))
+        size_pct *= em
+
         # Risk-based cap using the stop distance, if provided.
         if price and stop_price and price > stop_price > 0 and equity > 0:
             risk_per_unit = price - stop_price
@@ -146,8 +155,9 @@ class RiskEngine:
 
         if dollar_size <= 0:
             return RiskDecision(False, 0.0, 0.0, "Sized to zero", self.state)
+        reason = "Approved" if em >= 1.0 else f"Approved (edge x{em:.2f})"
         return RiskDecision(True, round(size_pct, 4), round(dollar_size, 2),
-                            "Approved", self.state)
+                            reason, self.state)
 
     # -------------------------------------------------------------- reporting
     def status(self, equity: float) -> dict:
