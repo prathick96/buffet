@@ -1,5 +1,31 @@
 [
   {
+    "id": 17,
+    "time": "2026-07-08T10:07:56+00:00",
+    "symbol": "ETH/USDT",
+    "price": 1734.19,
+    "action": "SELL",
+    "conviction": 0.606,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 16,
+    "time": "2026-07-08T10:07:53+00:00",
+    "symbol": "BTC/USDT",
+    "price": 61925.7,
+    "action": "SELL",
+    "conviction": 0.658,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 15,
     "time": "2026-07-08T07:31:32+00:00",
     "symbol": "ETH/USDT",
