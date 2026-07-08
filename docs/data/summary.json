@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-08T20:40:43+00:00",
+  "updated": "2026-07-08T20:57:03+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -12,7 +12,7 @@
     "scored": 5,
     "directional": 2,
     "ties": 2,
-    "pending": 24,
+    "pending": 26,
     "hit_rate": 0.5,
     "avg_signal_return_pct": -0.426,
     "sample": 2,
@@ -21,9 +21,11 @@
   "by_horizon": {
     "86400": {
       "horizon_days": 1.0,
-      "scored": 0,
-      "directional": 0,
-      "ties": 0
+      "scored": 3,
+      "directional": 3,
+      "ties": 0,
+      "hit_rate": 0.667,
+      "avg_signal_return_pct": 0.886
     },
     "259200": {
       "horizon_days": 3.0,
@@ -38,11 +40,39 @@
       "ties": 0
     }
   },
-  "calibration": [],
+  "calibration": [
+    {
+      "symbol": "AAPL",
+      "horizon_days": 1.0,
+      "n": 1,
+      "wins": 1,
+      "hit_shrunk": 0.5385,
+      "avg_signed_return_pct": 0.879,
+      "multiplier": 0.5
+    },
+    {
+      "symbol": "NVDA",
+      "horizon_days": 1.0,
+      "n": 1,
+      "wins": 1,
+      "hit_shrunk": 0.5385,
+      "avg_signed_return_pct": 3.651,
+      "multiplier": 0.5
+    },
+    {
+      "symbol": "TCS.NS",
+      "horizon_days": 1.0,
+      "n": 1,
+      "wins": 0,
+      "hit_shrunk": 0.4615,
+      "avg_signed_return_pct": -1.871,
+      "multiplier": 0.5
+    }
+  ],
   "counts": {
-    "predictions": 29,
+    "predictions": 31,
     "scored": 5,
-    "pending": 24
+    "pending": 26
   },
   "billing": {
     "model": "claude-opus-4-8",
