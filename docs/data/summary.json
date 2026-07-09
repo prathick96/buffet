@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-09T07:34:48+00:00",
+  "updated": "2026-07-09T10:46:13+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,23 +9,23 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 18,
-    "directional": 9,
+    "scored": 20,
+    "directional": 11,
     "ties": 8,
     "pending": 24,
-    "hit_rate": 0.667,
-    "avg_signal_return_pct": 0.513,
-    "sample": 9,
-    "verdict": "insufficient sample (9/20) \u2014 keep accumulating"
+    "hit_rate": 0.545,
+    "avg_signal_return_pct": 0.181,
+    "sample": 11,
+    "verdict": "insufficient sample (11/20) \u2014 keep accumulating"
   },
   "by_horizon": {
     "86400": {
       "horizon_days": 1.0,
-      "scored": 18,
-      "directional": 11,
+      "scored": 20,
+      "directional": 13,
       "ties": 7,
-      "hit_rate": 0.727,
-      "avg_signal_return_pct": 0.85
+      "hit_rate": 0.615,
+      "avg_signal_return_pct": 0.517
     },
     "259200": {
       "horizon_days": 3.0,
@@ -55,19 +55,19 @@
     {
       "symbol": "BTC/USDT",
       "horizon_days": 1.0,
-      "n": 2,
+      "n": 3,
       "wins": 2,
-      "hit_shrunk": 0.5714,
-      "avg_signed_return_pct": 2.028,
+      "hit_shrunk": 0.5333,
+      "avg_signed_return_pct": 0.827,
       "multiplier": 0.5
     },
     {
       "symbol": "ETH/USDT",
       "horizon_days": 1.0,
-      "n": 2,
+      "n": 3,
       "wins": 2,
-      "hit_shrunk": 0.5714,
-      "avg_signed_return_pct": 1.708,
+      "hit_shrunk": 0.5333,
+      "avg_signed_return_pct": 0.789,
       "multiplier": 0.5
     },
     {
@@ -99,8 +99,8 @@
     }
   ],
   "counts": {
-    "predictions": 42,
-    "scored": 18,
+    "predictions": 44,
+    "scored": 20,
     "pending": 24
   },
   "billing": {
