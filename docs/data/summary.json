@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-09T16:22:59+00:00",
+  "updated": "2026-07-09T18:46:28+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,23 +9,23 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 26,
-    "directional": 14,
-    "ties": 11,
-    "pending": 24,
-    "hit_rate": 0.5,
-    "avg_signal_return_pct": 0.087,
-    "sample": 14,
-    "verdict": "insufficient sample (14/20) \u2014 keep accumulating"
+    "scored": 28,
+    "directional": 15,
+    "ties": 12,
+    "pending": 26,
+    "hit_rate": 0.533,
+    "avg_signal_return_pct": 0.192,
+    "sample": 15,
+    "verdict": "insufficient sample (15/20) \u2014 keep accumulating"
   },
   "by_horizon": {
     "86400": {
       "horizon_days": 1.0,
-      "scored": 26,
-      "directional": 16,
-      "ties": 10,
-      "hit_rate": 0.562,
-      "avg_signal_return_pct": 0.372
+      "scored": 28,
+      "directional": 17,
+      "ties": 11,
+      "hit_rate": 0.588,
+      "avg_signal_return_pct": 0.448
     },
     "259200": {
       "horizon_days": 3.0,
@@ -55,10 +55,10 @@
     {
       "symbol": "BTC/USDT",
       "horizon_days": 1.0,
-      "n": 4,
-      "wins": 2,
-      "hit_shrunk": 0.5,
-      "avg_signed_return_pct": 0.17,
+      "n": 5,
+      "wins": 3,
+      "hit_shrunk": 0.5294,
+      "avg_signed_return_pct": 0.468,
       "multiplier": 0.5
     },
     {
@@ -99,9 +99,9 @@
     }
   ],
   "counts": {
-    "predictions": 50,
-    "scored": 26,
-    "pending": 24
+    "predictions": 54,
+    "scored": 28,
+    "pending": 26
   },
   "billing": {
     "model": "claude-opus-4-8",
