@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-08T22:01:38+00:00",
+  "updated": "2026-07-09T00:00:27+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,23 +9,23 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 5,
-    "directional": 2,
+    "scored": 8,
+    "directional": 5,
     "ties": 2,
     "pending": 28,
-    "hit_rate": 0.5,
-    "avg_signal_return_pct": -0.426,
-    "sample": 2,
-    "verdict": "insufficient sample (2/20) \u2014 keep accumulating"
+    "hit_rate": 0.6,
+    "avg_signal_return_pct": 0.22,
+    "sample": 5,
+    "verdict": "insufficient sample (5/20) \u2014 keep accumulating"
   },
   "by_horizon": {
     "86400": {
       "horizon_days": 1.0,
-      "scored": 3,
-      "directional": 3,
-      "ties": 0,
+      "scored": 7,
+      "directional": 6,
+      "ties": 1,
       "hit_rate": 0.667,
-      "avg_signal_return_pct": 0.886
+      "avg_signal_return_pct": 0.768
     },
     "259200": {
       "horizon_days": 3.0,
@@ -51,6 +51,24 @@
       "multiplier": 0.5
     },
     {
+      "symbol": "BTC/USDT",
+      "horizon_days": 1.0,
+      "n": 1,
+      "wins": 1,
+      "hit_shrunk": 0.5385,
+      "avg_signed_return_pct": 2.02,
+      "multiplier": 0.5
+    },
+    {
+      "symbol": "ETH/USDT",
+      "horizon_days": 1.0,
+      "n": 1,
+      "wins": 1,
+      "hit_shrunk": 0.5385,
+      "avg_signed_return_pct": 1.77,
+      "multiplier": 0.5
+    },
+    {
       "symbol": "NVDA",
       "horizon_days": 1.0,
       "n": 1,
@@ -62,16 +80,16 @@
     {
       "symbol": "TCS.NS",
       "horizon_days": 1.0,
-      "n": 1,
+      "n": 2,
       "wins": 0,
-      "hit_shrunk": 0.4615,
-      "avg_signed_return_pct": -1.871,
+      "hit_shrunk": 0.4286,
+      "avg_signed_return_pct": -1.856,
       "multiplier": 0.5
     }
   ],
   "counts": {
-    "predictions": 33,
-    "scored": 5,
+    "predictions": 36,
+    "scored": 8,
     "pending": 28
   },
   "billing": {
