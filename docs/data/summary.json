@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-09T03:36:21+00:00",
+  "updated": "2026-07-09T07:34:48+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,29 +9,31 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 10,
-    "directional": 7,
-    "ties": 2,
-    "pending": 28,
-    "hit_rate": 0.714,
-    "avg_signal_return_pct": 0.683,
-    "sample": 7,
-    "verdict": "insufficient sample (7/20) \u2014 keep accumulating"
+    "scored": 18,
+    "directional": 9,
+    "ties": 8,
+    "pending": 24,
+    "hit_rate": 0.667,
+    "avg_signal_return_pct": 0.513,
+    "sample": 9,
+    "verdict": "insufficient sample (9/20) \u2014 keep accumulating"
   },
   "by_horizon": {
     "86400": {
       "horizon_days": 1.0,
-      "scored": 9,
-      "directional": 8,
-      "ties": 1,
-      "hit_rate": 0.75,
-      "avg_signal_return_pct": 1.036
+      "scored": 18,
+      "directional": 11,
+      "ties": 7,
+      "hit_rate": 0.727,
+      "avg_signal_return_pct": 0.85
     },
     "259200": {
       "horizon_days": 3.0,
-      "scored": 0,
-      "directional": 0,
-      "ties": 0
+      "scored": 3,
+      "directional": 2,
+      "ties": 1,
+      "hit_rate": 1.0,
+      "avg_signal_return_pct": 1.223
     },
     "604800": {
       "horizon_days": 7.0,
@@ -78,19 +80,28 @@
       "multiplier": 0.5
     },
     {
-      "symbol": "TCS.NS",
+      "symbol": "RELIANCE.BO",
       "horizon_days": 1.0,
       "n": 2,
+      "wins": 2,
+      "hit_shrunk": 0.5714,
+      "avg_signed_return_pct": 1.223,
+      "multiplier": 0.5
+    },
+    {
+      "symbol": "TCS.NS",
+      "horizon_days": 1.0,
+      "n": 3,
       "wins": 0,
-      "hit_shrunk": 0.4286,
-      "avg_signed_return_pct": -1.856,
+      "hit_shrunk": 0.4,
+      "avg_signed_return_pct": -1.7,
       "multiplier": 0.5
     }
   ],
   "counts": {
-    "predictions": 38,
-    "scored": 10,
-    "pending": 28
+    "predictions": 42,
+    "scored": 18,
+    "pending": 24
   },
   "billing": {
     "model": "claude-opus-4-8",
