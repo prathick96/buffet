@@ -1,5 +1,31 @@
 [
   {
+    "id": 129,
+    "time": "2026-07-12T09:53:30+00:00",
+    "symbol": "ETH/USDT",
+    "price": 1803.93,
+    "action": "BUY",
+    "conviction": 0.24,
+    "sentiment": "BULLISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 128,
+    "time": "2026-07-12T09:53:26+00:00",
+    "symbol": "BTC/USDT",
+    "price": 63979.8,
+    "action": "SELL",
+    "conviction": 0.196,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 127,
     "time": "2026-07-12T08:00:13+00:00",
     "symbol": "ETH/USDT",
@@ -423,9 +449,9 @@
     "action": "BUY",
     "conviction": 0.185,
     "sentiment": "NEUTRAL",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
+    "scored": true,
+    "exit_price": 1803.93,
+    "fwd_return_pct": 0.212,
     "correct": null
   },
   {
@@ -436,10 +462,10 @@
     "action": "BUY",
     "conviction": 0.174,
     "sentiment": "NEUTRAL",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 63979.8,
+    "fwd_return_pct": -0.427,
+    "correct": false
   },
   {
     "id": 93,
