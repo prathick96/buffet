@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-12T22:38:30+00:00",
+  "updated": "2026-07-12T23:43:45+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,31 +9,31 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 114,
-    "directional": 68,
-    "ties": 45,
+    "scored": 116,
+    "directional": 69,
+    "ties": 46,
     "pending": 35,
-    "hit_rate": 0.529,
-    "avg_signal_return_pct": 0.268,
-    "sample": 68,
+    "hit_rate": 0.522,
+    "avg_signal_return_pct": 0.252,
+    "sample": 69,
     "verdict": "EDGE FORMING \u2014 hit-rate > 50% and positive signal return"
   },
   "by_horizon": {
     "86400": {
       "horizon_days": 1.0,
-      "scored": 114,
-      "directional": 70,
-      "ties": 44,
-      "hit_rate": 0.543,
-      "avg_signal_return_pct": 0.328
+      "scored": 116,
+      "directional": 71,
+      "ties": 45,
+      "hit_rate": 0.535,
+      "avg_signal_return_pct": 0.312
     },
     "259200": {
       "horizon_days": 3.0,
-      "scored": 48,
-      "directional": 45,
+      "scored": 50,
+      "directional": 47,
       "ties": 3,
-      "hit_rate": 0.533,
-      "avg_signal_return_pct": 0.047
+      "hit_rate": 0.553,
+      "avg_signal_return_pct": 0.136
     },
     "604800": {
       "horizon_days": 7.0,
@@ -64,10 +64,10 @@
     {
       "symbol": "ETH/USDT",
       "horizon_days": 1.0,
-      "n": 26,
+      "n": 27,
       "wins": 16,
-      "hit_shrunk": 0.5789,
-      "avg_signed_return_pct": 0.342,
+      "hit_shrunk": 0.5641,
+      "avg_signed_return_pct": 0.298,
       "multiplier": 0.5
     },
     {
@@ -99,8 +99,8 @@
     }
   ],
   "counts": {
-    "predictions": 149,
-    "scored": 114,
+    "predictions": 151,
+    "scored": 116,
     "pending": 35
   },
   "billing": {
