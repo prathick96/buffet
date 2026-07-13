@@ -1,5 +1,57 @@
 [
   {
+    "id": 165,
+    "time": "2026-07-13T14:06:03+00:00",
+    "symbol": "NVDA",
+    "price": 208.82000732421875,
+    "action": "BUY",
+    "conviction": 0.79,
+    "sentiment": "BULLISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 164,
+    "time": "2026-07-13T14:06:03+00:00",
+    "symbol": "AAPL",
+    "price": 321.05999755859375,
+    "action": "BUY",
+    "conviction": 0.79,
+    "sentiment": "BULLISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 163,
+    "time": "2026-07-13T14:06:01+00:00",
+    "symbol": "ETH/USDT",
+    "price": 1769.09,
+    "action": "SELL",
+    "conviction": 0.323,
+    "sentiment": "NEUTRAL",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 162,
+    "time": "2026-07-13T14:05:58+00:00",
+    "symbol": "BTC/USDT",
+    "price": 62306.1,
+    "action": "SELL",
+    "conviction": 0.387,
+    "sentiment": "NEUTRAL",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 161,
     "time": "2026-07-13T11:52:03+00:00",
     "symbol": "ETH/USDT",
@@ -345,10 +397,10 @@
     "action": "BUY",
     "conviction": 0.267,
     "sentiment": "BULLISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 1769.09,
+    "fwd_return_pct": -2.013,
+    "correct": false
   },
   {
     "id": 134,
@@ -358,10 +410,10 @@
     "action": "BUY",
     "conviction": 0.227,
     "sentiment": "BULLISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 62305.1,
+    "fwd_return_pct": -2.637,
+    "correct": false
   },
   {
     "id": 133,
@@ -371,10 +423,10 @@
     "action": "BUY",
     "conviction": 0.343,
     "sentiment": "BULLISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 1772.29,
+    "fwd_return_pct": -1.981,
+    "correct": false
   },
   {
     "id": 132,
@@ -384,10 +436,10 @@
     "action": "BUY",
     "conviction": 0.247,
     "sentiment": "BULLISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 62588.3,
+    "fwd_return_pct": -2.256,
+    "correct": false
   },
   {
     "id": 131,
@@ -1125,9 +1177,9 @@
     "action": "BUY",
     "conviction": 0.88,
     "sentiment": "BULLISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
+    "scored": true,
+    "exit_price": 208.82000732421875,
+    "fwd_return_pct": -0.105,
     "correct": null
   },
   {
@@ -1138,10 +1190,10 @@
     "action": "BUY",
     "conviction": 0.789,
     "sentiment": "BULLISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 321.05999755859375,
+    "fwd_return_pct": 2.2,
+    "correct": true
   },
   {
     "id": 73,
