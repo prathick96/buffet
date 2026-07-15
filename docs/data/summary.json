@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-15T01:24:33+00:00",
+  "updated": "2026-07-15T04:41:53+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,23 +9,23 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 181,
-    "directional": 124,
-    "ties": 56,
-    "pending": 31,
-    "hit_rate": 0.484,
-    "avg_signal_return_pct": -0.347,
-    "sample": 124,
+    "scored": 185,
+    "directional": 126,
+    "ties": 58,
+    "pending": 32,
+    "hit_rate": 0.492,
+    "avg_signal_return_pct": -0.276,
+    "sample": 126,
     "verdict": "no edge yet \u2014 signal not beating chance"
   },
   "by_horizon": {
     "86400": {
       "horizon_days": 1.0,
-      "scored": 181,
-      "directional": 126,
-      "ties": 55,
-      "hit_rate": 0.492,
-      "avg_signal_return_pct": -0.304
+      "scored": 185,
+      "directional": 128,
+      "ties": 57,
+      "hit_rate": 0.5,
+      "avg_signal_return_pct": -0.234
     },
     "259200": {
       "horizon_days": 3.0,
@@ -37,11 +37,11 @@
     },
     "604800": {
       "horizon_days": 7.0,
-      "scored": 12,
-      "directional": 8,
+      "scored": 15,
+      "directional": 11,
       "ties": 4,
-      "hit_rate": 0.375,
-      "avg_signal_return_pct": -1.178
+      "hit_rate": 0.364,
+      "avg_signal_return_pct": -1.538
     }
   },
   "calibration": [
@@ -57,19 +57,19 @@
     {
       "symbol": "BTC/USDT",
       "horizon_days": 1.0,
-      "n": 55,
-      "wins": 26,
-      "hit_shrunk": 0.4776,
-      "avg_signed_return_pct": -0.318,
+      "n": 56,
+      "wins": 27,
+      "hit_shrunk": 0.4853,
+      "avg_signed_return_pct": -0.252,
       "multiplier": 0.25
     },
     {
       "symbol": "ETH/USDT",
       "horizon_days": 1.0,
-      "n": 50,
-      "wins": 23,
-      "hit_shrunk": 0.4677,
-      "avg_signed_return_pct": -0.824,
+      "n": 51,
+      "wins": 24,
+      "hit_shrunk": 0.4762,
+      "avg_signed_return_pct": -0.71,
       "multiplier": 0.25
     },
     {
@@ -102,8 +102,8 @@
   ],
   "counts": {
     "predictions": 200,
-    "scored": 181,
-    "pending": 31
+    "scored": 185,
+    "pending": 32
   },
   "billing": {
     "model": "claude-opus-4-8",
