@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-16T20:53:24+00:00",
+  "updated": "2026-07-16T21:56:35+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,31 +9,31 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 236,
-    "directional": 159,
+    "scored": 238,
+    "directional": 161,
     "ties": 67,
     "pending": 33,
-    "hit_rate": 0.522,
-    "avg_signal_return_pct": -0.076,
-    "sample": 159,
+    "hit_rate": 0.528,
+    "avg_signal_return_pct": -0.055,
+    "sample": 161,
     "verdict": "no edge yet \u2014 signal not beating chance"
   },
   "by_horizon": {
     "86400": {
       "horizon_days": 1.0,
-      "scored": 236,
-      "directional": 161,
+      "scored": 238,
+      "directional": 163,
       "ties": 75,
-      "hit_rate": 0.528,
-      "avg_signal_return_pct": -0.045
+      "hit_rate": 0.534,
+      "avg_signal_return_pct": -0.025
     },
     "259200": {
       "horizon_days": 3.0,
-      "scored": 175,
-      "directional": 161,
+      "scored": 177,
+      "directional": 163,
       "ties": 14,
-      "hit_rate": 0.472,
-      "avg_signal_return_pct": -0.199
+      "hit_rate": 0.466,
+      "avg_signal_return_pct": -0.261
     },
     "604800": {
       "horizon_days": 7.0,
@@ -57,19 +57,19 @@
     {
       "symbol": "BTC/USDT",
       "horizon_days": 1.0,
-      "n": 67,
-      "wins": 34,
-      "hit_shrunk": 0.5063,
-      "avg_signed_return_pct": -0.154,
-      "multiplier": 0.2816
+      "n": 68,
+      "wins": 35,
+      "hit_shrunk": 0.5125,
+      "avg_signed_return_pct": -0.137,
+      "multiplier": 0.3125
     },
     {
       "symbol": "ETH/USDT",
       "horizon_days": 1.0,
-      "n": 66,
-      "wins": 32,
-      "hit_shrunk": 0.4872,
-      "avg_signed_return_pct": -0.422,
+      "n": 67,
+      "wins": 33,
+      "hit_shrunk": 0.4937,
+      "avg_signed_return_pct": -0.382,
       "multiplier": 0.25
     },
     {
@@ -102,7 +102,7 @@
   ],
   "counts": {
     "predictions": 200,
-    "scored": 236,
+    "scored": 238,
     "pending": 33
   },
   "billing": {
