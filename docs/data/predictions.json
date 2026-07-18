@@ -1,5 +1,31 @@
 [
   {
+    "id": 335,
+    "time": "2026-07-18T19:58:58+00:00",
+    "symbol": "ETH/USDT",
+    "price": 1858.37,
+    "action": "BUY",
+    "conviction": 0.484,
+    "sentiment": "BULLISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 334,
+    "time": "2026-07-18T19:58:55+00:00",
+    "symbol": "BTC/USDT",
+    "price": 64570.0,
+    "action": "BUY",
+    "conviction": 0.462,
+    "sentiment": "BULLISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 333,
     "time": "2026-07-18T18:46:53+00:00",
     "symbol": "ETH/USDT",
@@ -449,10 +475,10 @@
     "action": "BUY",
     "conviction": 0.446,
     "sentiment": "BULLISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 1858.37,
+    "fwd_return_pct": 0.79,
+    "correct": true
   },
   {
     "id": 298,
@@ -462,10 +488,10 @@
     "action": "BUY",
     "conviction": 0.639,
     "sentiment": "BULLISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 64570.0,
+    "fwd_return_pct": 0.633,
+    "correct": true
   },
   {
     "id": 297,
@@ -2571,32 +2597,6 @@
     "scored": true,
     "exit_price": 62605.2,
     "fwd_return_pct": -2.44,
-    "correct": false
-  },
-  {
-    "id": 135,
-    "time": "2026-07-12T14:24:45+00:00",
-    "symbol": "ETH/USDT",
-    "price": 1805.43,
-    "action": "BUY",
-    "conviction": 0.267,
-    "sentiment": "BULLISH",
-    "scored": true,
-    "exit_price": 1769.09,
-    "fwd_return_pct": -2.013,
-    "correct": false
-  },
-  {
-    "id": 134,
-    "time": "2026-07-12T14:24:42+00:00",
-    "symbol": "BTC/USDT",
-    "price": 63992.3,
-    "action": "BUY",
-    "conviction": 0.227,
-    "sentiment": "BULLISH",
-    "scored": true,
-    "exit_price": 62305.1,
-    "fwd_return_pct": -2.637,
     "correct": false
   }
 ]
