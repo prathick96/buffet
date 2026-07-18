@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-18T11:45:25+00:00",
+  "updated": "2026-07-18T12:52:51+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -12,7 +12,7 @@
     "scored": 286,
     "directional": 199,
     "ties": 76,
-    "pending": 35,
+    "pending": 37,
     "hit_rate": 0.563,
     "avg_signal_return_pct": 0.157,
     "sample": 199,
@@ -37,11 +37,11 @@
     },
     "604800": {
       "horizon_days": 7.0,
-      "scored": 97,
-      "directional": 84,
-      "ties": 13,
-      "hit_rate": 0.571,
-      "avg_signal_return_pct": 0.412
+      "scored": 99,
+      "directional": 85,
+      "ties": 14,
+      "hit_rate": 0.576,
+      "avg_signal_return_pct": 0.437
     }
   },
   "calibration": [
@@ -103,7 +103,7 @@
   "counts": {
     "predictions": 200,
     "scored": 286,
-    "pending": 35
+    "pending": 37
   },
   "billing": {
     "model": "claude-opus-4-8",
