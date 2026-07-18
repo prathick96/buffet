@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-18T06:53:43+00:00",
+  "updated": "2026-07-18T08:43:03+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,39 +9,39 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 280,
-    "directional": 194,
+    "scored": 282,
+    "directional": 196,
     "ties": 75,
     "pending": 35,
-    "hit_rate": 0.577,
-    "avg_signal_return_pct": 0.192,
-    "sample": 194,
+    "hit_rate": 0.571,
+    "avg_signal_return_pct": 0.177,
+    "sample": 196,
     "verdict": "EDGE FORMING \u2014 hit-rate > 50% and positive signal return"
   },
   "by_horizon": {
     "86400": {
       "horizon_days": 1.0,
-      "scored": 280,
-      "directional": 196,
+      "scored": 282,
+      "directional": 198,
       "ties": 84,
-      "hit_rate": 0.582,
-      "avg_signal_return_pct": 0.214
+      "hit_rate": 0.576,
+      "avg_signal_return_pct": 0.2
     },
     "259200": {
       "horizon_days": 3.0,
-      "scored": 216,
-      "directional": 193,
+      "scored": 218,
+      "directional": 195,
       "ties": 23,
-      "hit_rate": 0.461,
-      "avg_signal_return_pct": -0.27
+      "hit_rate": 0.467,
+      "avg_signal_return_pct": -0.252
     },
     "604800": {
       "horizon_days": 7.0,
-      "scored": 89,
-      "directional": 79,
-      "ties": 10,
-      "hit_rate": 0.557,
-      "avg_signal_return_pct": 0.316
+      "scored": 91,
+      "directional": 80,
+      "ties": 11,
+      "hit_rate": 0.562,
+      "avg_signal_return_pct": 0.343
     }
   },
   "calibration": [
@@ -57,20 +57,20 @@
     {
       "symbol": "BTC/USDT",
       "horizon_days": 1.0,
-      "n": 80,
+      "n": 81,
       "wins": 43,
-      "hit_shrunk": 0.5326,
-      "avg_signed_return_pct": -0.01,
-      "multiplier": 0.413
+      "hit_shrunk": 0.5269,
+      "avg_signed_return_pct": -0.031,
+      "multiplier": 0.3844
     },
     {
       "symbol": "ETH/USDT",
       "horizon_days": 1.0,
-      "n": 84,
+      "n": 85,
       "wins": 48,
-      "hit_shrunk": 0.5625,
-      "avg_signed_return_pct": 0.073,
-      "multiplier": 0.8125
+      "hit_shrunk": 0.5567,
+      "avg_signed_return_pct": 0.063,
+      "multiplier": 0.7835
     },
     {
       "symbol": "NVDA",
@@ -102,7 +102,7 @@
   ],
   "counts": {
     "predictions": 200,
-    "scored": 280,
+    "scored": 282,
     "pending": 35
   },
   "billing": {
