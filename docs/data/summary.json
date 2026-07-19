@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-19T15:47:11+00:00",
+  "updated": "2026-07-19T16:45:49+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,23 +9,23 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 322,
-    "directional": 234,
+    "scored": 324,
+    "directional": 236,
     "ties": 77,
     "pending": 37,
-    "hit_rate": 0.59,
-    "avg_signal_return_pct": 0.197,
-    "sample": 234,
+    "hit_rate": 0.589,
+    "avg_signal_return_pct": 0.192,
+    "sample": 236,
     "verdict": "EDGE FORMING \u2014 hit-rate > 50% and positive signal return"
   },
   "by_horizon": {
     "86400": {
       "horizon_days": 1.0,
-      "scored": 322,
-      "directional": 236,
+      "scored": 324,
+      "directional": 238,
       "ties": 86,
-      "hit_rate": 0.593,
-      "avg_signal_return_pct": 0.215
+      "hit_rate": 0.592,
+      "avg_signal_return_pct": 0.21
     },
     "259200": {
       "horizon_days": 3.0,
@@ -37,11 +37,11 @@
     },
     "604800": {
       "horizon_days": 7.0,
-      "scored": 135,
-      "directional": 115,
+      "scored": 137,
+      "directional": 117,
       "ties": 20,
-      "hit_rate": 0.574,
-      "avg_signal_return_pct": 0.334
+      "hit_rate": 0.581,
+      "avg_signal_return_pct": 0.357
     }
   },
   "calibration": [
@@ -57,20 +57,20 @@
     {
       "symbol": "BTC/USDT",
       "horizon_days": 1.0,
-      "n": 100,
-      "wins": 56,
-      "hit_shrunk": 0.5536,
-      "avg_signed_return_pct": 0.01,
-      "multiplier": 0.7679
+      "n": 101,
+      "wins": 57,
+      "hit_shrunk": 0.5575,
+      "avg_signed_return_pct": 0.016,
+      "multiplier": 0.7876
     },
     {
       "symbol": "ETH/USDT",
       "horizon_days": 1.0,
-      "n": 104,
+      "n": 105,
       "wins": 61,
-      "hit_shrunk": 0.5776,
-      "avg_signed_return_pct": 0.126,
-      "multiplier": 0.8879
+      "hit_shrunk": 0.5726,
+      "avg_signed_return_pct": 0.112,
+      "multiplier": 0.8632
     },
     {
       "symbol": "NVDA",
@@ -102,7 +102,7 @@
   ],
   "counts": {
     "predictions": 200,
-    "scored": 322,
+    "scored": 324,
     "pending": 37
   },
   "billing": {
