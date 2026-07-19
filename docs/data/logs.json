@@ -1,5 +1,146 @@
 [
   {
+    "time": "2026-07-19T01:46:12+00:00",
+    "kind": "cycle",
+    "symbol": "-",
+    "detail": {
+      "symbols": 6,
+      "captured": 2,
+      "dups": 3,
+      "scored": 2,
+      "hz_scored": 6,
+      "verdict": "EDGE FORMING \u2014 hit-rate > 50% and positive signal return",
+      "llm_symbols": 0,
+      "model": "claude-opus-4-8",
+      "calibration": {
+        "AAPL": {
+          "n": 8,
+          "hit_shrunk": 0.65,
+          "avg_signed_return_pct": 1.266,
+          "multiplier": 0.5
+        },
+        "NVDA": {
+          "n": 5,
+          "hit_shrunk": 0.5882,
+          "avg_signed_return_pct": 2.181,
+          "multiplier": 0.5
+        },
+        "TCS.NS": {
+          "n": 16,
+          "hit_shrunk": 0.5714,
+          "avg_signed_return_pct": 0.893,
+          "multiplier": 0.5
+        },
+        "BTC/USDT": {
+          "n": 93,
+          "hit_shrunk": 0.5333,
+          "avg_signed_return_pct": -0.034,
+          "multiplier": 0.4167
+        },
+        "ETH/USDT": {
+          "n": 96,
+          "hit_shrunk": 0.5648,
+          "avg_signed_return_pct": 0.083,
+          "multiplier": 0.8241
+        },
+        "RELIANCE.BO": {
+          "n": 3,
+          "hit_shrunk": 0.5333,
+          "avg_signed_return_pct": 0.445,
+          "multiplier": 0.5
+        }
+      }
+    }
+  },
+  {
+    "time": "2026-07-19T01:46:07+00:00",
+    "kind": "signal",
+    "symbol": "TCS.NS",
+    "detail": {
+      "symbol": "TCS.NS",
+      "exchange": "NSE",
+      "currency": "INR",
+      "price": 2269.0,
+      "action": "HOLD",
+      "conviction": 0.837,
+      "sentiment": "BEARISH",
+      "brain": "heuristic",
+      "captured": false
+    }
+  },
+  {
+    "time": "2026-07-19T01:46:06+00:00",
+    "kind": "error",
+    "symbol": "RELIANCE.BO",
+    "detail": {
+      "error": "ValueError: need at least 2 bars of data"
+    }
+  },
+  {
+    "time": "2026-07-19T01:46:06+00:00",
+    "kind": "signal",
+    "symbol": "NVDA",
+    "detail": {
+      "symbol": "NVDA",
+      "exchange": "NASDAQ",
+      "currency": "USD",
+      "price": 202.80999755859375,
+      "action": "SELL",
+      "conviction": 0.0,
+      "sentiment": "BEARISH",
+      "brain": "heuristic",
+      "captured": false
+    }
+  },
+  {
+    "time": "2026-07-19T01:46:06+00:00",
+    "kind": "signal",
+    "symbol": "AAPL",
+    "detail": {
+      "symbol": "AAPL",
+      "exchange": "NASDAQ",
+      "currency": "USD",
+      "price": 333.739990234375,
+      "action": "BUY",
+      "conviction": 1.0,
+      "sentiment": "BULLISH",
+      "brain": "heuristic",
+      "captured": false
+    }
+  },
+  {
+    "time": "2026-07-19T01:46:04+00:00",
+    "kind": "signal",
+    "symbol": "ETH/USDT",
+    "detail": {
+      "symbol": "ETH/USDT",
+      "exchange": "kraken",
+      "currency": "USD",
+      "price": 1859.18,
+      "action": "BUY",
+      "conviction": 0.236,
+      "sentiment": "BULLISH",
+      "brain": "heuristic",
+      "captured": true
+    }
+  },
+  {
+    "time": "2026-07-19T01:46:01+00:00",
+    "kind": "signal",
+    "symbol": "BTC/USDT",
+    "detail": {
+      "symbol": "BTC/USDT",
+      "exchange": "kraken",
+      "currency": "USD",
+      "price": 64776.4,
+      "action": "BUY",
+      "conviction": 0.315,
+      "sentiment": "BULLISH",
+      "brain": "heuristic",
+      "captured": true
+    }
+  },
+  {
     "time": "2026-07-18T23:43:07+00:00",
     "kind": "cycle",
     "symbol": "-",
@@ -3895,147 +4036,6 @@
       "action": "BUY",
       "conviction": 1.0,
       "sentiment": "BULLISH",
-      "brain": "heuristic",
-      "captured": false
-    }
-  },
-  {
-    "time": "2026-07-17T09:47:43+00:00",
-    "kind": "signal",
-    "symbol": "AAPL",
-    "detail": {
-      "symbol": "AAPL",
-      "exchange": "NASDAQ",
-      "currency": "USD",
-      "price": 333.260009765625,
-      "action": "BUY",
-      "conviction": 1.0,
-      "sentiment": "BULLISH",
-      "brain": "heuristic",
-      "captured": false
-    }
-  },
-  {
-    "time": "2026-07-17T09:47:42+00:00",
-    "kind": "signal",
-    "symbol": "ETH/USDT",
-    "detail": {
-      "symbol": "ETH/USDT",
-      "exchange": "kraken",
-      "currency": "USD",
-      "price": 1833.69,
-      "action": "SELL",
-      "conviction": 0.447,
-      "sentiment": "BEARISH",
-      "brain": "heuristic",
-      "captured": true
-    }
-  },
-  {
-    "time": "2026-07-17T09:47:39+00:00",
-    "kind": "signal",
-    "symbol": "BTC/USDT",
-    "detail": {
-      "symbol": "BTC/USDT",
-      "exchange": "kraken",
-      "currency": "USD",
-      "price": 63066.0,
-      "action": "SELL",
-      "conviction": 0.391,
-      "sentiment": "BEARISH",
-      "brain": "heuristic",
-      "captured": true
-    }
-  },
-  {
-    "time": "2026-07-17T07:11:25+00:00",
-    "kind": "cycle",
-    "symbol": "-",
-    "detail": {
-      "symbols": 6,
-      "captured": 2,
-      "dups": 3,
-      "scored": 2,
-      "hz_scored": 6,
-      "verdict": "EDGE FORMING \u2014 hit-rate > 50% and positive signal return",
-      "llm_symbols": 0,
-      "model": "claude-opus-4-8",
-      "calibration": {
-        "AAPL": {
-          "n": 7,
-          "hit_shrunk": 0.6316,
-          "avg_signed_return_pct": 1.342,
-          "multiplier": 0.5
-        },
-        "NVDA": {
-          "n": 5,
-          "hit_shrunk": 0.5882,
-          "avg_signed_return_pct": 2.181,
-          "multiplier": 0.5
-        },
-        "TCS.NS": {
-          "n": 15,
-          "hit_shrunk": 0.5556,
-          "avg_signed_return_pct": 0.746,
-          "multiplier": 0.5
-        },
-        "BTC/USDT": {
-          "n": 73,
-          "hit_shrunk": 0.5412,
-          "avg_signed_return_pct": -0.009,
-          "multiplier": 0.4559
-        },
-        "ETH/USDT": {
-          "n": 72,
-          "hit_shrunk": 0.5119,
-          "avg_signed_return_pct": -0.196,
-          "multiplier": 0.3095
-        },
-        "RELIANCE.BO": {
-          "n": 3,
-          "hit_shrunk": 0.5333,
-          "avg_signed_return_pct": 0.445,
-          "multiplier": 0.5
-        }
-      }
-    }
-  },
-  {
-    "time": "2026-07-17T07:11:20+00:00",
-    "kind": "signal",
-    "symbol": "TCS.NS",
-    "detail": {
-      "symbol": "TCS.NS",
-      "exchange": "NSE",
-      "currency": "INR",
-      "price": 2260.800048828125,
-      "action": "BUY",
-      "conviction": 1.0,
-      "sentiment": "BULLISH",
-      "brain": "heuristic",
-      "captured": false
-    }
-  },
-  {
-    "time": "2026-07-17T07:11:19+00:00",
-    "kind": "error",
-    "symbol": "RELIANCE.BO",
-    "detail": {
-      "error": "ValueError: need at least 2 bars of data"
-    }
-  },
-  {
-    "time": "2026-07-17T07:11:19+00:00",
-    "kind": "signal",
-    "symbol": "NVDA",
-    "detail": {
-      "symbol": "NVDA",
-      "exchange": "NASDAQ",
-      "currency": "USD",
-      "price": 207.39999389648438,
-      "action": "HOLD",
-      "conviction": 0.797,
-      "sentiment": "BEARISH",
       "brain": "heuristic",
       "captured": false
     }
