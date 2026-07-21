@@ -1,5 +1,31 @@
 [
   {
+    "id": 419,
+    "time": "2026-07-21T18:10:17+00:00",
+    "symbol": "ETH/USDT",
+    "price": 1922.46,
+    "action": "SELL",
+    "conviction": 0.481,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 418,
+    "time": "2026-07-21T18:10:13+00:00",
+    "symbol": "BTC/USDT",
+    "price": 66319.2,
+    "action": "SELL",
+    "conviction": 0.333,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 417,
     "time": "2026-07-21T16:16:57+00:00",
     "symbol": "ETH/USDT",
@@ -371,10 +397,10 @@
     "action": "BUY",
     "conviction": 0.754,
     "sentiment": "BULLISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 1918.64,
+    "fwd_return_pct": 1.015,
+    "correct": true
   },
   {
     "id": 388,
@@ -384,10 +410,10 @@
     "action": "BUY",
     "conviction": 0.774,
     "sentiment": "BULLISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 66191.4,
+    "fwd_return_pct": 1.036,
+    "correct": true
   },
   {
     "id": 387,
@@ -2572,31 +2598,5 @@
     "exit_price": 64080.6,
     "fwd_return_pct": -1.006,
     "correct": true
-  },
-  {
-    "id": 219,
-    "time": "2026-07-15T07:07:14+00:00",
-    "symbol": "ETH/USDT",
-    "price": 1875.71,
-    "action": "SELL",
-    "conviction": 0.242,
-    "sentiment": "BEARISH",
-    "scored": true,
-    "exit_price": 1920.65,
-    "fwd_return_pct": 2.396,
-    "correct": false
-  },
-  {
-    "id": 218,
-    "time": "2026-07-15T07:07:11+00:00",
-    "symbol": "BTC/USDT",
-    "price": 64782.7,
-    "action": "SELL",
-    "conviction": 0.208,
-    "sentiment": "BEARISH",
-    "scored": true,
-    "exit_price": 64608.9,
-    "fwd_return_pct": -0.268,
-    "correct": null
   }
 ]
