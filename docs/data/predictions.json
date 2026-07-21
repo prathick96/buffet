@@ -1,5 +1,31 @@
 [
   {
+    "id": 407,
+    "time": "2026-07-21T07:33:45+00:00",
+    "symbol": "ETH/USDT",
+    "price": 1937.72,
+    "action": "BUY",
+    "conviction": 0.628,
+    "sentiment": "BULLISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 406,
+    "time": "2026-07-21T07:33:42+00:00",
+    "symbol": "BTC/USDT",
+    "price": 66057.2,
+    "action": "BUY",
+    "conviction": 0.758,
+    "sentiment": "BULLISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 405,
     "time": "2026-07-21T04:59:59+00:00",
     "symbol": "TCS.NS",
@@ -371,10 +397,10 @@
     "action": "SELL",
     "conviction": 0.64,
     "sentiment": "BEARISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 1934.75,
+    "fwd_return_pct": 4.276,
+    "correct": false
   },
   {
     "id": 376,
@@ -384,10 +410,10 @@
     "action": "SELL",
     "conviction": 0.614,
     "sentiment": "BEARISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 65934.8,
+    "fwd_return_pct": 2.792,
+    "correct": false
   },
   {
     "id": 375,
@@ -2571,32 +2597,6 @@
     "scored": true,
     "exit_price": 64750.6,
     "fwd_return_pct": -0.376,
-    "correct": null
-  },
-  {
-    "id": 207,
-    "time": "2026-07-14T22:47:15+00:00",
-    "symbol": "ETH/USDT",
-    "price": 1888.83,
-    "action": "BUY",
-    "conviction": 0.535,
-    "sentiment": "BULLISH",
-    "scored": true,
-    "exit_price": 1926.1,
-    "fwd_return_pct": 1.973,
-    "correct": true
-  },
-  {
-    "id": 206,
-    "time": "2026-07-14T22:47:11+00:00",
-    "symbol": "BTC/USDT",
-    "price": 64935.6,
-    "action": "BUY",
-    "conviction": 0.508,
-    "sentiment": "BULLISH",
-    "scored": true,
-    "exit_price": 64911.7,
-    "fwd_return_pct": -0.037,
     "correct": null
   }
 ]
