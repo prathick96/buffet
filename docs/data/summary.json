@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-22T16:16:58+00:00",
+  "updated": "2026-07-22T18:02:50+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,38 +9,38 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 419,
-    "directional": 304,
-    "ties": 99,
+    "scored": 421,
+    "directional": 305,
+    "ties": 100,
     "pending": 28,
-    "hit_rate": 0.566,
-    "avg_signal_return_pct": 0.124,
-    "sample": 304,
+    "hit_rate": 0.564,
+    "avg_signal_return_pct": 0.121,
+    "sample": 305,
     "verdict": "EDGE FORMING \u2014 hit-rate > 50% and positive signal return"
   },
   "by_horizon": {
     "86400": {
       "horizon_days": 1.0,
-      "scored": 419,
-      "directional": 306,
-      "ties": 113,
-      "hit_rate": 0.569,
-      "avg_signal_return_pct": 0.139
+      "scored": 421,
+      "directional": 307,
+      "ties": 114,
+      "hit_rate": 0.567,
+      "avg_signal_return_pct": 0.136
     },
     "259200": {
       "horizon_days": 3.0,
-      "scored": 362,
-      "directional": 318,
+      "scored": 366,
+      "directional": 322,
       "ties": 44,
-      "hit_rate": 0.509,
-      "avg_signal_return_pct": 0.134
+      "hit_rate": 0.506,
+      "avg_signal_return_pct": 0.107
     },
     "604800": {
       "horizon_days": 7.0,
-      "scored": 232,
-      "directional": 198,
-      "ties": 34,
-      "hit_rate": 0.561,
+      "scored": 236,
+      "directional": 201,
+      "ties": 35,
+      "hit_rate": 0.562,
       "avg_signal_return_pct": 0.13
     }
   },
@@ -66,11 +66,11 @@
     {
       "symbol": "ETH/USDT",
       "horizon_days": 1.0,
-      "n": 132,
+      "n": 133,
       "wins": 78,
-      "hit_shrunk": 0.5833,
-      "avg_signed_return_pct": 0.106,
-      "multiplier": 0.9167
+      "hit_shrunk": 0.5793,
+      "avg_signed_return_pct": 0.099,
+      "multiplier": 0.8966
     },
     {
       "symbol": "NVDA",
@@ -102,7 +102,7 @@
   ],
   "counts": {
     "predictions": 200,
-    "scored": 419,
+    "scored": 421,
     "pending": 28
   },
   "billing": {
