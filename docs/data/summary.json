@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-22T20:07:23+00:00",
+  "updated": "2026-07-22T21:57:45+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,39 +9,39 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 423,
-    "directional": 306,
-    "ties": 101,
+    "scored": 425,
+    "directional": 307,
+    "ties": 102,
     "pending": 29,
-    "hit_rate": 0.565,
-    "avg_signal_return_pct": 0.124,
-    "sample": 306,
+    "hit_rate": 0.564,
+    "avg_signal_return_pct": 0.121,
+    "sample": 307,
     "verdict": "EDGE FORMING \u2014 hit-rate > 50% and positive signal return"
   },
   "by_horizon": {
     "86400": {
       "horizon_days": 1.0,
-      "scored": 423,
-      "directional": 308,
-      "ties": 115,
-      "hit_rate": 0.568,
-      "avg_signal_return_pct": 0.138
+      "scored": 425,
+      "directional": 309,
+      "ties": 116,
+      "hit_rate": 0.566,
+      "avg_signal_return_pct": 0.136
     },
     "259200": {
       "horizon_days": 3.0,
-      "scored": 368,
-      "directional": 324,
+      "scored": 370,
+      "directional": 326,
       "ties": 44,
-      "hit_rate": 0.506,
-      "avg_signal_return_pct": 0.102
+      "hit_rate": 0.503,
+      "avg_signal_return_pct": 0.081
     },
     "604800": {
       "horizon_days": 7.0,
-      "scored": 238,
-      "directional": 202,
+      "scored": 240,
+      "directional": 204,
       "ties": 36,
-      "hit_rate": 0.559,
-      "avg_signal_return_pct": 0.123
+      "hit_rate": 0.554,
+      "avg_signal_return_pct": 0.108
     }
   },
   "calibration": [
@@ -66,11 +66,11 @@
     {
       "symbol": "ETH/USDT",
       "horizon_days": 1.0,
-      "n": 133,
+      "n": 134,
       "wins": 78,
-      "hit_shrunk": 0.5793,
-      "avg_signed_return_pct": 0.099,
-      "multiplier": 0.8966
+      "hit_shrunk": 0.5753,
+      "avg_signed_return_pct": 0.094,
+      "multiplier": 0.8767
     },
     {
       "symbol": "NVDA",
@@ -102,7 +102,7 @@
   ],
   "counts": {
     "predictions": 200,
-    "scored": 423,
+    "scored": 425,
     "pending": 29
   },
   "billing": {
