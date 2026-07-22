@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-22T04:59:38+00:00",
+  "updated": "2026-07-22T07:35:04+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,39 +9,39 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 407,
-    "directional": 296,
-    "ties": 97,
+    "scored": 409,
+    "directional": 297,
+    "ties": 98,
     "pending": 28,
-    "hit_rate": 0.581,
-    "avg_signal_return_pct": 0.154,
-    "sample": 296,
+    "hit_rate": 0.579,
+    "avg_signal_return_pct": 0.15,
+    "sample": 297,
     "verdict": "EDGE FORMING \u2014 hit-rate > 50% and positive signal return"
   },
   "by_horizon": {
     "86400": {
       "horizon_days": 1.0,
-      "scored": 407,
-      "directional": 298,
-      "ties": 109,
-      "hit_rate": 0.584,
-      "avg_signal_return_pct": 0.169
+      "scored": 409,
+      "directional": 299,
+      "ties": 110,
+      "hit_rate": 0.582,
+      "avg_signal_return_pct": 0.165
     },
     "259200": {
       "horizon_days": 3.0,
-      "scored": 346,
-      "directional": 302,
+      "scored": 350,
+      "directional": 306,
       "ties": 44,
       "hit_rate": 0.51,
-      "avg_signal_return_pct": 0.126
+      "avg_signal_return_pct": 0.129
     },
     "604800": {
       "horizon_days": 7.0,
-      "scored": 220,
-      "directional": 190,
+      "scored": 222,
+      "directional": 192,
       "ties": 30,
-      "hit_rate": 0.563,
-      "avg_signal_return_pct": 0.14
+      "hit_rate": 0.557,
+      "avg_signal_return_pct": 0.119
     }
   },
   "calibration": [
@@ -66,11 +66,11 @@
     {
       "symbol": "ETH/USDT",
       "horizon_days": 1.0,
-      "n": 130,
+      "n": 131,
       "wins": 78,
-      "hit_shrunk": 0.5915,
-      "avg_signed_return_pct": 0.121,
-      "multiplier": 0.9577
+      "hit_shrunk": 0.5874,
+      "avg_signed_return_pct": 0.112,
+      "multiplier": 0.9371
     },
     {
       "symbol": "NVDA",
@@ -102,7 +102,7 @@
   ],
   "counts": {
     "predictions": 200,
-    "scored": 407,
+    "scored": 409,
     "pending": 28
   },
   "billing": {
