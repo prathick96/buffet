@@ -1,5 +1,31 @@
 [
   {
+    "id": 535,
+    "time": "2026-07-25T14:54:54+00:00",
+    "symbol": "ETH/USDT",
+    "price": 1868.67,
+    "action": "HOLD",
+    "conviction": 0.366,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 534,
+    "time": "2026-07-25T14:54:51+00:00",
+    "symbol": "BTC/USDT",
+    "price": 64205.4,
+    "action": "HOLD",
+    "conviction": 0.234,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 533,
     "time": "2026-07-25T13:01:52+00:00",
     "symbol": "NVDA",
@@ -397,10 +423,10 @@
     "action": "SELL",
     "conviction": 0.816,
     "sentiment": "BEARISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 1868.67,
+    "fwd_return_pct": 0.903,
+    "correct": false
   },
   {
     "id": 502,
@@ -410,10 +436,10 @@
     "action": "SELL",
     "conviction": 0.935,
     "sentiment": "BEARISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 64205.4,
+    "fwd_return_pct": 0.615,
+    "correct": false
   },
   {
     "id": 501,
@@ -2571,32 +2597,6 @@
     "scored": true,
     "exit_price": 64545.4,
     "fwd_return_pct": -0.095,
-    "correct": null
-  },
-  {
-    "id": 335,
-    "time": "2026-07-18T19:58:58+00:00",
-    "symbol": "ETH/USDT",
-    "price": 1858.37,
-    "action": "BUY",
-    "conviction": 0.484,
-    "sentiment": "BULLISH",
-    "scored": true,
-    "exit_price": 1859.9,
-    "fwd_return_pct": 0.082,
-    "correct": null
-  },
-  {
-    "id": 334,
-    "time": "2026-07-18T19:58:55+00:00",
-    "symbol": "BTC/USDT",
-    "price": 64570.0,
-    "action": "BUY",
-    "conviction": 0.462,
-    "sentiment": "BULLISH",
-    "scored": true,
-    "exit_price": 64445.2,
-    "fwd_return_pct": -0.193,
     "correct": null
   }
 ]
