@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-26T14:28:51+00:00",
+  "updated": "2026-07-26T15:55:52+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,39 +9,39 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 536,
-    "directional": 395,
+    "scored": 539,
+    "directional": 396,
     "ties": 118,
     "pending": 46,
-    "hit_rate": 0.539,
-    "avg_signal_return_pct": 0.03,
-    "sample": 395,
+    "hit_rate": 0.538,
+    "avg_signal_return_pct": 0.027,
+    "sample": 396,
     "verdict": "EDGE FORMING \u2014 hit-rate > 50% and positive signal return"
   },
   "by_horizon": {
     "86400": {
       "horizon_days": 1.0,
-      "scored": 536,
-      "directional": 397,
-      "ties": 139,
-      "hit_rate": 0.542,
-      "avg_signal_return_pct": 0.042
+      "scored": 539,
+      "directional": 398,
+      "ties": 141,
+      "hit_rate": 0.54,
+      "avg_signal_return_pct": 0.039
     },
     "259200": {
       "horizon_days": 3.0,
-      "scored": 464,
-      "directional": 408,
-      "ties": 56,
-      "hit_rate": 0.51,
-      "avg_signal_return_pct": 0.113
+      "scored": 466,
+      "directional": 409,
+      "ties": 57,
+      "hit_rate": 0.509,
+      "avg_signal_return_pct": 0.11
     },
     "604800": {
       "horizon_days": 7.0,
-      "scored": 358,
-      "directional": 284,
+      "scored": 360,
+      "directional": 286,
       "ties": 74,
       "hit_rate": 0.514,
-      "avg_signal_return_pct": -0.114
+      "avg_signal_return_pct": -0.106
     }
   },
   "calibration": [
@@ -75,10 +75,10 @@
     {
       "symbol": "NVDA",
       "horizon_days": 1.0,
-      "n": 12,
+      "n": 13,
       "wins": 4,
-      "hit_shrunk": 0.4167,
-      "avg_signed_return_pct": 0.294,
+      "hit_shrunk": 0.4,
+      "avg_signed_return_pct": 0.201,
       "multiplier": 0.5
     },
     {
@@ -102,7 +102,7 @@
   ],
   "counts": {
     "predictions": 200,
-    "scored": 536,
+    "scored": 539,
     "pending": 46
   },
   "billing": {
