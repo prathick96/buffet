@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-27T01:59:15+00:00",
+  "updated": "2026-07-27T05:51:11+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,49 +9,49 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 557,
-    "directional": 398,
+    "scored": 564,
+    "directional": 402,
     "ties": 118,
-    "pending": 50,
+    "pending": 49,
     "hit_rate": 0.535,
     "avg_signal_return_pct": 0.016,
-    "sample": 398,
+    "sample": 402,
     "verdict": "EDGE FORMING \u2014 hit-rate > 50% and positive signal return"
   },
   "by_horizon": {
     "86400": {
       "horizon_days": 1.0,
-      "scored": 557,
-      "directional": 400,
-      "ties": 157,
+      "scored": 564,
+      "directional": 404,
+      "ties": 160,
       "hit_rate": 0.537,
       "avg_signal_return_pct": 0.028
     },
     "259200": {
       "horizon_days": 3.0,
-      "scored": 480,
-      "directional": 420,
-      "ties": 60,
-      "hit_rate": 0.5,
-      "avg_signal_return_pct": 0.063
+      "scored": 493,
+      "directional": 429,
+      "ties": 64,
+      "hit_rate": 0.51,
+      "avg_signal_return_pct": 0.129
     },
     "604800": {
       "horizon_days": 7.0,
-      "scored": 374,
-      "directional": 299,
-      "ties": 75,
-      "hit_rate": 0.512,
-      "avg_signal_return_pct": -0.116
+      "scored": 380,
+      "directional": 304,
+      "ties": 76,
+      "hit_rate": 0.52,
+      "avg_signal_return_pct": -0.08
     }
   },
   "calibration": [
     {
       "symbol": "AAPL",
       "horizon_days": 1.0,
-      "n": 18,
+      "n": 19,
       "wins": 7,
-      "hit_shrunk": 0.4333,
-      "avg_signed_return_pct": -0.974,
+      "hit_shrunk": 0.4194,
+      "avg_signed_return_pct": -1.109,
       "multiplier": 0.5
     },
     {
@@ -75,10 +75,10 @@
     {
       "symbol": "NVDA",
       "horizon_days": 1.0,
-      "n": 14,
+      "n": 15,
       "wins": 4,
-      "hit_shrunk": 0.3846,
-      "avg_signed_return_pct": 0.121,
+      "hit_shrunk": 0.3704,
+      "avg_signed_return_pct": 0.051,
       "multiplier": 0.5
     },
     {
@@ -93,17 +93,17 @@
     {
       "symbol": "TCS.NS",
       "horizon_days": 1.0,
-      "n": 29,
-      "wins": 15,
-      "hit_shrunk": 0.5122,
-      "avg_signed_return_pct": 0.415,
-      "multiplier": 0.5
+      "n": 31,
+      "wins": 17,
+      "hit_shrunk": 0.5349,
+      "avg_signed_return_pct": 0.534,
+      "multiplier": 0.6744
     }
   ],
   "counts": {
     "predictions": 200,
-    "scored": 557,
-    "pending": 50
+    "scored": 564,
+    "pending": 49
   },
   "billing": {
     "model": "claude-opus-4-8",
