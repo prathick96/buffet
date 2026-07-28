@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-28T22:04:55+00:00",
+  "updated": "2026-07-28T23:51:51+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,39 +9,39 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 635,
-    "directional": 442,
-    "ties": 121,
+    "scored": 638,
+    "directional": 444,
+    "ties": 122,
     "pending": 27,
     "hit_rate": 0.552,
-    "avg_signal_return_pct": 0.175,
-    "sample": 442,
+    "avg_signal_return_pct": 0.181,
+    "sample": 444,
     "verdict": "EDGE FORMING \u2014 hit-rate > 50% and positive signal return"
   },
   "by_horizon": {
     "86400": {
       "horizon_days": 1.0,
-      "scored": 635,
-      "directional": 444,
-      "ties": 191,
+      "scored": 638,
+      "directional": 446,
+      "ties": 192,
       "hit_rate": 0.554,
-      "avg_signal_return_pct": 0.185
+      "avg_signal_return_pct": 0.19
     },
     "259200": {
       "horizon_days": 3.0,
-      "scored": 580,
+      "scored": 582,
       "directional": 496,
-      "ties": 84,
+      "ties": 86,
       "hit_rate": 0.502,
       "avg_signal_return_pct": 0.001
     },
     "604800": {
       "horizon_days": 7.0,
-      "scored": 428,
-      "directional": 342,
-      "ties": 86,
-      "hit_rate": 0.526,
-      "avg_signal_return_pct": 0.016
+      "scored": 430,
+      "directional": 343,
+      "ties": 87,
+      "hit_rate": 0.528,
+      "avg_signal_return_pct": 0.027
     }
   },
   "calibration": [
@@ -66,11 +66,11 @@
     {
       "symbol": "ETH/USDT",
       "horizon_days": 1.0,
-      "n": 178,
+      "n": 179,
       "wins": 100,
-      "hit_shrunk": 0.5579,
-      "avg_signed_return_pct": 0.058,
-      "multiplier": 0.7895
+      "hit_shrunk": 0.555,
+      "avg_signed_return_pct": 0.049,
+      "multiplier": 0.7749
     },
     {
       "symbol": "NVDA",
@@ -93,16 +93,16 @@
     {
       "symbol": "TCS.NS",
       "horizon_days": 1.0,
-      "n": 34,
-      "wins": 20,
-      "hit_shrunk": 0.5652,
-      "avg_signed_return_pct": 0.796,
-      "multiplier": 0.8261
+      "n": 35,
+      "wins": 21,
+      "hit_shrunk": 0.5745,
+      "avg_signed_return_pct": 0.9,
+      "multiplier": 0.8723
     }
   ],
   "counts": {
     "predictions": 200,
-    "scored": 635,
+    "scored": 638,
     "pending": 27
   },
   "billing": {
