@@ -1,5 +1,31 @@
 [
   {
+    "id": 752,
+    "time": "2026-07-31T22:55:39+00:00",
+    "symbol": "ETH/USDT",
+    "price": 1862.12,
+    "action": "SELL",
+    "conviction": 0.395,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 751,
+    "time": "2026-07-31T22:55:35+00:00",
+    "symbol": "BTC/USDT",
+    "price": 62922.3,
+    "action": "SELL",
+    "conviction": 0.333,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 750,
     "time": "2026-07-31T21:57:22+00:00",
     "symbol": "ETH/USDT",
@@ -371,10 +397,10 @@
     "action": "SELL",
     "conviction": 0.107,
     "sentiment": "NEUTRAL",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 1862.12,
+    "fwd_return_pct": -2.86,
+    "correct": true
   },
   {
     "id": 721,
@@ -384,10 +410,10 @@
     "action": "SELL",
     "conviction": 0.085,
     "sentiment": "NEUTRAL",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 62922.3,
+    "fwd_return_pct": -2.731,
+    "correct": true
   },
   {
     "id": 720,
@@ -2572,31 +2598,5 @@
     "exit_price": 196.25999450683594,
     "fwd_return_pct": -5.115,
     "correct": true
-  },
-  {
-    "id": 552,
-    "time": "2026-07-25T20:06:17+00:00",
-    "symbol": "AAPL",
-    "price": 333.0199890136719,
-    "action": "BUY",
-    "conviction": 0.772,
-    "sentiment": "BULLISH",
-    "scored": true,
-    "exit_price": 338.4248962402344,
-    "fwd_return_pct": 1.623,
-    "correct": true
-  },
-  {
-    "id": 551,
-    "time": "2026-07-25T20:06:16+00:00",
-    "symbol": "ETH/USDT",
-    "price": 1873.98,
-    "action": "HOLD",
-    "conviction": 0.258,
-    "sentiment": "BEARISH",
-    "scored": true,
-    "exit_price": 1913.55,
-    "fwd_return_pct": 2.112,
-    "correct": null
   }
 ]
