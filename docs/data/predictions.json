@@ -1,5 +1,31 @@
 [
   {
+    "id": 743,
+    "time": "2026-07-31T17:19:36+00:00",
+    "symbol": "ETH/USDT",
+    "price": 1867.23,
+    "action": "SELL",
+    "conviction": 0.431,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 742,
+    "time": "2026-07-31T17:19:33+00:00",
+    "symbol": "BTC/USDT",
+    "price": 62885.1,
+    "action": "SELL",
+    "conviction": 0.566,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 741,
     "time": "2026-07-31T15:54:59+00:00",
     "symbol": "ETH/USDT",
@@ -345,10 +371,10 @@
     "action": "SELL",
     "conviction": 0.282,
     "sentiment": "BEARISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 1870.72,
+    "fwd_return_pct": -2.421,
+    "correct": true
   },
   {
     "id": 714,
@@ -358,10 +384,10 @@
     "action": "BUY",
     "conviction": 0.25,
     "sentiment": "BULLISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 62968.9,
+    "fwd_return_pct": -2.815,
+    "correct": false
   },
   {
     "id": 713,
@@ -2572,31 +2598,5 @@
     "exit_price": 338.4248962402344,
     "fwd_return_pct": 1.623,
     "correct": true
-  },
-  {
-    "id": 543,
-    "time": "2026-07-25T17:51:21+00:00",
-    "symbol": "ETH/USDT",
-    "price": 1874.19,
-    "action": "HOLD",
-    "conviction": 0.408,
-    "sentiment": "BEARISH",
-    "scored": true,
-    "exit_price": 1913.26,
-    "fwd_return_pct": 2.085,
-    "correct": null
-  },
-  {
-    "id": 542,
-    "time": "2026-07-25T17:51:18+00:00",
-    "symbol": "BTC/USDT",
-    "price": 64285.8,
-    "action": "HOLD",
-    "conviction": 0.25,
-    "sentiment": "BEARISH",
-    "scored": true,
-    "exit_price": 64698.6,
-    "fwd_return_pct": 0.642,
-    "correct": null
   }
 ]
