@@ -1,5 +1,31 @@
 [
   {
+    "id": 763,
+    "time": "2026-08-01T10:27:05+00:00",
+    "symbol": "ETH/USDT",
+    "price": 1865.51,
+    "action": "SELL",
+    "conviction": 0.371,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 762,
+    "time": "2026-08-01T10:27:01+00:00",
+    "symbol": "BTC/USDT",
+    "price": 63047.0,
+    "action": "SELL",
+    "conviction": 0.285,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 761,
     "time": "2026-08-01T08:04:05+00:00",
     "symbol": "ETH/USDT",
@@ -2571,32 +2597,6 @@
     "scored": true,
     "exit_price": 65205.3,
     "fwd_return_pct": 1.129,
-    "correct": null
-  },
-  {
-    "id": 563,
-    "time": "2026-07-25T23:52:34+00:00",
-    "symbol": "ETH/USDT",
-    "price": 1875.62,
-    "action": "HOLD",
-    "conviction": 0.194,
-    "sentiment": "BEARISH",
-    "scored": true,
-    "exit_price": 1955.61,
-    "fwd_return_pct": 4.265,
-    "correct": null
-  },
-  {
-    "id": 562,
-    "time": "2026-07-25T23:52:31+00:00",
-    "symbol": "BTC/USDT",
-    "price": 64396.7,
-    "action": "HOLD",
-    "conviction": 0.162,
-    "sentiment": "BEARISH",
-    "scored": true,
-    "exit_price": 65443.4,
-    "fwd_return_pct": 1.625,
     "correct": null
   }
 ]
