@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-02T20:06:40+00:00",
+  "updated": "2026-08-02T21:45:26+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,23 +9,23 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 774,
-    "directional": 531,
+    "scored": 776,
+    "directional": 533,
     "ties": 161,
     "pending": 35,
-    "hit_rate": 0.529,
-    "avg_signal_return_pct": 0.077,
-    "sample": 531,
+    "hit_rate": 0.527,
+    "avg_signal_return_pct": 0.068,
+    "sample": 533,
     "verdict": "EDGE FORMING \u2014 hit-rate > 50% and positive signal return"
   },
   "by_horizon": {
     "86400": {
       "horizon_days": 1.0,
-      "scored": 774,
-      "directional": 533,
+      "scored": 776,
+      "directional": 535,
       "ties": 241,
-      "hit_rate": 0.531,
-      "avg_signal_return_pct": 0.085
+      "hit_rate": 0.529,
+      "avg_signal_return_pct": 0.077
     },
     "259200": {
       "horizon_days": 3.0,
@@ -37,9 +37,9 @@
     },
     "604800": {
       "horizon_days": 7.0,
-      "scored": 606,
+      "scored": 608,
       "directional": 454,
-      "ties": 152,
+      "ties": 154,
       "hit_rate": 0.511,
       "avg_signal_return_pct": -0.092
     }
@@ -57,20 +57,20 @@
     {
       "symbol": "BTC/USDT",
       "horizon_days": 1.0,
-      "n": 210,
+      "n": 211,
       "wins": 107,
-      "hit_shrunk": 0.509,
-      "avg_signed_return_pct": -0.07,
-      "multiplier": 0.295
+      "hit_shrunk": 0.5067,
+      "avg_signed_return_pct": -0.077,
+      "multiplier": 0.2836
     },
     {
       "symbol": "ETH/USDT",
       "horizon_days": 1.0,
-      "n": 215,
+      "n": 216,
       "wins": 116,
-      "hit_shrunk": 0.5374,
-      "avg_signed_return_pct": -0.009,
-      "multiplier": 0.4372
+      "hit_shrunk": 0.5351,
+      "avg_signed_return_pct": -0.022,
+      "multiplier": 0.4254
     },
     {
       "symbol": "NVDA",
@@ -102,7 +102,7 @@
   ],
   "counts": {
     "predictions": 200,
-    "scored": 774,
+    "scored": 776,
     "pending": 35
   },
   "billing": {
