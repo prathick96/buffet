@@ -1,5 +1,31 @@
 [
   {
+    "id": 813,
+    "time": "2026-08-02T22:45:24+00:00",
+    "symbol": "ETH/USDT",
+    "price": 1883.58,
+    "action": "HOLD",
+    "conviction": 0.425,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 812,
+    "time": "2026-08-02T22:45:21+00:00",
+    "symbol": "BTC/USDT",
+    "price": 63519.9,
+    "action": "HOLD",
+    "conviction": 0.271,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 811,
     "time": "2026-08-02T21:45:18+00:00",
     "symbol": "ETH/USDT",
@@ -371,10 +397,10 @@
     "action": "SELL",
     "conviction": 0.505,
     "sentiment": "BEARISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 1883.58,
+    "fwd_return_pct": 1.975,
+    "correct": false
   },
   {
     "id": 782,
@@ -384,10 +410,10 @@
     "action": "BUY",
     "conviction": 0.127,
     "sentiment": "NEUTRAL",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 63519.9,
+    "fwd_return_pct": 1.062,
+    "correct": true
   },
   {
     "id": 781,
@@ -2572,31 +2598,5 @@
     "exit_price": 63400.0,
     "fwd_return_pct": -2.789,
     "correct": true
-  },
-  {
-    "id": 613,
-    "time": "2026-07-27T05:51:06+00:00",
-    "symbol": "TCS.NS",
-    "price": 2295.89990234375,
-    "action": "BUY",
-    "conviction": 0.966,
-    "sentiment": "BULLISH",
-    "scored": true,
-    "exit_price": 2395.10009765625,
-    "fwd_return_pct": 4.321,
-    "correct": true
-  },
-  {
-    "id": 612,
-    "time": "2026-07-27T05:51:05+00:00",
-    "symbol": "RELIANCE.BO",
-    "price": 1281.9000244140625,
-    "action": "HOLD",
-    "conviction": 0.19,
-    "sentiment": "BULLISH",
-    "scored": true,
-    "exit_price": 1273.800048828125,
-    "fwd_return_pct": -0.632,
-    "correct": null
   }
 ]
