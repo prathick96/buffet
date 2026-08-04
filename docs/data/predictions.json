@@ -1,5 +1,31 @@
 [
   {
+    "id": 852,
+    "time": "2026-08-04T09:33:57+00:00",
+    "symbol": "ETH/USDT",
+    "price": 1855.48,
+    "action": "SELL",
+    "conviction": 0.192,
+    "sentiment": "NEUTRAL",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 851,
+    "time": "2026-08-04T09:33:54+00:00",
+    "symbol": "BTC/USDT",
+    "price": 63558.3,
+    "action": "SELL",
+    "conviction": 0.151,
+    "sentiment": "NEUTRAL",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 850,
     "time": "2026-08-04T06:25:36+00:00",
     "symbol": "RELIANCE.BO",
@@ -358,10 +384,10 @@
     "action": "SELL",
     "conviction": 0.558,
     "sentiment": "BEARISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 1855.48,
+    "fwd_return_pct": 0.719,
+    "correct": false
   },
   {
     "id": 822,
@@ -371,10 +397,10 @@
     "action": "SELL",
     "conviction": 0.387,
     "sentiment": "BEARISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 63558.3,
+    "fwd_return_pct": 1.463,
+    "correct": false
   },
   {
     "id": 821,
@@ -2572,31 +2598,5 @@
     "exit_price": 192.7725067138672,
     "fwd_return_pct": -1.906,
     "correct": true
-  },
-  {
-    "id": 652,
-    "time": "2026-07-28T15:12:36+00:00",
-    "symbol": "AAPL",
-    "price": 339.4549865722656,
-    "action": "BUY",
-    "conviction": 0.784,
-    "sentiment": "BULLISH",
-    "scored": true,
-    "exit_price": 339.8800048828125,
-    "fwd_return_pct": 0.125,
-    "correct": null
-  },
-  {
-    "id": 651,
-    "time": "2026-07-28T15:12:34+00:00",
-    "symbol": "ETH/USDT",
-    "price": 1888.29,
-    "action": "HOLD",
-    "conviction": 0.336,
-    "sentiment": "BEARISH",
-    "scored": true,
-    "exit_price": 1895.8,
-    "fwd_return_pct": 0.398,
-    "correct": null
   }
 ]
