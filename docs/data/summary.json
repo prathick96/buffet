@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-05T01:42:30+00:00",
+  "updated": "2026-08-05T04:56:07+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,23 +9,23 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 845,
-    "directional": 574,
-    "ties": 173,
-    "pending": 27,
+    "scored": 850,
+    "directional": 576,
+    "ties": 175,
+    "pending": 26,
     "hit_rate": 0.526,
-    "avg_signal_return_pct": 0.054,
-    "sample": 574,
+    "avg_signal_return_pct": 0.053,
+    "sample": 576,
     "verdict": "EDGE FORMING \u2014 hit-rate > 50% and positive signal return"
   },
   "by_horizon": {
     "86400": {
       "horizon_days": 1.0,
-      "scored": 845,
-      "directional": 576,
-      "ties": 269,
+      "scored": 850,
+      "directional": 578,
+      "ties": 272,
       "hit_rate": 0.528,
-      "avg_signal_return_pct": 0.062
+      "avg_signal_return_pct": 0.061
     },
     "259200": {
       "horizon_days": 3.0,
@@ -37,9 +37,9 @@
     },
     "604800": {
       "horizon_days": 7.0,
-      "scored": 670,
+      "scored": 674,
       "directional": 493,
-      "ties": 177,
+      "ties": 181,
       "hit_rate": 0.509,
       "avg_signal_return_pct": -0.136
     }
@@ -57,11 +57,11 @@
     {
       "symbol": "BTC/USDT",
       "horizon_days": 1.0,
-      "n": 231,
-      "wins": 117,
-      "hit_shrunk": 0.5062,
-      "avg_signed_return_pct": -0.085,
-      "multiplier": 0.2809
+      "n": 232,
+      "wins": 118,
+      "hit_shrunk": 0.5082,
+      "avg_signed_return_pct": -0.082,
+      "multiplier": 0.291
     },
     {
       "symbol": "ETH/USDT",
@@ -93,17 +93,17 @@
     {
       "symbol": "TCS.NS",
       "horizon_days": 1.0,
-      "n": 48,
+      "n": 49,
       "wins": 30,
-      "hit_shrunk": 0.6,
-      "avg_signed_return_pct": 0.821,
-      "multiplier": 1.0
+      "hit_shrunk": 0.5902,
+      "avg_signed_return_pct": 0.786,
+      "multiplier": 0.9508
     }
   ],
   "counts": {
     "predictions": 200,
-    "scored": 845,
-    "pending": 27
+    "scored": 850,
+    "pending": 26
   },
   "billing": {
     "model": "claude-opus-4-8",
