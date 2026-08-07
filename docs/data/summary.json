@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-07T12:40:29+00:00",
+  "updated": "2026-08-07T14:05:48+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,39 +9,39 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 910,
-    "directional": 621,
-    "ties": 188,
-    "pending": 24,
-    "hit_rate": 0.522,
-    "avg_signal_return_pct": 0.042,
-    "sample": 621,
+    "scored": 912,
+    "directional": 622,
+    "ties": 189,
+    "pending": 26,
+    "hit_rate": 0.523,
+    "avg_signal_return_pct": 0.045,
+    "sample": 622,
     "verdict": "EDGE FORMING \u2014 hit-rate > 50% and positive signal return"
   },
   "by_horizon": {
     "86400": {
       "horizon_days": 1.0,
-      "scored": 910,
-      "directional": 623,
-      "ties": 287,
-      "hit_rate": 0.523,
-      "avg_signal_return_pct": 0.05
+      "scored": 912,
+      "directional": 624,
+      "ties": 288,
+      "hit_rate": 0.524,
+      "avg_signal_return_pct": 0.052
     },
     "259200": {
       "horizon_days": 3.0,
-      "scored": 857,
-      "directional": 686,
+      "scored": 861,
+      "directional": 690,
       "ties": 171,
-      "hit_rate": 0.472,
-      "avg_signal_return_pct": -0.148
+      "hit_rate": 0.474,
+      "avg_signal_return_pct": -0.136
     },
     "604800": {
       "horizon_days": 7.0,
-      "scored": 738,
-      "directional": 535,
+      "scored": 744,
+      "directional": 541,
       "ties": 203,
-      "hit_rate": 0.492,
-      "avg_signal_return_pct": -0.232
+      "hit_rate": 0.486,
+      "avg_signal_return_pct": -0.288
     }
   },
   "calibration": [
@@ -75,11 +75,11 @@
     {
       "symbol": "NVDA",
       "horizon_days": 1.0,
-      "n": 33,
-      "wins": 17,
-      "hit_shrunk": 0.5111,
-      "avg_signed_return_pct": 1.495,
-      "multiplier": 0.5556
+      "n": 34,
+      "wins": 18,
+      "hit_shrunk": 0.5217,
+      "avg_signed_return_pct": 1.499,
+      "multiplier": 0.6087
     },
     {
       "symbol": "RELIANCE.BO",
@@ -102,8 +102,8 @@
   ],
   "counts": {
     "predictions": 200,
-    "scored": 910,
-    "pending": 24
+    "scored": 912,
+    "pending": 26
   },
   "billing": {
     "model": "claude-opus-4-8",
