@@ -1,5 +1,31 @@
 [
   {
+    "id": 1044,
+    "time": "2026-08-09T22:19:47+00:00",
+    "symbol": "ETH/USDT",
+    "price": 1932.12,
+    "action": "BUY",
+    "conviction": 0.506,
+    "sentiment": "BULLISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 1043,
+    "time": "2026-08-09T22:19:44+00:00",
+    "symbol": "BTC/USDT",
+    "price": 65308.6,
+    "action": "BUY",
+    "conviction": 0.357,
+    "sentiment": "BULLISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 1042,
     "time": "2026-08-09T21:22:03+00:00",
     "symbol": "ETH/USDT",
@@ -553,10 +579,10 @@
     "action": "SELL",
     "conviction": 0.235,
     "sentiment": "BEARISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 1932.12,
+    "fwd_return_pct": 0.622,
+    "correct": false
   },
   {
     "id": 999,
@@ -566,10 +592,10 @@
     "action": "SELL",
     "conviction": 0.236,
     "sentiment": "BEARISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 65308.6,
+    "fwd_return_pct": 0.437,
+    "correct": false
   },
   {
     "id": 998,
@@ -2572,31 +2598,5 @@
     "exit_price": 2438.10009765625,
     "fwd_return_pct": -0.217,
     "correct": null
-  },
-  {
-    "id": 844,
-    "time": "2026-08-04T03:58:14+00:00",
-    "symbol": "ETH/USDT",
-    "price": 1864.81,
-    "action": "BUY",
-    "conviction": 0.115,
-    "sentiment": "NEUTRAL",
-    "scored": true,
-    "exit_price": 1867.76,
-    "fwd_return_pct": 0.158,
-    "correct": null
-  },
-  {
-    "id": 843,
-    "time": "2026-08-04T03:58:10+00:00",
-    "symbol": "BTC/USDT",
-    "price": 63805.1,
-    "action": "BUY",
-    "conviction": 0.19,
-    "sentiment": "NEUTRAL",
-    "scored": true,
-    "exit_price": 64179.7,
-    "fwd_return_pct": 0.587,
-    "correct": true
   }
 ]
