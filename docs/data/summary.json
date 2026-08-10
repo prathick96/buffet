@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-10T15:51:20+00:00",
+  "updated": "2026-08-10T16:43:24+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,31 +9,31 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 1030,
-    "directional": 664,
+    "scored": 1032,
+    "directional": 666,
     "ties": 234,
     "pending": 40,
-    "hit_rate": 0.505,
-    "avg_signal_return_pct": 0.009,
-    "sample": 664,
+    "hit_rate": 0.503,
+    "avg_signal_return_pct": 0.003,
+    "sample": 666,
     "verdict": "EDGE FORMING \u2014 hit-rate > 50% and positive signal return"
   },
   "by_horizon": {
     "86400": {
       "horizon_days": 1.0,
-      "scored": 1030,
-      "directional": 666,
+      "scored": 1032,
+      "directional": 668,
       "ties": 364,
-      "hit_rate": 0.506,
-      "avg_signal_return_pct": 0.016
+      "hit_rate": 0.504,
+      "avg_signal_return_pct": 0.01
     },
     "259200": {
       "horizon_days": 3.0,
-      "scored": 942,
-      "directional": 750,
+      "scored": 944,
+      "directional": 752,
       "ties": 192,
-      "hit_rate": 0.477,
-      "avg_signal_return_pct": -0.122
+      "hit_rate": 0.476,
+      "avg_signal_return_pct": -0.126
     },
     "604800": {
       "horizon_days": 7.0,
@@ -57,20 +57,20 @@
     {
       "symbol": "BTC/USDT",
       "horizon_days": 1.0,
-      "n": 273,
+      "n": 274,
       "wins": 131,
-      "hit_shrunk": 0.4807,
-      "avg_signed_return_pct": -0.117,
+      "hit_shrunk": 0.479,
+      "avg_signed_return_pct": -0.124,
       "multiplier": 0.25
     },
     {
       "symbol": "ETH/USDT",
       "horizon_days": 1.0,
-      "n": 265,
+      "n": 266,
       "wins": 135,
-      "hit_shrunk": 0.509,
-      "avg_signed_return_pct": -0.091,
-      "multiplier": 0.2951
+      "hit_shrunk": 0.5072,
+      "avg_signed_return_pct": -0.1,
+      "multiplier": 0.286
     },
     {
       "symbol": "NVDA",
@@ -102,7 +102,7 @@
   ],
   "counts": {
     "predictions": 200,
-    "scored": 1030,
+    "scored": 1032,
     "pending": 40
   },
   "billing": {
