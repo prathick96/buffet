@@ -1,5 +1,31 @@
 [
   {
+    "id": 1074,
+    "time": "2026-08-10T17:43:23+00:00",
+    "symbol": "ETH/USDT",
+    "price": 1876.39,
+    "action": "SELL",
+    "conviction": 0.51,
+    "sentiment": "NEUTRAL",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 1073,
+    "time": "2026-08-10T17:43:20+00:00",
+    "symbol": "BTC/USDT",
+    "price": 63986.7,
+    "action": "SELL",
+    "conviction": 0.557,
+    "sentiment": "BULLISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 1072,
     "time": "2026-08-10T16:43:14+00:00",
     "symbol": "ETH/USDT",
@@ -501,10 +527,10 @@
     "action": "BUY",
     "conviction": 0.359,
     "sentiment": "BULLISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 1876.48,
+    "fwd_return_pct": -2.492,
+    "correct": false
   },
   {
     "id": 1033,
@@ -514,10 +540,10 @@
     "action": "BUY",
     "conviction": 0.412,
     "sentiment": "BULLISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 63986.7,
+    "fwd_return_pct": -1.894,
+    "correct": false
   },
   {
     "id": 1032,
@@ -2572,31 +2598,5 @@
     "exit_price": 1301.300048828125,
     "fwd_return_pct": 0.798,
     "correct": null
-  },
-  {
-    "id": 874,
-    "time": "2026-08-05T04:55:58+00:00",
-    "symbol": "ETH/USDT",
-    "price": 1867.2,
-    "action": "SELL",
-    "conviction": 0.147,
-    "sentiment": "NEUTRAL",
-    "scored": true,
-    "exit_price": 1907.45,
-    "fwd_return_pct": 2.156,
-    "correct": false
-  },
-  {
-    "id": 873,
-    "time": "2026-08-05T04:55:55+00:00",
-    "symbol": "BTC/USDT",
-    "price": 64164.3,
-    "action": "SELL",
-    "conviction": 0.055,
-    "sentiment": "NEUTRAL",
-    "scored": true,
-    "exit_price": 64683.6,
-    "fwd_return_pct": 0.809,
-    "correct": false
   }
 ]
