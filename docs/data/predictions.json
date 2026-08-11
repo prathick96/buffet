@@ -1,5 +1,44 @@
 [
   {
+    "id": 1123,
+    "time": "2026-08-11T18:47:14+00:00",
+    "symbol": "TCS.NS",
+    "price": 2425.699951171875,
+    "action": "BUY",
+    "conviction": 0.322,
+    "sentiment": "BULLISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 1122,
+    "time": "2026-08-11T18:47:11+00:00",
+    "symbol": "ETH/USDT",
+    "price": 1863.77,
+    "action": "SELL",
+    "conviction": 0.555,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 1121,
+    "time": "2026-08-11T18:47:08+00:00",
+    "symbol": "BTC/USDT",
+    "price": 63309.4,
+    "action": "SELL",
+    "conviction": 0.638,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 1120,
     "time": "2026-08-11T17:49:08+00:00",
     "symbol": "ETH/USDT",
@@ -579,10 +618,10 @@
     "action": "SELL",
     "conviction": 0.505,
     "sentiment": "NEUTRAL",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 1863.77,
+    "fwd_return_pct": -0.4,
+    "correct": true
   },
   {
     "id": 1075,
@@ -592,10 +631,10 @@
     "action": "SELL",
     "conviction": 0.56,
     "sentiment": "BULLISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 63327.6,
+    "fwd_return_pct": -0.792,
+    "correct": true
   },
   {
     "id": 1074,
@@ -2559,44 +2598,5 @@
     "exit_price": 1916.33,
     "fwd_return_pct": 0.836,
     "correct": false
-  },
-  {
-    "id": 923,
-    "time": "2026-08-07T06:04:47+00:00",
-    "symbol": "BTC/USDT",
-    "price": 64313.4,
-    "action": "SELL",
-    "conviction": 0.224,
-    "sentiment": "BEARISH",
-    "scored": true,
-    "exit_price": 64976.0,
-    "fwd_return_pct": 1.03,
-    "correct": false
-  },
-  {
-    "id": 922,
-    "time": "2026-08-07T04:48:13+00:00",
-    "symbol": "TCS.NS",
-    "price": 2434.39990234375,
-    "action": "BUY",
-    "conviction": 0.658,
-    "sentiment": "BULLISH",
-    "scored": true,
-    "exit_price": 2465.89990234375,
-    "fwd_return_pct": 1.294,
-    "correct": true
-  },
-  {
-    "id": 921,
-    "time": "2026-08-07T04:48:12+00:00",
-    "symbol": "RELIANCE.BO",
-    "price": 1321.5,
-    "action": "HOLD",
-    "conviction": 0.1,
-    "sentiment": "NEUTRAL",
-    "scored": true,
-    "exit_price": 1327.800048828125,
-    "fwd_return_pct": 0.477,
-    "correct": null
   }
 ]
