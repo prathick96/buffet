@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-11T03:03:24+00:00",
+  "updated": "2026-08-11T04:58:42+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,39 +9,39 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 1051,
-    "directional": 685,
-    "ties": 234,
-    "pending": 41,
-    "hit_rate": 0.504,
-    "avg_signal_return_pct": 0.003,
-    "sample": 685,
+    "scored": 1054,
+    "directional": 686,
+    "ties": 235,
+    "pending": 42,
+    "hit_rate": 0.503,
+    "avg_signal_return_pct": 0.001,
+    "sample": 686,
     "verdict": "EDGE FORMING \u2014 hit-rate > 50% and positive signal return"
   },
   "by_horizon": {
     "86400": {
       "horizon_days": 1.0,
-      "scored": 1051,
-      "directional": 687,
-      "ties": 364,
-      "hit_rate": 0.505,
-      "avg_signal_return_pct": 0.01
+      "scored": 1054,
+      "directional": 688,
+      "ties": 366,
+      "hit_rate": 0.504,
+      "avg_signal_return_pct": 0.008
     },
     "259200": {
       "horizon_days": 3.0,
-      "scored": 963,
+      "scored": 965,
       "directional": 761,
-      "ties": 202,
+      "ties": 204,
       "hit_rate": 0.481,
       "avg_signal_return_pct": -0.107
     },
     "604800": {
       "horizon_days": 7.0,
-      "scored": 847,
-      "directional": 624,
-      "ties": 223,
-      "hit_rate": 0.466,
-      "avg_signal_return_pct": -0.406
+      "scored": 851,
+      "directional": 626,
+      "ties": 225,
+      "hit_rate": 0.465,
+      "avg_signal_return_pct": -0.408
     }
   },
   "calibration": [
@@ -93,17 +93,17 @@
     {
       "symbol": "TCS.NS",
       "horizon_days": 1.0,
-      "n": 56,
+      "n": 57,
       "wins": 32,
-      "hit_shrunk": 0.5588,
-      "avg_signed_return_pct": 0.584,
-      "multiplier": 0.7941
+      "hit_shrunk": 0.5507,
+      "avg_signed_return_pct": 0.551,
+      "multiplier": 0.7536
     }
   ],
   "counts": {
     "predictions": 200,
-    "scored": 1051,
-    "pending": 41
+    "scored": 1054,
+    "pending": 42
   },
   "billing": {
     "model": "claude-opus-4-8",
