@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-12T15:51:30+00:00",
+  "updated": "2026-08-12T16:46:26+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,31 +9,31 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 1118,
-    "directional": 738,
-    "ties": 242,
+    "scored": 1120,
+    "directional": 739,
+    "ties": 243,
     "pending": 38,
-    "hit_rate": 0.514,
-    "avg_signal_return_pct": 0.015,
-    "sample": 738,
+    "hit_rate": 0.513,
+    "avg_signal_return_pct": 0.013,
+    "sample": 739,
     "verdict": "EDGE FORMING \u2014 hit-rate > 50% and positive signal return"
   },
   "by_horizon": {
     "86400": {
       "horizon_days": 1.0,
-      "scored": 1118,
-      "directional": 740,
-      "ties": 378,
-      "hit_rate": 0.515,
-      "avg_signal_return_pct": 0.021
+      "scored": 1120,
+      "directional": 741,
+      "ties": 379,
+      "hit_rate": 0.514,
+      "avg_signal_return_pct": 0.019
     },
     "259200": {
       "horizon_days": 3.0,
-      "scored": 1031,
-      "directional": 809,
+      "scored": 1033,
+      "directional": 811,
       "ties": 222,
-      "hit_rate": 0.483,
-      "avg_signal_return_pct": -0.098
+      "hit_rate": 0.482,
+      "avg_signal_return_pct": -0.103
     },
     "604800": {
       "horizon_days": 7.0,
@@ -66,11 +66,11 @@
     {
       "symbol": "ETH/USDT",
       "horizon_days": 1.0,
-      "n": 298,
+      "n": 299,
       "wins": 154,
-      "hit_shrunk": 0.5161,
-      "avg_signed_return_pct": -0.073,
-      "multiplier": 0.3306
+      "hit_shrunk": 0.5145,
+      "avg_signed_return_pct": -0.078,
+      "multiplier": 0.3223
     },
     {
       "symbol": "NVDA",
@@ -102,7 +102,7 @@
   ],
   "counts": {
     "predictions": 200,
-    "scored": 1118,
+    "scored": 1120,
     "pending": 38
   },
   "billing": {
