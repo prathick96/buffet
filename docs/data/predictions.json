@@ -1,5 +1,31 @@
 [
   {
+    "id": 1190,
+    "time": "2026-08-13T11:39:43+00:00",
+    "symbol": "ETH/USDT",
+    "price": 1878.21,
+    "action": "SELL",
+    "conviction": 0.32,
+    "sentiment": "NEUTRAL",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 1189,
+    "time": "2026-08-13T11:39:39+00:00",
+    "symbol": "BTC/USDT",
+    "price": 63443.0,
+    "action": "SELL",
+    "conviction": 0.242,
+    "sentiment": "NEUTRAL",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 1188,
     "time": "2026-08-13T10:53:23+00:00",
     "symbol": "ETH/USDT",
@@ -527,10 +553,10 @@
     "action": "BUY",
     "conviction": 0.625,
     "sentiment": "BULLISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 1878.21,
+    "fwd_return_pct": -1.777,
+    "correct": false
   },
   {
     "id": 1147,
@@ -540,10 +566,10 @@
     "action": "BUY",
     "conviction": 0.454,
     "sentiment": "BULLISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 63443.0,
+    "fwd_return_pct": -1.17,
+    "correct": false
   },
   {
     "id": 1146,
@@ -2571,32 +2597,6 @@
     "scored": true,
     "exit_price": 65200.4,
     "fwd_return_pct": 0.2,
-    "correct": null
-  },
-  {
-    "id": 990,
-    "time": "2026-08-08T17:21:05+00:00",
-    "symbol": "ETH/USDT",
-    "price": 1923.1,
-    "action": "BUY",
-    "conviction": 0.259,
-    "sentiment": "BULLISH",
-    "scored": true,
-    "exit_price": 1924.44,
-    "fwd_return_pct": 0.07,
-    "correct": null
-  },
-  {
-    "id": 989,
-    "time": "2026-08-08T17:21:01+00:00",
-    "symbol": "BTC/USDT",
-    "price": 65119.9,
-    "action": "BUY",
-    "conviction": 0.259,
-    "sentiment": "BULLISH",
-    "scored": true,
-    "exit_price": 65221.8,
-    "fwd_return_pct": 0.156,
     "correct": null
   }
 ]
