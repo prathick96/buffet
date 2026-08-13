@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-13T01:06:33+00:00",
+  "updated": "2026-08-13T04:00:41+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,39 +9,39 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 1137,
-    "directional": 744,
-    "ties": 255,
-    "pending": 39,
+    "scored": 1140,
+    "directional": 745,
+    "ties": 256,
+    "pending": 40,
     "hit_rate": 0.511,
-    "avg_signal_return_pct": 0.004,
-    "sample": 744,
+    "avg_signal_return_pct": 0.006,
+    "sample": 745,
     "verdict": "EDGE FORMING \u2014 hit-rate > 50% and positive signal return"
   },
   "by_horizon": {
     "86400": {
       "horizon_days": 1.0,
-      "scored": 1137,
-      "directional": 746,
-      "ties": 391,
-      "hit_rate": 0.512,
-      "avg_signal_return_pct": 0.01
+      "scored": 1140,
+      "directional": 747,
+      "ties": 393,
+      "hit_rate": 0.513,
+      "avg_signal_return_pct": 0.013
     },
     "259200": {
       "horizon_days": 3.0,
-      "scored": 1049,
-      "directional": 827,
-      "ties": 222,
-      "hit_rate": 0.484,
-      "avg_signal_return_pct": -0.099
+      "scored": 1055,
+      "directional": 832,
+      "ties": 223,
+      "hit_rate": 0.482,
+      "avg_signal_return_pct": -0.112
     },
     "604800": {
       "horizon_days": 7.0,
-      "scored": 900,
-      "directional": 668,
-      "ties": 232,
-      "hit_rate": 0.461,
-      "avg_signal_return_pct": -0.395
+      "scored": 905,
+      "directional": 672,
+      "ties": 233,
+      "hit_rate": 0.463,
+      "avg_signal_return_pct": -0.39
     }
   },
   "calibration": [
@@ -93,17 +93,17 @@
     {
       "symbol": "TCS.NS",
       "horizon_days": 1.0,
-      "n": 61,
-      "wins": 33,
-      "hit_shrunk": 0.5342,
-      "avg_signed_return_pct": 0.4,
-      "multiplier": 0.6712
+      "n": 62,
+      "wins": 34,
+      "hit_shrunk": 0.5405,
+      "avg_signed_return_pct": 0.424,
+      "multiplier": 0.7027
     }
   ],
   "counts": {
     "predictions": 200,
-    "scored": 1137,
-    "pending": 39
+    "scored": 1140,
+    "pending": 40
   },
   "billing": {
     "model": "claude-opus-4-8",
