@@ -1,5 +1,31 @@
 [
   {
+    "id": 1200,
+    "time": "2026-08-13T16:45:11+00:00",
+    "symbol": "ETH/USDT",
+    "price": 1869.84,
+    "action": "SELL",
+    "conviction": 0.417,
+    "sentiment": "NEUTRAL",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 1199,
+    "time": "2026-08-13T16:45:08+00:00",
+    "symbol": "BTC/USDT",
+    "price": 62961.8,
+    "action": "SELL",
+    "conviction": 0.465,
+    "sentiment": "NEUTRAL",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 1198,
     "time": "2026-08-13T15:50:28+00:00",
     "symbol": "ETH/USDT",
@@ -527,10 +553,10 @@
     "action": "SELL",
     "conviction": 0.528,
     "sentiment": "BEARISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 1870.21,
+    "fwd_return_pct": -1.123,
+    "correct": true
   },
   {
     "id": 1157,
@@ -540,10 +566,10 @@
     "action": "SELL",
     "conviction": 0.577,
     "sentiment": "BEARISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 62984.7,
+    "fwd_return_pct": -0.799,
+    "correct": true
   },
   {
     "id": 1156,
@@ -2572,31 +2598,5 @@
     "exit_price": 64965.9,
     "fwd_return_pct": 0.002,
     "correct": null
-  },
-  {
-    "id": 1000,
-    "time": "2026-08-08T22:18:34+00:00",
-    "symbol": "ETH/USDT",
-    "price": 1920.18,
-    "action": "SELL",
-    "conviction": 0.235,
-    "sentiment": "BEARISH",
-    "scored": true,
-    "exit_price": 1932.12,
-    "fwd_return_pct": 0.622,
-    "correct": false
-  },
-  {
-    "id": 999,
-    "time": "2026-08-08T22:18:30+00:00",
-    "symbol": "BTC/USDT",
-    "price": 65024.4,
-    "action": "SELL",
-    "conviction": 0.236,
-    "sentiment": "BEARISH",
-    "scored": true,
-    "exit_price": 65308.6,
-    "fwd_return_pct": 0.437,
-    "correct": false
   }
 ]
