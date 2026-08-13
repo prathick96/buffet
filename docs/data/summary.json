@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-13T17:50:41+00:00",
+  "updated": "2026-08-13T18:48:44+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,28 +9,28 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 1162,
-    "directional": 758,
-    "ties": 265,
-    "pending": 40,
-    "hit_rate": 0.509,
-    "avg_signal_return_pct": 0.0,
-    "sample": 758,
-    "verdict": "no edge yet \u2014 signal not beating chance"
+    "scored": 1164,
+    "directional": 759,
+    "ties": 266,
+    "pending": 41,
+    "hit_rate": 0.51,
+    "avg_signal_return_pct": 0.001,
+    "sample": 759,
+    "verdict": "EDGE FORMING \u2014 hit-rate > 50% and positive signal return"
   },
   "by_horizon": {
     "86400": {
       "horizon_days": 1.0,
-      "scored": 1162,
-      "directional": 760,
-      "ties": 402,
+      "scored": 1164,
+      "directional": 761,
+      "ties": 403,
       "hit_rate": 0.511,
       "avg_signal_return_pct": 0.007
     },
     "259200": {
       "horizon_days": 3.0,
-      "scored": 1077,
-      "directional": 852,
+      "scored": 1079,
+      "directional": 854,
       "ties": 225,
       "hit_rate": 0.488,
       "avg_signal_return_pct": -0.092
@@ -57,10 +57,10 @@
     {
       "symbol": "BTC/USDT",
       "horizon_days": 1.0,
-      "n": 313,
-      "wins": 156,
-      "hit_shrunk": 0.4985,
-      "avg_signed_return_pct": -0.088,
+      "n": 314,
+      "wins": 157,
+      "hit_shrunk": 0.5,
+      "avg_signed_return_pct": -0.086,
       "multiplier": 0.25
     },
     {
@@ -102,8 +102,8 @@
   ],
   "counts": {
     "predictions": 200,
-    "scored": 1162,
-    "pending": 40
+    "scored": 1164,
+    "pending": 41
   },
   "billing": {
     "model": "claude-opus-4-8",
