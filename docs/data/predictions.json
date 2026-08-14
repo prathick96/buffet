@@ -1,5 +1,31 @@
 [
   {
+    "id": 1235,
+    "time": "2026-08-14T12:41:22+00:00",
+    "symbol": "ETH/USDT",
+    "price": 1875.65,
+    "action": "SELL",
+    "conviction": 0.357,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 1234,
+    "time": "2026-08-14T12:41:19+00:00",
+    "symbol": "BTC/USDT",
+    "price": 62790.5,
+    "action": "SELL",
+    "conviction": 0.489,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 1233,
     "time": "2026-08-14T11:41:45+00:00",
     "symbol": "ETH/USDT",
@@ -540,10 +566,10 @@
     "action": "SELL",
     "conviction": 0.082,
     "sentiment": "NEUTRAL",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 1875.65,
+    "fwd_return_pct": -0.622,
+    "correct": true
   },
   {
     "id": 1191,
@@ -553,10 +579,10 @@
     "action": "SELL",
     "conviction": 0.143,
     "sentiment": "NEUTRAL",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 62789.8,
+    "fwd_return_pct": -1.218,
+    "correct": true
   },
   {
     "id": 1190,
@@ -2572,31 +2598,5 @@
     "exit_price": 1871.25,
     "fwd_return_pct": -2.626,
     "correct": true
-  },
-  {
-    "id": 1035,
-    "time": "2026-08-09T18:25:08+00:00",
-    "symbol": "BTC/USDT",
-    "price": 65200.4,
-    "action": "BUY",
-    "conviction": 0.359,
-    "sentiment": "BULLISH",
-    "scored": true,
-    "exit_price": 63833.0,
-    "fwd_return_pct": -2.097,
-    "correct": false
-  },
-  {
-    "id": 1034,
-    "time": "2026-08-09T17:22:05+00:00",
-    "symbol": "ETH/USDT",
-    "price": 1924.44,
-    "action": "BUY",
-    "conviction": 0.359,
-    "sentiment": "BULLISH",
-    "scored": true,
-    "exit_price": 1876.48,
-    "fwd_return_pct": -2.492,
-    "correct": false
   }
 ]
