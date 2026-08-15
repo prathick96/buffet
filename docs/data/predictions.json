@@ -1,5 +1,44 @@
 [
   {
+    "id": 1261,
+    "time": "2026-08-15T00:39:35+00:00",
+    "symbol": "TCS.NS",
+    "price": 2361.0,
+    "action": "SELL",
+    "conviction": 0.864,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 1260,
+    "time": "2026-08-15T00:39:32+00:00",
+    "symbol": "ETH/USDT",
+    "price": 1882.3,
+    "action": "HOLD",
+    "conviction": 0.151,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 1259,
+    "time": "2026-08-15T00:39:29+00:00",
+    "symbol": "BTC/USDT",
+    "price": 63000.5,
+    "action": "BUY",
+    "conviction": 0.126,
+    "sentiment": "NEUTRAL",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 1258,
     "time": "2026-08-14T23:12:47+00:00",
     "symbol": "ETH/USDT",
@@ -137,9 +176,9 @@
     "action": "SELL",
     "conviction": 0.832,
     "sentiment": "BEARISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
+    "scored": true,
+    "exit_price": 2361.0,
+    "fwd_return_pct": -0.589,
     "correct": null
   },
   {
@@ -2558,45 +2597,6 @@
     "scored": true,
     "exit_price": 1891.53,
     "fwd_return_pct": -1.389,
-    "correct": true
-  },
-  {
-    "id": 1061,
-    "time": "2026-08-10T11:44:30+00:00",
-    "symbol": "BTC/USDT",
-    "price": 65065.0,
-    "action": "SELL",
-    "conviction": 0.225,
-    "sentiment": "BEARISH",
-    "scored": true,
-    "exit_price": 64340.6,
-    "fwd_return_pct": -1.113,
-    "correct": true
-  },
-  {
-    "id": 1060,
-    "time": "2026-08-10T10:58:09+00:00",
-    "symbol": "ETH/USDT",
-    "price": 1917.79,
-    "action": "SELL",
-    "conviction": 0.319,
-    "sentiment": "BEARISH",
-    "scored": true,
-    "exit_price": 1886.29,
-    "fwd_return_pct": -1.643,
-    "correct": true
-  },
-  {
-    "id": 1059,
-    "time": "2026-08-10T10:58:06+00:00",
-    "symbol": "BTC/USDT",
-    "price": 65008.4,
-    "action": "SELL",
-    "conviction": 0.288,
-    "sentiment": "BEARISH",
-    "scored": true,
-    "exit_price": 64270.8,
-    "fwd_return_pct": -1.135,
     "correct": true
   }
 ]
