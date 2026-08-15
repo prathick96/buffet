@@ -1,5 +1,31 @@
 [
   {
+    "id": 1267,
+    "time": "2026-08-15T04:20:32+00:00",
+    "symbol": "ETH/USDT",
+    "price": 1882.91,
+    "action": "HOLD",
+    "conviction": 0.123,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 1266,
+    "time": "2026-08-15T04:20:29+00:00",
+    "symbol": "BTC/USDT",
+    "price": 63111.6,
+    "action": "BUY",
+    "conviction": 0.207,
+    "sentiment": "NEUTRAL",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 1265,
     "time": "2026-08-15T03:30:54+00:00",
     "symbol": "ETH/USDT",
@@ -2572,31 +2598,5 @@
     "exit_price": 219.83999633789062,
     "fwd_return_pct": -0.995,
     "correct": false
-  },
-  {
-    "id": 1067,
-    "time": "2026-08-10T14:13:40+00:00",
-    "symbol": "AAPL",
-    "price": 306.1099853515625,
-    "action": "SELL",
-    "conviction": 0.789,
-    "sentiment": "BEARISH",
-    "scored": true,
-    "exit_price": 306.42999267578125,
-    "fwd_return_pct": 0.105,
-    "correct": null
-  },
-  {
-    "id": 1066,
-    "time": "2026-08-10T14:13:39+00:00",
-    "symbol": "ETH/USDT",
-    "price": 1898.25,
-    "action": "SELL",
-    "conviction": 0.437,
-    "sentiment": "NEUTRAL",
-    "scored": true,
-    "exit_price": 1889.18,
-    "fwd_return_pct": -0.478,
-    "correct": true
   }
 ]
