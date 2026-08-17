@@ -1,5 +1,31 @@
 [
   {
+    "id": 1373,
+    "time": "2026-08-17T10:22:14+00:00",
+    "symbol": "ETH/USDT",
+    "price": 1892.5,
+    "action": "SELL",
+    "conviction": 0.197,
+    "sentiment": "NEUTRAL",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 1372,
+    "time": "2026-08-17T10:22:10+00:00",
+    "symbol": "BTC/USDT",
+    "price": 63331.2,
+    "action": "SELL",
+    "conviction": 0.095,
+    "sentiment": "NEUTRAL",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 1371,
     "time": "2026-08-17T09:30:39+00:00",
     "symbol": "ETH/USDT",
@@ -605,10 +631,10 @@
     "action": "SELL",
     "conviction": 0.035,
     "sentiment": "NEUTRAL",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 1892.5,
+    "fwd_return_pct": 0.659,
+    "correct": false
   },
   {
     "id": 1324,
@@ -618,10 +644,10 @@
     "action": "SELL",
     "conviction": 0.082,
     "sentiment": "NEUTRAL",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 63333.0,
+    "fwd_return_pct": 0.568,
+    "correct": false
   },
   {
     "id": 1323,
@@ -2571,32 +2597,6 @@
     "scored": true,
     "exit_price": 2346.800048828125,
     "fwd_return_pct": -0.123,
-    "correct": null
-  },
-  {
-    "id": 1173,
-    "time": "2026-08-12T23:30:22+00:00",
-    "symbol": "ETH/USDT",
-    "price": 1876.87,
-    "action": "SELL",
-    "conviction": 0.629,
-    "sentiment": "BEARISH",
-    "scored": true,
-    "exit_price": 1886.62,
-    "fwd_return_pct": 0.519,
-    "correct": false
-  },
-  {
-    "id": 1172,
-    "time": "2026-08-12T23:30:19+00:00",
-    "symbol": "BTC/USDT",
-    "price": 63402.0,
-    "action": "SELL",
-    "conviction": 0.441,
-    "sentiment": "BEARISH",
-    "scored": true,
-    "exit_price": 63480.5,
-    "fwd_return_pct": 0.124,
     "correct": null
   }
 ]
