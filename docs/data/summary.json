@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-17T00:40:09+00:00",
+  "updated": "2026-08-17T02:14:10+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,31 +9,31 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 1302,
-    "directional": 800,
-    "ties": 343,
+    "scored": 1304,
+    "directional": 801,
+    "ties": 344,
     "pending": 51,
     "hit_rate": 0.497,
     "avg_signal_return_pct": -0.016,
-    "sample": 800,
+    "sample": 801,
     "verdict": "no edge yet \u2014 signal not beating chance"
   },
   "by_horizon": {
     "86400": {
       "horizon_days": 1.0,
-      "scored": 1302,
-      "directional": 802,
-      "ties": 500,
-      "hit_rate": 0.499,
+      "scored": 1304,
+      "directional": 803,
+      "ties": 501,
+      "hit_rate": 0.498,
       "avg_signal_return_pct": -0.01
     },
     "259200": {
       "horizon_days": 3.0,
-      "scored": 1205,
-      "directional": 937,
-      "ties": 268,
+      "scored": 1207,
+      "directional": 938,
+      "ties": 269,
       "hit_rate": 0.481,
-      "avg_signal_return_pct": -0.113
+      "avg_signal_return_pct": -0.114
     },
     "604800": {
       "horizon_days": 7.0,
@@ -66,10 +66,10 @@
     {
       "symbol": "ETH/USDT",
       "horizon_days": 1.0,
-      "n": 322,
+      "n": 323,
       "wins": 158,
-      "hit_shrunk": 0.491,
-      "avg_signed_return_pct": -0.114,
+      "hit_shrunk": 0.4896,
+      "avg_signed_return_pct": -0.115,
       "multiplier": 0.25
     },
     {
@@ -102,7 +102,7 @@
   ],
   "counts": {
     "predictions": 200,
-    "scored": 1302,
+    "scored": 1304,
     "pending": 51
   },
   "billing": {
