@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-18T09:22:46+00:00",
+  "updated": "2026-08-18T10:18:14+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,39 +9,39 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 1373,
-    "directional": 860,
-    "ties": 352,
+    "scored": 1375,
+    "directional": 861,
+    "ties": 353,
     "pending": 52,
-    "hit_rate": 0.499,
-    "avg_signal_return_pct": -0.007,
-    "sample": 860,
+    "hit_rate": 0.498,
+    "avg_signal_return_pct": -0.009,
+    "sample": 861,
     "verdict": "no edge yet \u2014 signal not beating chance"
   },
   "by_horizon": {
     "86400": {
       "horizon_days": 1.0,
-      "scored": 1373,
-      "directional": 862,
-      "ties": 511,
-      "hit_rate": 0.5,
-      "avg_signal_return_pct": -0.002
+      "scored": 1375,
+      "directional": 863,
+      "ties": 512,
+      "hit_rate": 0.499,
+      "avg_signal_return_pct": -0.004
     },
     "259200": {
       "horizon_days": 3.0,
-      "scored": 1278,
-      "directional": 984,
+      "scored": 1280,
+      "directional": 986,
       "ties": 294,
-      "hit_rate": 0.48,
-      "avg_signal_return_pct": -0.103
+      "hit_rate": 0.479,
+      "avg_signal_return_pct": -0.106
     },
     "604800": {
       "horizon_days": 7.0,
-      "scored": 1107,
-      "directional": 834,
-      "ties": 273,
+      "scored": 1109,
+      "directional": 835,
+      "ties": 274,
       "hit_rate": 0.463,
-      "avg_signal_return_pct": -0.383
+      "avg_signal_return_pct": -0.382
     }
   },
   "calibration": [
@@ -57,10 +57,10 @@
     {
       "symbol": "BTC/USDT",
       "horizon_days": 1.0,
-      "n": 368,
+      "n": 369,
       "wins": 183,
-      "hit_shrunk": 0.4974,
-      "avg_signed_return_pct": -0.07,
+      "hit_shrunk": 0.4961,
+      "avg_signed_return_pct": -0.073,
       "multiplier": 0.25
     },
     {
@@ -102,7 +102,7 @@
   ],
   "counts": {
     "predictions": 200,
-    "scored": 1373,
+    "scored": 1375,
     "pending": 52
   },
   "billing": {
