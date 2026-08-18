@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-18T21:14:22+00:00",
+  "updated": "2026-08-18T22:12:45+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,39 +9,39 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 1401,
-    "directional": 881,
+    "scored": 1403,
+    "directional": 883,
     "ties": 359,
     "pending": 51,
     "hit_rate": 0.505,
     "avg_signal_return_pct": -0.001,
-    "sample": 881,
+    "sample": 883,
     "verdict": "no edge yet \u2014 signal not beating chance"
   },
   "by_horizon": {
     "86400": {
       "horizon_days": 1.0,
-      "scored": 1401,
-      "directional": 883,
+      "scored": 1403,
+      "directional": 885,
       "ties": 518,
       "hit_rate": 0.506,
       "avg_signal_return_pct": 0.005
     },
     "259200": {
       "horizon_days": 3.0,
-      "scored": 1304,
-      "directional": 1009,
+      "scored": 1306,
+      "directional": 1011,
       "ties": 295,
-      "hit_rate": 0.485,
-      "avg_signal_return_pct": -0.08
+      "hit_rate": 0.486,
+      "avg_signal_return_pct": -0.076
     },
     "604800": {
       "horizon_days": 7.0,
-      "scored": 1131,
-      "directional": 851,
+      "scored": 1133,
+      "directional": 853,
       "ties": 280,
-      "hit_rate": 0.461,
-      "avg_signal_return_pct": -0.396
+      "hit_rate": 0.462,
+      "avg_signal_return_pct": -0.391
     }
   },
   "calibration": [
@@ -57,19 +57,19 @@
     {
       "symbol": "BTC/USDT",
       "horizon_days": 1.0,
-      "n": 380,
-      "wins": 194,
-      "hit_shrunk": 0.5102,
-      "avg_signed_return_pct": -0.045,
-      "multiplier": 0.301
+      "n": 381,
+      "wins": 195,
+      "hit_shrunk": 0.5115,
+      "avg_signed_return_pct": -0.044,
+      "multiplier": 0.3073
     },
     {
       "symbol": "ETH/USDT",
       "horizon_days": 1.0,
-      "n": 356,
+      "n": 357,
       "wins": 174,
-      "hit_shrunk": 0.4891,
-      "avg_signed_return_pct": -0.113,
+      "hit_shrunk": 0.4878,
+      "avg_signed_return_pct": -0.114,
       "multiplier": 0.25
     },
     {
@@ -102,7 +102,7 @@
   ],
   "counts": {
     "predictions": 200,
-    "scored": 1401,
+    "scored": 1403,
     "pending": 51
   },
   "billing": {
