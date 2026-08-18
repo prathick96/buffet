@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-18T00:39:57+00:00",
+  "updated": "2026-08-18T02:10:13+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,31 +9,31 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 1354,
-    "directional": 846,
+    "scored": 1356,
+    "directional": 848,
     "ties": 348,
     "pending": 51,
-    "hit_rate": 0.495,
-    "avg_signal_return_pct": -0.02,
-    "sample": 846,
+    "hit_rate": 0.496,
+    "avg_signal_return_pct": -0.017,
+    "sample": 848,
     "verdict": "no edge yet \u2014 signal not beating chance"
   },
   "by_horizon": {
     "86400": {
       "horizon_days": 1.0,
-      "scored": 1354,
-      "directional": 848,
+      "scored": 1356,
+      "directional": 850,
       "ties": 506,
-      "hit_rate": 0.496,
-      "avg_signal_return_pct": -0.014
+      "hit_rate": 0.498,
+      "avg_signal_return_pct": -0.011
     },
     "259200": {
       "horizon_days": 3.0,
-      "scored": 1262,
-      "directional": 972,
-      "ties": 290,
-      "hit_rate": 0.479,
-      "avg_signal_return_pct": -0.108
+      "scored": 1264,
+      "directional": 973,
+      "ties": 291,
+      "hit_rate": 0.48,
+      "avg_signal_return_pct": -0.106
     },
     "604800": {
       "horizon_days": 7.0,
@@ -57,19 +57,19 @@
     {
       "symbol": "BTC/USDT",
       "horizon_days": 1.0,
-      "n": 360,
-      "wins": 176,
-      "hit_shrunk": 0.4892,
-      "avg_signed_return_pct": -0.092,
+      "n": 361,
+      "wins": 177,
+      "hit_shrunk": 0.4906,
+      "avg_signed_return_pct": -0.086,
       "multiplier": 0.25
     },
     {
       "symbol": "ETH/USDT",
       "horizon_days": 1.0,
-      "n": 345,
-      "wins": 168,
-      "hit_shrunk": 0.4874,
-      "avg_signed_return_pct": -0.118,
+      "n": 346,
+      "wins": 169,
+      "hit_shrunk": 0.4888,
+      "avg_signed_return_pct": -0.116,
       "multiplier": 0.25
     },
     {
@@ -102,7 +102,7 @@
   ],
   "counts": {
     "predictions": 200,
-    "scored": 1354,
+    "scored": 1356,
     "pending": 51
   },
   "billing": {
