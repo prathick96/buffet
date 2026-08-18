@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-17T23:14:05+00:00",
+  "updated": "2026-08-18T00:39:57+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,39 +9,39 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 1351,
-    "directional": 843,
+    "scored": 1354,
+    "directional": 846,
     "ties": 348,
     "pending": 51,
-    "hit_rate": 0.496,
-    "avg_signal_return_pct": -0.017,
-    "sample": 843,
+    "hit_rate": 0.495,
+    "avg_signal_return_pct": -0.02,
+    "sample": 846,
     "verdict": "no edge yet \u2014 signal not beating chance"
   },
   "by_horizon": {
     "86400": {
       "horizon_days": 1.0,
-      "scored": 1351,
-      "directional": 845,
+      "scored": 1354,
+      "directional": 848,
       "ties": 506,
-      "hit_rate": 0.497,
-      "avg_signal_return_pct": -0.011
+      "hit_rate": 0.496,
+      "avg_signal_return_pct": -0.014
     },
     "259200": {
       "horizon_days": 3.0,
-      "scored": 1259,
-      "directional": 970,
-      "ties": 289,
-      "hit_rate": 0.478,
-      "avg_signal_return_pct": -0.112
+      "scored": 1262,
+      "directional": 972,
+      "ties": 290,
+      "hit_rate": 0.479,
+      "avg_signal_return_pct": -0.108
     },
     "604800": {
       "horizon_days": 7.0,
-      "scored": 1089,
-      "directional": 821,
+      "scored": 1091,
+      "directional": 823,
       "ties": 268,
       "hit_rate": 0.465,
-      "avg_signal_return_pct": -0.362
+      "avg_signal_return_pct": -0.363
     }
   },
   "calibration": [
@@ -57,19 +57,19 @@
     {
       "symbol": "BTC/USDT",
       "horizon_days": 1.0,
-      "n": 359,
+      "n": 360,
       "wins": 176,
-      "hit_shrunk": 0.4906,
-      "avg_signed_return_pct": -0.085,
+      "hit_shrunk": 0.4892,
+      "avg_signed_return_pct": -0.092,
       "multiplier": 0.25
     },
     {
       "symbol": "ETH/USDT",
       "horizon_days": 1.0,
-      "n": 344,
+      "n": 345,
       "wins": 168,
-      "hit_shrunk": 0.4888,
-      "avg_signed_return_pct": -0.113,
+      "hit_shrunk": 0.4874,
+      "avg_signed_return_pct": -0.118,
       "multiplier": 0.25
     },
     {
@@ -93,16 +93,16 @@
     {
       "symbol": "TCS.NS",
       "horizon_days": 1.0,
-      "n": 64,
-      "wins": 34,
-      "hit_shrunk": 0.5263,
-      "avg_signed_return_pct": 0.382,
-      "multiplier": 0.6316
+      "n": 65,
+      "wins": 35,
+      "hit_shrunk": 0.5325,
+      "avg_signed_return_pct": 0.407,
+      "multiplier": 0.6623
     }
   ],
   "counts": {
     "predictions": 200,
-    "scored": 1351,
+    "scored": 1354,
     "pending": 51
   },
   "billing": {
