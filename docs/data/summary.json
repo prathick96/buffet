@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-18T02:10:13+00:00",
+  "updated": "2026-08-18T03:36:30+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,39 +9,39 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 1356,
-    "directional": 848,
+    "scored": 1358,
+    "directional": 850,
     "ties": 348,
     "pending": 51,
     "hit_rate": 0.496,
-    "avg_signal_return_pct": -0.017,
-    "sample": 848,
+    "avg_signal_return_pct": -0.016,
+    "sample": 850,
     "verdict": "no edge yet \u2014 signal not beating chance"
   },
   "by_horizon": {
     "86400": {
       "horizon_days": 1.0,
-      "scored": 1356,
-      "directional": 850,
+      "scored": 1358,
+      "directional": 852,
       "ties": 506,
       "hit_rate": 0.498,
       "avg_signal_return_pct": -0.011
     },
     "259200": {
       "horizon_days": 3.0,
-      "scored": 1264,
-      "directional": 973,
-      "ties": 291,
+      "scored": 1266,
+      "directional": 974,
+      "ties": 292,
       "hit_rate": 0.48,
-      "avg_signal_return_pct": -0.106
+      "avg_signal_return_pct": -0.104
     },
     "604800": {
       "horizon_days": 7.0,
-      "scored": 1091,
-      "directional": 823,
-      "ties": 268,
-      "hit_rate": 0.465,
-      "avg_signal_return_pct": -0.363
+      "scored": 1093,
+      "directional": 824,
+      "ties": 269,
+      "hit_rate": 0.466,
+      "avg_signal_return_pct": -0.362
     }
   },
   "calibration": [
@@ -57,19 +57,19 @@
     {
       "symbol": "BTC/USDT",
       "horizon_days": 1.0,
-      "n": 361,
-      "wins": 177,
-      "hit_shrunk": 0.4906,
-      "avg_signed_return_pct": -0.086,
+      "n": 362,
+      "wins": 178,
+      "hit_shrunk": 0.492,
+      "avg_signed_return_pct": -0.083,
       "multiplier": 0.25
     },
     {
       "symbol": "ETH/USDT",
       "horizon_days": 1.0,
-      "n": 346,
+      "n": 347,
       "wins": 169,
-      "hit_shrunk": 0.4888,
-      "avg_signed_return_pct": -0.116,
+      "hit_shrunk": 0.4875,
+      "avg_signed_return_pct": -0.117,
       "multiplier": 0.25
     },
     {
@@ -102,7 +102,7 @@
   ],
   "counts": {
     "predictions": 200,
-    "scored": 1356,
+    "scored": 1358,
     "pending": 51
   },
   "billing": {

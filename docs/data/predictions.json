@@ -1,5 +1,31 @@
 [
   {
+    "id": 1409,
+    "time": "2026-08-18T03:36:21+00:00",
+    "symbol": "ETH/USDT",
+    "price": 1888.39,
+    "action": "SELL",
+    "conviction": 0.603,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 1408,
+    "time": "2026-08-18T03:36:18+00:00",
+    "symbol": "BTC/USDT",
+    "price": 64055.8,
+    "action": "SELL",
+    "conviction": 0.415,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 1407,
     "time": "2026-08-18T02:10:04+00:00",
     "symbol": "ETH/USDT",
@@ -657,10 +683,10 @@
     "action": "BUY",
     "conviction": 0.667,
     "sentiment": "BULLISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 1888.39,
+    "fwd_return_pct": -0.613,
+    "correct": false
   },
   {
     "id": 1356,
@@ -670,10 +696,10 @@
     "action": "BUY",
     "conviction": 0.518,
     "sentiment": "BULLISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 64055.8,
+    "fwd_return_pct": 1.118,
+    "correct": true
   },
   {
     "id": 1355,
@@ -2572,31 +2598,5 @@
     "exit_price": 62903.5,
     "fwd_return_pct": -0.903,
     "correct": false
-  },
-  {
-    "id": 1209,
-    "time": "2026-08-13T20:31:21+00:00",
-    "symbol": "ETH/USDT",
-    "price": 1887.1,
-    "action": "BUY",
-    "conviction": 0.364,
-    "sentiment": "BULLISH",
-    "scored": true,
-    "exit_price": 1879.46,
-    "fwd_return_pct": -0.405,
-    "correct": null
-  },
-  {
-    "id": 1208,
-    "time": "2026-08-13T20:31:17+00:00",
-    "symbol": "BTC/USDT",
-    "price": 63448.1,
-    "action": "SELL",
-    "conviction": 0.021,
-    "sentiment": "NEUTRAL",
-    "scored": true,
-    "exit_price": 62937.4,
-    "fwd_return_pct": -0.805,
-    "correct": true
   }
 ]
