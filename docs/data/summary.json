@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-19T11:16:58+00:00",
+  "updated": "2026-08-19T12:24:43+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,39 +9,39 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 1433,
-    "directional": 906,
+    "scored": 1435,
+    "directional": 908,
     "ties": 365,
     "pending": 52,
-    "hit_rate": 0.499,
-    "avg_signal_return_pct": -0.012,
-    "sample": 906,
+    "hit_rate": 0.5,
+    "avg_signal_return_pct": -0.011,
+    "sample": 908,
     "verdict": "no edge yet \u2014 signal not beating chance"
   },
   "by_horizon": {
     "86400": {
       "horizon_days": 1.0,
-      "scored": 1433,
-      "directional": 908,
+      "scored": 1435,
+      "directional": 910,
       "ties": 525,
-      "hit_rate": 0.5,
-      "avg_signal_return_pct": -0.007
+      "hit_rate": 0.501,
+      "avg_signal_return_pct": -0.005
     },
     "259200": {
       "horizon_days": 3.0,
-      "scored": 1330,
-      "directional": 1035,
+      "scored": 1332,
+      "directional": 1037,
       "ties": 295,
-      "hit_rate": 0.48,
-      "avg_signal_return_pct": -0.099
+      "hit_rate": 0.479,
+      "avg_signal_return_pct": -0.103
     },
     "604800": {
       "horizon_days": 7.0,
-      "scored": 1151,
-      "directional": 870,
+      "scored": 1153,
+      "directional": 872,
       "ties": 281,
-      "hit_rate": 0.471,
-      "avg_signal_return_pct": -0.358
+      "hit_rate": 0.472,
+      "avg_signal_return_pct": -0.356
     }
   },
   "calibration": [
@@ -57,19 +57,19 @@
     {
       "symbol": "BTC/USDT",
       "horizon_days": 1.0,
-      "n": 389,
-      "wins": 198,
-      "hit_shrunk": 0.5087,
-      "avg_signed_return_pct": -0.045,
-      "multiplier": 0.2936
+      "n": 390,
+      "wins": 199,
+      "hit_shrunk": 0.51,
+      "avg_signed_return_pct": -0.044,
+      "multiplier": 0.2998
     },
     {
       "symbol": "ETH/USDT",
       "horizon_days": 1.0,
-      "n": 369,
-      "wins": 176,
-      "hit_shrunk": 0.4777,
-      "avg_signed_return_pct": -0.13,
+      "n": 370,
+      "wins": 177,
+      "hit_shrunk": 0.4791,
+      "avg_signed_return_pct": -0.127,
       "multiplier": 0.25
     },
     {
@@ -102,7 +102,7 @@
   ],
   "counts": {
     "predictions": 200,
-    "scored": 1433,
+    "scored": 1435,
     "pending": 52
   },
   "billing": {
