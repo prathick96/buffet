@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-19T12:24:43+00:00",
+  "updated": "2026-08-19T13:36:53+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,67 +9,67 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 1435,
-    "directional": 908,
-    "ties": 365,
-    "pending": 52,
-    "hit_rate": 0.5,
-    "avg_signal_return_pct": -0.011,
-    "sample": 908,
+    "scored": 1441,
+    "directional": 911,
+    "ties": 368,
+    "pending": 50,
+    "hit_rate": 0.498,
+    "avg_signal_return_pct": -0.016,
+    "sample": 911,
     "verdict": "no edge yet \u2014 signal not beating chance"
   },
   "by_horizon": {
     "86400": {
       "horizon_days": 1.0,
-      "scored": 1435,
-      "directional": 910,
-      "ties": 525,
-      "hit_rate": 0.501,
-      "avg_signal_return_pct": -0.005
+      "scored": 1441,
+      "directional": 913,
+      "ties": 528,
+      "hit_rate": 0.499,
+      "avg_signal_return_pct": -0.011
     },
     "259200": {
       "horizon_days": 3.0,
-      "scored": 1332,
-      "directional": 1037,
+      "scored": 1334,
+      "directional": 1039,
       "ties": 295,
-      "hit_rate": 0.479,
-      "avg_signal_return_pct": -0.103
+      "hit_rate": 0.48,
+      "avg_signal_return_pct": -0.097
     },
     "604800": {
       "horizon_days": 7.0,
-      "scored": 1153,
-      "directional": 872,
+      "scored": 1155,
+      "directional": 874,
       "ties": 281,
-      "hit_rate": 0.472,
-      "avg_signal_return_pct": -0.356
+      "hit_rate": 0.471,
+      "avg_signal_return_pct": -0.359
     }
   },
   "calibration": [
     {
       "symbol": "AAPL",
       "horizon_days": 1.0,
-      "n": 39,
+      "n": 40,
       "wins": 20,
-      "hit_shrunk": 0.5098,
-      "avg_signed_return_pct": -0.524,
-      "multiplier": 0.299
+      "hit_shrunk": 0.5,
+      "avg_signed_return_pct": -0.548,
+      "multiplier": 0.25
     },
     {
       "symbol": "BTC/USDT",
       "horizon_days": 1.0,
-      "n": 390,
+      "n": 391,
       "wins": 199,
-      "hit_shrunk": 0.51,
-      "avg_signed_return_pct": -0.044,
-      "multiplier": 0.2998
+      "hit_shrunk": 0.5087,
+      "avg_signed_return_pct": -0.047,
+      "multiplier": 0.2934
     },
     {
       "symbol": "ETH/USDT",
       "horizon_days": 1.0,
-      "n": 370,
+      "n": 371,
       "wins": 177,
-      "hit_shrunk": 0.4791,
-      "avg_signed_return_pct": -0.127,
+      "hit_shrunk": 0.4778,
+      "avg_signed_return_pct": -0.132,
       "multiplier": 0.25
     },
     {
@@ -102,8 +102,8 @@
   ],
   "counts": {
     "predictions": 200,
-    "scored": 1435,
-    "pending": 52
+    "scored": 1441,
+    "pending": 50
   },
   "billing": {
     "model": "claude-opus-4-8",
