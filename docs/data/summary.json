@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-20T07:33:10+00:00",
+  "updated": "2026-08-20T08:25:41+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,31 +9,31 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 1479,
-    "directional": 945,
+    "scored": 1481,
+    "directional": 947,
     "ties": 371,
     "pending": 50,
     "hit_rate": 0.502,
-    "avg_signal_return_pct": 0.01,
-    "sample": 945,
+    "avg_signal_return_pct": 0.018,
+    "sample": 947,
     "verdict": "EDGE FORMING \u2014 hit-rate > 50% and positive signal return"
   },
   "by_horizon": {
     "86400": {
       "horizon_days": 1.0,
-      "scored": 1479,
-      "directional": 947,
+      "scored": 1481,
+      "directional": 949,
       "ties": 532,
       "hit_rate": 0.503,
-      "avg_signal_return_pct": 0.015
+      "avg_signal_return_pct": 0.023
     },
     "259200": {
       "horizon_days": 3.0,
-      "scored": 1372,
-      "directional": 1076,
+      "scored": 1374,
+      "directional": 1078,
       "ties": 296,
       "hit_rate": 0.491,
-      "avg_signal_return_pct": 0.06
+      "avg_signal_return_pct": 0.052
     },
     "604800": {
       "horizon_days": 7.0,
@@ -57,20 +57,20 @@
     {
       "symbol": "BTC/USDT",
       "horizon_days": 1.0,
-      "n": 408,
+      "n": 409,
       "wins": 207,
-      "hit_shrunk": 0.5071,
-      "avg_signed_return_pct": -0.119,
-      "multiplier": 0.2857
+      "hit_shrunk": 0.5059,
+      "avg_signed_return_pct": -0.145,
+      "multiplier": 0.2797
     },
     {
       "symbol": "ETH/USDT",
       "horizon_days": 1.0,
-      "n": 388,
-      "wins": 189,
-      "hit_shrunk": 0.4875,
-      "avg_signed_return_pct": 0.013,
-      "multiplier": 0.4375
+      "n": 389,
+      "wins": 190,
+      "hit_shrunk": 0.4888,
+      "avg_signed_return_pct": 0.061,
+      "multiplier": 0.4439
     },
     {
       "symbol": "NVDA",
@@ -102,7 +102,7 @@
   ],
   "counts": {
     "predictions": 200,
-    "scored": 1479,
+    "scored": 1481,
     "pending": 50
   },
   "billing": {
