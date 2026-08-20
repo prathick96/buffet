@@ -1,5 +1,31 @@
 [
   {
+    "id": 1517,
+    "time": "2026-08-20T02:11:27+00:00",
+    "symbol": "ETH/USDT",
+    "price": 2268.23,
+    "action": "BUY",
+    "conviction": 0.784,
+    "sentiment": "BULLISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 1516,
+    "time": "2026-08-20T02:11:23+00:00",
+    "symbol": "BTC/USDT",
+    "price": 69581.3,
+    "action": "BUY",
+    "conviction": 0.547,
+    "sentiment": "BULLISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 1515,
     "time": "2026-08-20T00:39:38+00:00",
     "symbol": "TCS.NS",
@@ -709,10 +735,10 @@
     "action": "SELL",
     "conviction": 0.261,
     "sentiment": "BEARISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 2268.23,
+    "fwd_return_pct": 18.638,
+    "correct": false
   },
   {
     "id": 1460,
@@ -722,10 +748,10 @@
     "action": "SELL",
     "conviction": 0.398,
     "sentiment": "BEARISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 69581.3,
+    "fwd_return_pct": 8.107,
+    "correct": false
   },
   {
     "id": 1459,
@@ -2571,32 +2597,6 @@
     "scored": true,
     "exit_price": 63558.5,
     "fwd_return_pct": 0.79,
-    "correct": false
-  },
-  {
-    "id": 1317,
-    "time": "2026-08-16T06:22:33+00:00",
-    "symbol": "ETH/USDT",
-    "price": 1879.18,
-    "action": "SELL",
-    "conviction": 0.1,
-    "sentiment": "NEUTRAL",
-    "scored": true,
-    "exit_price": 1900.77,
-    "fwd_return_pct": 1.149,
-    "correct": false
-  },
-  {
-    "id": 1316,
-    "time": "2026-08-16T06:22:30+00:00",
-    "symbol": "BTC/USDT",
-    "price": 63048.9,
-    "action": "SELL",
-    "conviction": 0.047,
-    "sentiment": "NEUTRAL",
-    "scored": true,
-    "exit_price": 63584.7,
-    "fwd_return_pct": 0.85,
     "correct": false
   }
 ]
