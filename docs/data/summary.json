@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-21T05:23:53+00:00",
+  "updated": "2026-08-21T06:28:47+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,31 +9,31 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 1527,
-    "directional": 988,
+    "scored": 1529,
+    "directional": 990,
     "ties": 375,
     "pending": 50,
     "hit_rate": 0.52,
-    "avg_signal_return_pct": 0.364,
-    "sample": 988,
+    "avg_signal_return_pct": 0.367,
+    "sample": 990,
     "verdict": "EDGE FORMING \u2014 hit-rate > 50% and positive signal return"
   },
   "by_horizon": {
     "86400": {
       "horizon_days": 1.0,
-      "scored": 1527,
-      "directional": 990,
+      "scored": 1529,
+      "directional": 992,
       "ties": 537,
       "hit_rate": 0.521,
-      "avg_signal_return_pct": 0.368
+      "avg_signal_return_pct": 0.371
     },
     "259200": {
       "horizon_days": 3.0,
-      "scored": 1422,
-      "directional": 1124,
+      "scored": 1424,
+      "directional": 1126,
       "ties": 298,
       "hit_rate": 0.493,
-      "avg_signal_return_pct": 0.141
+      "avg_signal_return_pct": 0.134
     },
     "604800": {
       "horizon_days": 7.0,
@@ -57,20 +57,20 @@
     {
       "symbol": "BTC/USDT",
       "horizon_days": 1.0,
-      "n": 429,
-      "wins": 226,
-      "hit_shrunk": 0.5261,
-      "avg_signed_return_pct": 0.19,
-      "multiplier": 0.6304
+      "n": 430,
+      "wins": 227,
+      "hit_shrunk": 0.5271,
+      "avg_signed_return_pct": 0.209,
+      "multiplier": 0.6357
     },
     {
       "symbol": "ETH/USDT",
       "horizon_days": 1.0,
-      "n": 409,
+      "n": 410,
       "wins": 209,
-      "hit_shrunk": 0.5107,
-      "avg_signed_return_pct": 0.546,
-      "multiplier": 0.5534
+      "hit_shrunk": 0.5095,
+      "avg_signed_return_pct": 0.532,
+      "multiplier": 0.5474
     },
     {
       "symbol": "NVDA",
@@ -102,7 +102,7 @@
   ],
   "counts": {
     "predictions": 200,
-    "scored": 1527,
+    "scored": 1529,
     "pending": 50
   },
   "billing": {
