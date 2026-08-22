@@ -1,5 +1,31 @@
 [
   {
+    "id": 1663,
+    "time": "2026-08-22T23:11:36+00:00",
+    "symbol": "ETH/USDT",
+    "price": 2415.41,
+    "action": "SELL",
+    "conviction": 0.138,
+    "sentiment": "NEUTRAL",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 1662,
+    "time": "2026-08-22T23:11:33+00:00",
+    "symbol": "BTC/USDT",
+    "price": 77001.7,
+    "action": "SELL",
+    "conviction": 0.115,
+    "sentiment": "NEUTRAL",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 1661,
     "time": "2026-08-22T22:12:13+00:00",
     "symbol": "ETH/USDT",
@@ -592,10 +618,10 @@
     "action": "BUY",
     "conviction": 0.878,
     "sentiment": "BULLISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 2415.41,
+    "fwd_return_pct": -4.299,
+    "correct": false
   },
   {
     "id": 1615,
@@ -605,10 +631,10 @@
     "action": "BUY",
     "conviction": 0.762,
     "sentiment": "BULLISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 77001.7,
+    "fwd_return_pct": -1.929,
+    "correct": false
   },
   {
     "id": 1614,
@@ -2572,31 +2598,5 @@
     "exit_price": 2289.0,
     "fwd_return_pct": 0.395,
     "correct": null
-  },
-  {
-    "id": 1463,
-    "time": "2026-08-19T03:38:28+00:00",
-    "symbol": "ETH/USDT",
-    "price": 1911.15,
-    "action": "SELL",
-    "conviction": 0.271,
-    "sentiment": "BEARISH",
-    "scored": true,
-    "exit_price": 2247.76,
-    "fwd_return_pct": 17.613,
-    "correct": false
-  },
-  {
-    "id": 1462,
-    "time": "2026-08-19T03:38:24+00:00",
-    "symbol": "BTC/USDT",
-    "price": 64340.4,
-    "action": "SELL",
-    "conviction": 0.388,
-    "sentiment": "BEARISH",
-    "scored": true,
-    "exit_price": 69115.3,
-    "fwd_return_pct": 7.421,
-    "correct": false
   }
 ]
