@@ -1,5 +1,31 @@
 [
   {
+    "id": 1671,
+    "time": "2026-08-23T04:27:35+00:00",
+    "symbol": "ETH/USDT",
+    "price": 2411.06,
+    "action": "SELL",
+    "conviction": 0.244,
+    "sentiment": "NEUTRAL",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 1670,
+    "time": "2026-08-23T04:27:32+00:00",
+    "symbol": "BTC/USDT",
+    "price": 76889.8,
+    "action": "SELL",
+    "conviction": 0.166,
+    "sentiment": "NEUTRAL",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 1669,
     "time": "2026-08-23T03:41:51+00:00",
     "symbol": "ETH/USDT",
@@ -579,10 +605,10 @@
     "action": "BUY",
     "conviction": 0.564,
     "sentiment": "BULLISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 2411.06,
+    "fwd_return_pct": -3.959,
+    "correct": false
   },
   {
     "id": 1624,
@@ -592,10 +618,10 @@
     "action": "BUY",
     "conviction": 0.498,
     "sentiment": "BULLISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 76889.8,
+    "fwd_return_pct": -1.91,
+    "correct": false
   },
   {
     "id": 1623,
@@ -2571,32 +2597,6 @@
     "scored": true,
     "exit_price": 2251.84,
     "fwd_return_pct": 17.777,
-    "correct": false
-  },
-  {
-    "id": 1471,
-    "time": "2026-08-19T06:26:17+00:00",
-    "symbol": "BTC/USDT",
-    "price": 64297.4,
-    "action": "SELL",
-    "conviction": 0.327,
-    "sentiment": "BEARISH",
-    "scored": true,
-    "exit_price": 69663.6,
-    "fwd_return_pct": 8.346,
-    "correct": false
-  },
-  {
-    "id": 1470,
-    "time": "2026-08-19T05:20:57+00:00",
-    "symbol": "AAPL",
-    "price": 305.5899963378906,
-    "action": "SELL",
-    "conviction": 0.55,
-    "sentiment": "BEARISH",
-    "scored": true,
-    "exit_price": 310.0299987792969,
-    "fwd_return_pct": 1.453,
     "correct": false
   }
 ]
