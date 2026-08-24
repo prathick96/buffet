@@ -1,5 +1,31 @@
 [
   {
+    "id": 1743,
+    "time": "2026-08-24T15:30:06+00:00",
+    "symbol": "ETH/USDT",
+    "price": 2523.22,
+    "action": "BUY",
+    "conviction": 0.744,
+    "sentiment": "BULLISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 1742,
+    "time": "2026-08-24T15:30:03+00:00",
+    "symbol": "BTC/USDT",
+    "price": 79909.9,
+    "action": "BUY",
+    "conviction": 0.773,
+    "sentiment": "BULLISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 1741,
     "time": "2026-08-24T14:32:33+00:00",
     "symbol": "ETH/USDT",
@@ -631,10 +657,10 @@
     "action": "BUY",
     "conviction": 0.636,
     "sentiment": "BULLISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 2522.24,
+    "fwd_return_pct": 3.453,
+    "correct": true
   },
   {
     "id": 1692,
@@ -644,10 +670,10 @@
     "action": "BUY",
     "conviction": 0.577,
     "sentiment": "BULLISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 79822.9,
+    "fwd_return_pct": 3.342,
+    "correct": true
   },
   {
     "id": 1691,
@@ -2572,31 +2598,5 @@
     "exit_price": 77042.2,
     "fwd_return_pct": 7.504,
     "correct": true
-  },
-  {
-    "id": 1543,
-    "time": "2026-08-20T13:38:49+00:00",
-    "symbol": "NVDA",
-    "price": 219.5850067138672,
-    "action": "SELL",
-    "conviction": 0.425,
-    "sentiment": "NEUTRAL",
-    "scored": true,
-    "exit_price": 217.5399932861328,
-    "fwd_return_pct": -0.931,
-    "correct": true
-  },
-  {
-    "id": 1542,
-    "time": "2026-08-20T13:38:49+00:00",
-    "symbol": "AAPL",
-    "price": 317.32000732421875,
-    "action": "BUY",
-    "conviction": 0.785,
-    "sentiment": "BULLISH",
-    "scored": true,
-    "exit_price": 308.7300109863281,
-    "fwd_return_pct": -2.707,
-    "correct": false
   }
 ]
