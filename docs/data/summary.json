@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-25T10:21:57+00:00",
+  "updated": "2026-08-25T11:18:03+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,39 +9,39 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 1732,
-    "directional": 1131,
-    "ties": 436,
+    "scored": 1734,
+    "directional": 1132,
+    "ties": 437,
     "pending": 50,
     "hit_rate": 0.538,
-    "avg_signal_return_pct": 0.512,
-    "sample": 1131,
+    "avg_signal_return_pct": 0.513,
+    "sample": 1132,
     "verdict": "EDGE FORMING \u2014 hit-rate > 50% and positive signal return"
   },
   "by_horizon": {
     "86400": {
       "horizon_days": 1.0,
-      "scored": 1732,
-      "directional": 1133,
-      "ties": 599,
-      "hit_rate": 0.538,
-      "avg_signal_return_pct": 0.516
+      "scored": 1734,
+      "directional": 1134,
+      "ties": 600,
+      "hit_rate": 0.539,
+      "avg_signal_return_pct": 0.517
     },
     "259200": {
       "horizon_days": 3.0,
-      "scored": 1638,
-      "directional": 1317,
+      "scored": 1640,
+      "directional": 1319,
       "ties": 321,
-      "hit_rate": 0.523,
-      "avg_signal_return_pct": 0.731
+      "hit_rate": 0.522,
+      "avg_signal_return_pct": 0.725
     },
     "604800": {
       "horizon_days": 7.0,
-      "scored": 1431,
-      "directional": 1123,
+      "scored": 1433,
+      "directional": 1125,
       "ties": 308,
-      "hit_rate": 0.473,
-      "avg_signal_return_pct": -0.244
+      "hit_rate": 0.474,
+      "avg_signal_return_pct": -0.196
     }
   },
   "calibration": [
@@ -57,11 +57,11 @@
     {
       "symbol": "BTC/USDT",
       "horizon_days": 1.0,
-      "n": 492,
-      "wins": 272,
-      "hit_shrunk": 0.5516,
-      "avg_signed_return_pct": 0.496,
-      "multiplier": 0.7579
+      "n": 493,
+      "wins": 273,
+      "hit_shrunk": 0.5525,
+      "avg_signed_return_pct": 0.498,
+      "multiplier": 0.7624
     },
     {
       "symbol": "ETH/USDT",
@@ -102,7 +102,7 @@
   ],
   "counts": {
     "predictions": 200,
-    "scored": 1732,
+    "scored": 1734,
     "pending": 50
   },
   "billing": {
