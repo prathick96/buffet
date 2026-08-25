@@ -1,5 +1,31 @@
 [
   {
+    "id": 1794,
+    "time": "2026-08-25T15:33:37+00:00",
+    "symbol": "ETH/USDT",
+    "price": 2471.53,
+    "action": "SELL",
+    "conviction": 0.427,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 1793,
+    "time": "2026-08-25T15:33:33+00:00",
+    "symbol": "BTC/USDT",
+    "price": 79261.8,
+    "action": "SELL",
+    "conviction": 0.375,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 1792,
     "time": "2026-08-25T14:35:17+00:00",
     "symbol": "ETH/USDT",
@@ -644,10 +670,10 @@
     "action": "BUY",
     "conviction": 0.744,
     "sentiment": "BULLISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 2471.53,
+    "fwd_return_pct": -2.049,
+    "correct": false
   },
   {
     "id": 1742,
@@ -657,10 +683,10 @@
     "action": "BUY",
     "conviction": 0.773,
     "sentiment": "BULLISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 79261.8,
+    "fwd_return_pct": -0.811,
+    "correct": false
   },
   {
     "id": 1741,
@@ -2572,31 +2598,5 @@
     "exit_price": 211.09010314941406,
     "fwd_return_pct": -2.965,
     "correct": true
-  },
-  {
-    "id": 1594,
-    "time": "2026-08-21T13:37:58+00:00",
-    "symbol": "AAPL",
-    "price": 308.7300109863281,
-    "action": "BUY",
-    "conviction": 0.346,
-    "sentiment": "BULLISH",
-    "scored": true,
-    "exit_price": 311.7200927734375,
-    "fwd_return_pct": 0.969,
-    "correct": true
-  },
-  {
-    "id": 1593,
-    "time": "2026-08-21T13:37:57+00:00",
-    "symbol": "ETH/USDT",
-    "price": 2381.65,
-    "action": "SELL",
-    "conviction": 0.072,
-    "sentiment": "NEUTRAL",
-    "scored": true,
-    "exit_price": 2426.84,
-    "fwd_return_pct": 1.897,
-    "correct": false
   }
 ]
