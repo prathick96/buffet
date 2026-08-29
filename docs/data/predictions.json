@@ -1,5 +1,44 @@
 [
   {
+    "id": 1879,
+    "time": "2026-08-29T14:48:46+00:00",
+    "symbol": "TCS.NS",
+    "price": 2342.0,
+    "action": "BUY",
+    "conviction": 0.865,
+    "sentiment": "BULLISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 1878,
+    "time": "2026-08-29T14:48:42+00:00",
+    "symbol": "ETH/USDT",
+    "price": 2449.44,
+    "action": "BUY",
+    "conviction": 0.474,
+    "sentiment": "BULLISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 1877,
+    "time": "2026-08-29T14:48:39+00:00",
+    "symbol": "BTC/USDT",
+    "price": 78096.0,
+    "action": "BUY",
+    "conviction": 0.405,
+    "sentiment": "NEUTRAL",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 1876,
     "time": "2026-08-29T09:34:05+00:00",
     "symbol": "NVDA",
@@ -85,10 +124,10 @@
     "action": "SELL",
     "conviction": 0.768,
     "sentiment": "BEARISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 2342.0,
+    "fwd_return_pct": 4.163,
+    "correct": false
   },
   {
     "id": 1869,
@@ -2558,45 +2597,6 @@
     "scored": true,
     "exit_price": 77431.9,
     "fwd_return_pct": 1.149,
-    "correct": false
-  },
-  {
-    "id": 1679,
-    "time": "2026-08-23T08:18:24+00:00",
-    "symbol": "ETH/USDT",
-    "price": 2410.43,
-    "action": "BUY",
-    "conviction": 0.412,
-    "sentiment": "BULLISH",
-    "scored": true,
-    "exit_price": 2444.32,
-    "fwd_return_pct": 1.406,
-    "correct": true
-  },
-  {
-    "id": 1678,
-    "time": "2026-08-23T08:18:21+00:00",
-    "symbol": "BTC/USDT",
-    "price": 76263.4,
-    "action": "SELL",
-    "conviction": 0.279,
-    "sentiment": "NEUTRAL",
-    "scored": true,
-    "exit_price": 77042.9,
-    "fwd_return_pct": 1.022,
-    "correct": false
-  },
-  {
-    "id": 1677,
-    "time": "2026-08-23T07:25:26+00:00",
-    "symbol": "ETH/USDT",
-    "price": 2394.99,
-    "action": "SELL",
-    "conviction": 0.26,
-    "sentiment": "NEUTRAL",
-    "scored": true,
-    "exit_price": 2457.85,
-    "fwd_return_pct": 2.625,
     "correct": false
   }
 ]
