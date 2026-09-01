@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-01T00:12:28+00:00",
+  "updated": "2026-09-01T05:52:31+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,39 +9,39 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 1899,
-    "directional": 1247,
+    "scored": 1902,
+    "directional": 1249,
     "ties": 484,
-    "pending": 13,
+    "pending": 14,
     "hit_rate": 0.528,
-    "avg_signal_return_pct": 0.422,
-    "sample": 1247,
+    "avg_signal_return_pct": 0.424,
+    "sample": 1249,
     "verdict": "EDGE FORMING \u2014 hit-rate > 50% and positive signal return"
   },
   "by_horizon": {
     "86400": {
       "horizon_days": 1.0,
-      "scored": 1899,
-      "directional": 1249,
-      "ties": 650,
-      "hit_rate": 0.528,
-      "avg_signal_return_pct": 0.425
+      "scored": 1902,
+      "directional": 1251,
+      "ties": 651,
+      "hit_rate": 0.529,
+      "avg_signal_return_pct": 0.427
     },
     "259200": {
       "horizon_days": 3.0,
-      "scored": 1875,
-      "directional": 1511,
+      "scored": 1878,
+      "directional": 1514,
       "ties": 364,
       "hit_rate": 0.51,
       "avg_signal_return_pct": 0.57
     },
     "604800": {
       "horizon_days": 7.0,
-      "scored": 1764,
-      "directional": 1379,
+      "scored": 1775,
+      "directional": 1390,
       "ties": 385,
-      "hit_rate": 0.5,
-      "avg_signal_return_pct": 0.664
+      "hit_rate": 0.496,
+      "avg_signal_return_pct": 0.644
     }
   },
   "calibration": [
@@ -93,17 +93,17 @@
     {
       "symbol": "TCS.NS",
       "horizon_days": 1.0,
-      "n": 79,
-      "wins": 44,
-      "hit_shrunk": 0.5495,
-      "avg_signed_return_pct": 0.356,
-      "multiplier": 0.7473
+      "n": 81,
+      "wins": 46,
+      "hit_shrunk": 0.5591,
+      "avg_signed_return_pct": 0.389,
+      "multiplier": 0.7957
     }
   ],
   "counts": {
     "predictions": 200,
-    "scored": 1899,
-    "pending": 13
+    "scored": 1902,
+    "pending": 14
   },
   "billing": {
     "model": "claude-opus-4-8",
