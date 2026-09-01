@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-31T20:29:34+00:00",
+  "updated": "2026-09-01T00:12:28+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,23 +9,23 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 1895,
-    "directional": 1244,
-    "ties": 483,
-    "pending": 15,
-    "hit_rate": 0.529,
-    "avg_signal_return_pct": 0.426,
-    "sample": 1244,
+    "scored": 1899,
+    "directional": 1247,
+    "ties": 484,
+    "pending": 13,
+    "hit_rate": 0.528,
+    "avg_signal_return_pct": 0.422,
+    "sample": 1247,
     "verdict": "EDGE FORMING \u2014 hit-rate > 50% and positive signal return"
   },
   "by_horizon": {
     "86400": {
       "horizon_days": 1.0,
-      "scored": 1895,
-      "directional": 1246,
-      "ties": 649,
-      "hit_rate": 0.53,
-      "avg_signal_return_pct": 0.43
+      "scored": 1899,
+      "directional": 1249,
+      "ties": 650,
+      "hit_rate": 0.528,
+      "avg_signal_return_pct": 0.425
     },
     "259200": {
       "horizon_days": 3.0,
@@ -37,9 +37,9 @@
     },
     "604800": {
       "horizon_days": 7.0,
-      "scored": 1756,
+      "scored": 1764,
       "directional": 1379,
-      "ties": 377,
+      "ties": 385,
       "hit_rate": 0.5,
       "avg_signal_return_pct": 0.664
     }
@@ -57,20 +57,20 @@
     {
       "symbol": "BTC/USDT",
       "horizon_days": 1.0,
-      "n": 536,
+      "n": 538,
       "wins": 291,
-      "hit_shrunk": 0.542,
-      "avg_signed_return_pct": 0.432,
-      "multiplier": 0.7099
+      "hit_shrunk": 0.54,
+      "avg_signed_return_pct": 0.427,
+      "multiplier": 0.7
     },
     {
       "symbol": "ETH/USDT",
       "horizon_days": 1.0,
-      "n": 533,
+      "n": 534,
       "wins": 275,
-      "hit_shrunk": 0.5156,
-      "avg_signed_return_pct": 0.489,
-      "multiplier": 0.578
+      "hit_shrunk": 0.5147,
+      "avg_signed_return_pct": 0.483,
+      "multiplier": 0.5733
     },
     {
       "symbol": "NVDA",
@@ -102,13 +102,13 @@
   ],
   "counts": {
     "predictions": 200,
-    "scored": 1895,
-    "pending": 15
+    "scored": 1899,
+    "pending": 13
   },
   "billing": {
     "model": "claude-opus-4-8",
     "budget_usd": 20.0,
-    "month": "2026-08",
+    "month": "2026-09",
     "cost_usd": 0.0,
     "calls": 0,
     "input_tokens": 0,
