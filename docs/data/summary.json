@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-03T00:52:04+00:00",
+  "updated": "2026-09-03T05:21:12+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,39 +9,39 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 1931,
-    "directional": 1270,
-    "ties": 489,
-    "pending": 21,
+    "scored": 1938,
+    "directional": 1272,
+    "ties": 493,
+    "pending": 20,
     "hit_rate": 0.531,
-    "avg_signal_return_pct": 0.428,
-    "sample": 1270,
+    "avg_signal_return_pct": 0.429,
+    "sample": 1272,
     "verdict": "EDGE FORMING \u2014 hit-rate > 50% and positive signal return"
   },
   "by_horizon": {
     "86400": {
       "horizon_days": 1.0,
-      "scored": 1931,
-      "directional": 1272,
-      "ties": 659,
+      "scored": 1938,
+      "directional": 1274,
+      "ties": 664,
       "hit_rate": 0.531,
-      "avg_signal_return_pct": 0.431
+      "avg_signal_return_pct": 0.432
     },
     "259200": {
       "horizon_days": 3.0,
-      "scored": 1900,
+      "scored": 1903,
       "directional": 1533,
-      "ties": 367,
+      "ties": 370,
       "hit_rate": 0.508,
       "avg_signal_return_pct": 0.557
     },
     "604800": {
       "horizon_days": 7.0,
-      "scored": 1852,
-      "directional": 1464,
+      "scored": 1856,
+      "directional": 1468,
       "ties": 388,
-      "hit_rate": 0.499,
-      "avg_signal_return_pct": 0.611
+      "hit_rate": 0.497,
+      "avg_signal_return_pct": 0.601
     }
   },
   "calibration": [
@@ -57,11 +57,11 @@
     {
       "symbol": "BTC/USDT",
       "horizon_days": 1.0,
-      "n": 544,
+      "n": 545,
       "wins": 295,
-      "hit_shrunk": 0.5414,
-      "avg_signed_return_pct": 0.426,
-      "multiplier": 0.7068
+      "hit_shrunk": 0.5404,
+      "avg_signed_return_pct": 0.424,
+      "multiplier": 0.702
     },
     {
       "symbol": "ETH/USDT",
@@ -75,11 +75,11 @@
     {
       "symbol": "NVDA",
       "horizon_days": 1.0,
-      "n": 49,
-      "wins": 24,
-      "hit_shrunk": 0.4918,
-      "avg_signed_return_pct": 0.744,
-      "multiplier": 0.459
+      "n": 50,
+      "wins": 25,
+      "hit_shrunk": 0.5,
+      "avg_signed_return_pct": 0.794,
+      "multiplier": 0.5
     },
     {
       "symbol": "RELIANCE.BO",
@@ -102,8 +102,8 @@
   ],
   "counts": {
     "predictions": 200,
-    "scored": 1931,
-    "pending": 21
+    "scored": 1938,
+    "pending": 20
   },
   "billing": {
     "model": "claude-opus-4-8",
