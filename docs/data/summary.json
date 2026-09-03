@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-02T22:09:36+00:00",
+  "updated": "2026-09-03T00:52:04+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,31 +9,31 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 1928,
-    "directional": 1268,
+    "scored": 1931,
+    "directional": 1270,
     "ties": 489,
-    "pending": 19,
+    "pending": 21,
     "hit_rate": 0.531,
     "avg_signal_return_pct": 0.428,
-    "sample": 1268,
+    "sample": 1270,
     "verdict": "EDGE FORMING \u2014 hit-rate > 50% and positive signal return"
   },
   "by_horizon": {
     "86400": {
       "horizon_days": 1.0,
-      "scored": 1928,
-      "directional": 1270,
-      "ties": 658,
+      "scored": 1931,
+      "directional": 1272,
+      "ties": 659,
       "hit_rate": 0.531,
       "avg_signal_return_pct": 0.431
     },
     "259200": {
       "horizon_days": 3.0,
-      "scored": 1898,
-      "directional": 1531,
+      "scored": 1900,
+      "directional": 1533,
       "ties": 367,
       "hit_rate": 0.508,
-      "avg_signal_return_pct": 0.556
+      "avg_signal_return_pct": 0.557
     },
     "604800": {
       "horizon_days": 7.0,
@@ -66,11 +66,11 @@
     {
       "symbol": "ETH/USDT",
       "horizon_days": 1.0,
-      "n": 542,
-      "wins": 281,
-      "hit_shrunk": 0.5181,
-      "avg_signed_return_pct": 0.488,
-      "multiplier": 0.5903
+      "n": 543,
+      "wins": 282,
+      "hit_shrunk": 0.5189,
+      "avg_signed_return_pct": 0.489,
+      "multiplier": 0.5946
     },
     {
       "symbol": "NVDA",
@@ -93,17 +93,17 @@
     {
       "symbol": "TCS.NS",
       "horizon_days": 1.0,
-      "n": 82,
+      "n": 83,
       "wins": 46,
-      "hit_shrunk": 0.5532,
-      "avg_signed_return_pct": 0.369,
-      "multiplier": 0.766
+      "hit_shrunk": 0.5474,
+      "avg_signed_return_pct": 0.354,
+      "multiplier": 0.7368
     }
   ],
   "counts": {
     "predictions": 200,
-    "scored": 1928,
-    "pending": 19
+    "scored": 1931,
+    "pending": 21
   },
   "billing": {
     "model": "claude-opus-4-8",
