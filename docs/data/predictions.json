@@ -1,5 +1,44 @@
 [
   {
+    "id": 1991,
+    "time": "2026-09-04T19:13:12+00:00",
+    "symbol": "TCS.NS",
+    "price": 2320.10009765625,
+    "action": "BUY",
+    "conviction": 0.337,
+    "sentiment": "BULLISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 1990,
+    "time": "2026-09-04T19:13:08+00:00",
+    "symbol": "ETH/USDT",
+    "price": 2452.11,
+    "action": "SELL",
+    "conviction": 0.487,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 1989,
+    "time": "2026-09-04T19:13:05+00:00",
+    "symbol": "BTC/USDT",
+    "price": 79688.8,
+    "action": "SELL",
+    "conviction": 0.289,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 1988,
     "time": "2026-09-04T16:39:53+00:00",
     "symbol": "NVDA",
@@ -293,10 +332,10 @@
     "action": "BUY",
     "conviction": 0.776,
     "sentiment": "BULLISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 2450.49,
+    "fwd_return_pct": -2.401,
+    "correct": false
   },
   {
     "id": 1965,
@@ -306,10 +345,10 @@
     "action": "BUY",
     "conviction": 0.771,
     "sentiment": "BULLISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 79654.9,
+    "fwd_return_pct": -1.965,
+    "correct": false
   },
   {
     "id": 1964,
@@ -2559,44 +2598,5 @@
     "exit_price": 2450.96,
     "fwd_return_pct": -1.081,
     "correct": true
-  },
-  {
-    "id": 1791,
-    "time": "2026-08-25T14:35:14+00:00",
-    "symbol": "BTC/USDT",
-    "price": 79229.0,
-    "action": "SELL",
-    "conviction": 0.504,
-    "sentiment": "BEARISH",
-    "scored": true,
-    "exit_price": 78181.8,
-    "fwd_return_pct": -1.322,
-    "correct": true
-  },
-  {
-    "id": 1790,
-    "time": "2026-08-25T13:40:43+00:00",
-    "symbol": "NVDA",
-    "price": 212.1999969482422,
-    "action": "SELL",
-    "conviction": 0.597,
-    "sentiment": "NEUTRAL",
-    "scored": true,
-    "exit_price": 213.10000610351562,
-    "fwd_return_pct": 0.424,
-    "correct": null
-  },
-  {
-    "id": 1789,
-    "time": "2026-08-25T13:40:42+00:00",
-    "symbol": "AAPL",
-    "price": 310.82501220703125,
-    "action": "BUY",
-    "conviction": 0.629,
-    "sentiment": "BULLISH",
-    "scored": true,
-    "exit_price": 311.4100036621094,
-    "fwd_return_pct": 0.188,
-    "correct": null
   }
 ]
