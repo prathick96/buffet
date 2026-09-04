@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-04T21:57:03+00:00",
+  "updated": "2026-09-04T23:38:20+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,31 +9,31 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 1974,
-    "directional": 1303,
+    "scored": 1976,
+    "directional": 1305,
     "ties": 495,
     "pending": 19,
-    "hit_rate": 0.527,
-    "avg_signal_return_pct": 0.402,
-    "sample": 1303,
+    "hit_rate": 0.526,
+    "avg_signal_return_pct": 0.398,
+    "sample": 1305,
     "verdict": "EDGE FORMING \u2014 hit-rate > 50% and positive signal return"
   },
   "by_horizon": {
     "86400": {
       "horizon_days": 1.0,
-      "scored": 1974,
-      "directional": 1305,
+      "scored": 1976,
+      "directional": 1307,
       "ties": 669,
-      "hit_rate": 0.528,
-      "avg_signal_return_pct": 0.405
+      "hit_rate": 0.527,
+      "avg_signal_return_pct": 0.401
     },
     "259200": {
       "horizon_days": 3.0,
-      "scored": 1931,
-      "directional": 1558,
-      "ties": 373,
-      "hit_rate": 0.506,
-      "avg_signal_return_pct": 0.544
+      "scored": 1933,
+      "directional": 1559,
+      "ties": 374,
+      "hit_rate": 0.505,
+      "avg_signal_return_pct": 0.543
     },
     "604800": {
       "horizon_days": 7.0,
@@ -57,20 +57,20 @@
     {
       "symbol": "BTC/USDT",
       "horizon_days": 1.0,
-      "n": 555,
+      "n": 556,
       "wins": 298,
-      "hit_shrunk": 0.5362,
-      "avg_signed_return_pct": 0.403,
-      "multiplier": 0.6808
+      "hit_shrunk": 0.5352,
+      "avg_signed_return_pct": 0.399,
+      "multiplier": 0.6761
     },
     {
       "symbol": "ETH/USDT",
       "horizon_days": 1.0,
-      "n": 553,
+      "n": 554,
       "wins": 284,
-      "hit_shrunk": 0.5133,
-      "avg_signed_return_pct": 0.449,
-      "multiplier": 0.5664
+      "hit_shrunk": 0.5124,
+      "avg_signed_return_pct": 0.444,
+      "multiplier": 0.5618
     },
     {
       "symbol": "NVDA",
@@ -102,7 +102,7 @@
   ],
   "counts": {
     "predictions": 200,
-    "scored": 1974,
+    "scored": 1976,
     "pending": 19
   },
   "billing": {
