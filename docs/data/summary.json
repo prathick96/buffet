@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-05T21:48:03+00:00",
+  "updated": "2026-09-05T23:27:47+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,39 +9,39 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 1989,
-    "directional": 1314,
-    "ties": 499,
+    "scored": 1991,
+    "directional": 1315,
+    "ties": 500,
     "pending": 21,
     "hit_rate": 0.526,
-    "avg_signal_return_pct": 0.394,
-    "sample": 1314,
+    "avg_signal_return_pct": 0.395,
+    "sample": 1315,
     "verdict": "EDGE FORMING \u2014 hit-rate > 50% and positive signal return"
   },
   "by_horizon": {
     "86400": {
       "horizon_days": 1.0,
-      "scored": 1989,
-      "directional": 1316,
-      "ties": 673,
+      "scored": 1991,
+      "directional": 1317,
+      "ties": 674,
       "hit_rate": 0.527,
-      "avg_signal_return_pct": 0.397
+      "avg_signal_return_pct": 0.398
     },
     "259200": {
       "horizon_days": 3.0,
-      "scored": 1943,
-      "directional": 1567,
+      "scored": 1945,
+      "directional": 1569,
       "ties": 376,
       "hit_rate": 0.505,
-      "avg_signal_return_pct": 0.54
+      "avg_signal_return_pct": 0.534
     },
     "604800": {
       "horizon_days": 7.0,
-      "scored": 1886,
-      "directional": 1493,
+      "scored": 1888,
+      "directional": 1495,
       "ties": 393,
-      "hit_rate": 0.497,
-      "avg_signal_return_pct": 0.598
+      "hit_rate": 0.498,
+      "avg_signal_return_pct": 0.599
     }
   },
   "calibration": [
@@ -66,11 +66,11 @@
     {
       "symbol": "ETH/USDT",
       "horizon_days": 1.0,
-      "n": 559,
-      "wins": 286,
-      "hit_shrunk": 0.5114,
-      "avg_signed_return_pct": 0.437,
-      "multiplier": 0.5569
+      "n": 560,
+      "wins": 287,
+      "hit_shrunk": 0.5122,
+      "avg_signed_return_pct": 0.438,
+      "multiplier": 0.5612
     },
     {
       "symbol": "NVDA",
@@ -102,7 +102,7 @@
   ],
   "counts": {
     "predictions": 200,
-    "scored": 1989,
+    "scored": 1991,
     "pending": 21
   },
   "billing": {
