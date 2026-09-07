@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-07T13:09:13+00:00",
+  "updated": "2026-09-07T18:29:38+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,39 +9,39 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 2016,
-    "directional": 1326,
-    "ties": 513,
-    "pending": 20,
-    "hit_rate": 0.527,
+    "scored": 2020,
+    "directional": 1328,
+    "ties": 515,
+    "pending": 18,
+    "hit_rate": 0.528,
     "avg_signal_return_pct": 0.395,
-    "sample": 1326,
+    "sample": 1328,
     "verdict": "EDGE FORMING \u2014 hit-rate > 50% and positive signal return"
   },
   "by_horizon": {
     "86400": {
       "horizon_days": 1.0,
-      "scored": 2016,
-      "directional": 1328,
-      "ties": 688,
-      "hit_rate": 0.528,
+      "scored": 2020,
+      "directional": 1330,
+      "ties": 690,
+      "hit_rate": 0.529,
       "avg_signal_return_pct": 0.398
     },
     "259200": {
       "horizon_days": 3.0,
-      "scored": 1976,
-      "directional": 1591,
+      "scored": 1978,
+      "directional": 1593,
       "ties": 385,
       "hit_rate": 0.501,
-      "avg_signal_return_pct": 0.505
+      "avg_signal_return_pct": 0.504
     },
     "604800": {
       "horizon_days": 7.0,
-      "scored": 1905,
-      "directional": 1508,
+      "scored": 1907,
+      "directional": 1510,
       "ties": 397,
       "hit_rate": 0.497,
-      "avg_signal_return_pct": 0.588
+      "avg_signal_return_pct": 0.587
     }
   },
   "calibration": [
@@ -57,11 +57,11 @@
     {
       "symbol": "BTC/USDT",
       "horizon_days": 1.0,
-      "n": 560,
-      "wins": 300,
-      "hit_shrunk": 0.535,
+      "n": 562,
+      "wins": 302,
+      "hit_shrunk": 0.5366,
       "avg_signed_return_pct": 0.398,
-      "multiplier": 0.6748
+      "multiplier": 0.6829
     },
     {
       "symbol": "ETH/USDT",
@@ -102,8 +102,8 @@
   ],
   "counts": {
     "predictions": 200,
-    "scored": 2016,
-    "pending": 20
+    "scored": 2020,
+    "pending": 18
   },
   "billing": {
     "model": "claude-opus-4-8",
