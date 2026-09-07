@@ -1,5 +1,57 @@
 [
   {
+    "id": 2034,
+    "time": "2026-09-07T06:48:04+00:00",
+    "symbol": "TCS.NS",
+    "price": 2272.60009765625,
+    "action": "SELL",
+    "conviction": 0.664,
+    "sentiment": "BULLISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 2033,
+    "time": "2026-09-07T06:48:04+00:00",
+    "symbol": "RELIANCE.BO",
+    "price": 1310.949951171875,
+    "action": "HOLD",
+    "conviction": 0.19,
+    "sentiment": "BULLISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 2032,
+    "time": "2026-09-07T06:48:01+00:00",
+    "symbol": "ETH/USDT",
+    "price": 2500.07,
+    "action": "SELL",
+    "conviction": 0.137,
+    "sentiment": "NEUTRAL",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 2031,
+    "time": "2026-09-07T06:47:58+00:00",
+    "symbol": "BTC/USDT",
+    "price": 79679.0,
+    "action": "SELL",
+    "conviction": 0.172,
+    "sentiment": "NEUTRAL",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 2030,
     "time": "2026-09-07T01:53:21+00:00",
     "symbol": "ETH/USDT",
@@ -189,9 +241,9 @@
     "action": "BUY",
     "conviction": 0.586,
     "sentiment": "BULLISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
+    "scored": true,
+    "exit_price": 2499.38,
+    "fwd_return_pct": -0.333,
     "correct": null
   },
   {
@@ -202,9 +254,9 @@
     "action": "SELL",
     "conviction": 0.143,
     "sentiment": "BULLISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
+    "scored": true,
+    "exit_price": 79679.0,
+    "fwd_return_pct": -0.179,
     "correct": null
   },
   {
@@ -423,10 +475,10 @@
     "action": "SELL",
     "conviction": 0.326,
     "sentiment": "NEUTRAL",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 2272.60009765625,
+    "fwd_return_pct": -1.363,
+    "correct": true
   },
   {
     "id": 1997,
@@ -605,9 +657,9 @@
     "action": "HOLD",
     "conviction": 0.1,
     "sentiment": "NEUTRAL",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
+    "scored": true,
+    "exit_price": 1310.949951171875,
+    "fwd_return_pct": -0.836,
     "correct": null
   },
   {
@@ -670,10 +722,10 @@
     "action": "SELL",
     "conviction": 0.236,
     "sentiment": "BEARISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 2272.60009765625,
+    "fwd_return_pct": -1.946,
+    "correct": true
   },
   {
     "id": 1978,
@@ -2546,57 +2598,5 @@
     "exit_price": 2501.51,
     "fwd_return_pct": 1.428,
     "correct": null
-  },
-  {
-    "id": 1834,
-    "time": "2026-08-26T11:20:22+00:00",
-    "symbol": "BTC/USDT",
-    "price": 78673.0,
-    "action": "SELL",
-    "conviction": 0.506,
-    "sentiment": "BEARISH",
-    "scored": true,
-    "exit_price": 79482.3,
-    "fwd_return_pct": 1.029,
-    "correct": false
-  },
-  {
-    "id": 1833,
-    "time": "2026-08-26T10:24:57+00:00",
-    "symbol": "ETH/USDT",
-    "price": 2452.86,
-    "action": "SELL",
-    "conviction": 0.504,
-    "sentiment": "BEARISH",
-    "scored": true,
-    "exit_price": 2503.65,
-    "fwd_return_pct": 2.071,
-    "correct": false
-  },
-  {
-    "id": 1832,
-    "time": "2026-08-26T10:24:54+00:00",
-    "symbol": "BTC/USDT",
-    "price": 78577.2,
-    "action": "SELL",
-    "conviction": 0.572,
-    "sentiment": "BEARISH",
-    "scored": true,
-    "exit_price": 79594.4,
-    "fwd_return_pct": 1.295,
-    "correct": false
-  },
-  {
-    "id": 1831,
-    "time": "2026-08-26T09:31:00+00:00",
-    "symbol": "ETH/USDT",
-    "price": 2450.7,
-    "action": "SELL",
-    "conviction": 0.458,
-    "sentiment": "BEARISH",
-    "scored": true,
-    "exit_price": 2533.64,
-    "fwd_return_pct": 3.384,
-    "correct": false
   }
 ]
