@@ -1,5 +1,70 @@
 [
   {
+    "id": 2066,
+    "time": "2026-09-09T00:52:17+00:00",
+    "symbol": "TCS.NS",
+    "price": 2255.5,
+    "action": "SELL",
+    "conviction": 0.781,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 2065,
+    "time": "2026-09-09T00:52:15+00:00",
+    "symbol": "NVDA",
+    "price": 230.36000061035156,
+    "action": "BUY",
+    "conviction": 0.79,
+    "sentiment": "BULLISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 2064,
+    "time": "2026-09-09T00:52:14+00:00",
+    "symbol": "AAPL",
+    "price": 319.9700012207031,
+    "action": "BUY",
+    "conviction": 0.477,
+    "sentiment": "BULLISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 2063,
+    "time": "2026-09-09T00:52:12+00:00",
+    "symbol": "ETH/USDT",
+    "price": 2494.64,
+    "action": "BUY",
+    "conviction": 0.259,
+    "sentiment": "NEUTRAL",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 2062,
+    "time": "2026-09-09T00:52:09+00:00",
+    "symbol": "BTC/USDT",
+    "price": 78761.6,
+    "action": "BUY",
+    "conviction": 0.242,
+    "sentiment": "NEUTRAL",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 2061,
     "time": "2026-09-08T22:10:22+00:00",
     "symbol": "ETH/USDT",
@@ -33,10 +98,10 @@
     "action": "SELL",
     "conviction": 0.859,
     "sentiment": "BEARISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 2255.5,
+    "fwd_return_pct": -0.639,
+    "correct": true
   },
   {
     "id": 2058,
@@ -241,9 +306,9 @@
     "action": "HOLD",
     "conviction": 0.19,
     "sentiment": "BEARISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
+    "scored": true,
+    "exit_price": 2484.82,
+    "fwd_return_pct": -0.333,
     "correct": null
   },
   {
@@ -254,9 +319,9 @@
     "action": "HOLD",
     "conviction": 0.108,
     "sentiment": "BEARISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
+    "scored": true,
+    "exit_price": 78458.5,
+    "fwd_return_pct": -0.891,
     "correct": null
   },
   {
@@ -2533,70 +2598,5 @@
     "exit_price": 2453.46,
     "fwd_return_pct": 0.741,
     "correct": false
-  },
-  {
-    "id": 1866,
-    "time": "2026-08-28T19:47:08+00:00",
-    "symbol": "BTC/USDT",
-    "price": 77492.6,
-    "action": "SELL",
-    "conviction": 0.821,
-    "sentiment": "BEARISH",
-    "scored": true,
-    "exit_price": 78168.7,
-    "fwd_return_pct": 0.872,
-    "correct": false
-  },
-  {
-    "id": 1865,
-    "time": "2026-08-28T07:55:24+00:00",
-    "symbol": "TCS.NS",
-    "price": 2340.0,
-    "action": "BUY",
-    "conviction": 0.862,
-    "sentiment": "BULLISH",
-    "scored": true,
-    "exit_price": 2325.39990234375,
-    "fwd_return_pct": -0.624,
-    "correct": false
-  },
-  {
-    "id": 1864,
-    "time": "2026-08-28T07:55:23+00:00",
-    "symbol": "RELIANCE.BO",
-    "price": 1283.0,
-    "action": "HOLD",
-    "conviction": 0.1,
-    "sentiment": "NEUTRAL",
-    "scored": true,
-    "exit_price": 1282.0999755859375,
-    "fwd_return_pct": -0.07,
-    "correct": null
-  },
-  {
-    "id": 1863,
-    "time": "2026-08-28T07:55:20+00:00",
-    "symbol": "ETH/USDT",
-    "price": 2496.23,
-    "action": "SELL",
-    "conviction": 0.405,
-    "sentiment": "BEARISH",
-    "scored": true,
-    "exit_price": 2436.44,
-    "fwd_return_pct": -2.395,
-    "correct": true
-  },
-  {
-    "id": 1862,
-    "time": "2026-08-28T07:55:17+00:00",
-    "symbol": "BTC/USDT",
-    "price": 79636.1,
-    "action": "SELL",
-    "conviction": 0.559,
-    "sentiment": "BEARISH",
-    "scored": true,
-    "exit_price": 77625.4,
-    "fwd_return_pct": -2.525,
-    "correct": true
   }
 ]

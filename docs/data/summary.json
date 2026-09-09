@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-08T22:10:32+00:00",
+  "updated": "2026-09-09T00:52:22+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,39 +9,39 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 2042,
-    "directional": 1344,
+    "scored": 2045,
+    "directional": 1345,
     "ties": 520,
-    "pending": 19,
+    "pending": 21,
     "hit_rate": 0.528,
     "avg_signal_return_pct": 0.388,
-    "sample": 1344,
+    "sample": 1345,
     "verdict": "EDGE FORMING \u2014 hit-rate > 50% and positive signal return"
   },
   "by_horizon": {
     "86400": {
       "horizon_days": 1.0,
-      "scored": 2042,
-      "directional": 1346,
-      "ties": 696,
-      "hit_rate": 0.528,
-      "avg_signal_return_pct": 0.39
+      "scored": 2045,
+      "directional": 1347,
+      "ties": 698,
+      "hit_rate": 0.529,
+      "avg_signal_return_pct": 0.391
     },
     "259200": {
       "horizon_days": 3.0,
-      "scored": 2011,
-      "directional": 1617,
-      "ties": 394,
-      "hit_rate": 0.497,
-      "avg_signal_return_pct": 0.478
+      "scored": 2013,
+      "directional": 1618,
+      "ties": 395,
+      "hit_rate": 0.498,
+      "avg_signal_return_pct": 0.479
     },
     "604800": {
       "horizon_days": 7.0,
-      "scored": 1931,
-      "directional": 1531,
-      "ties": 400,
+      "scored": 1933,
+      "directional": 1532,
+      "ties": 401,
       "hit_rate": 0.493,
-      "avg_signal_return_pct": 0.564
+      "avg_signal_return_pct": 0.562
     }
   },
   "calibration": [
@@ -93,17 +93,17 @@
     {
       "symbol": "TCS.NS",
       "horizon_days": 1.0,
-      "n": 89,
-      "wins": 49,
-      "hit_shrunk": 0.5446,
-      "avg_signed_return_pct": 0.354,
-      "multiplier": 0.7228
+      "n": 90,
+      "wins": 50,
+      "hit_shrunk": 0.549,
+      "avg_signed_return_pct": 0.357,
+      "multiplier": 0.7451
     }
   ],
   "counts": {
     "predictions": 200,
-    "scored": 2042,
-    "pending": 19
+    "scored": 2045,
+    "pending": 21
   },
   "billing": {
     "model": "claude-opus-4-8",
