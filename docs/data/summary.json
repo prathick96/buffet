@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-13T21:56:24+00:00",
+  "updated": "2026-09-13T23:48:56+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,39 +9,39 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 2139,
-    "directional": 1406,
-    "ties": 548,
+    "scored": 2141,
+    "directional": 1407,
+    "ties": 549,
     "pending": 21,
     "hit_rate": 0.525,
-    "avg_signal_return_pct": 0.366,
-    "sample": 1406,
+    "avg_signal_return_pct": 0.368,
+    "sample": 1407,
     "verdict": "EDGE FORMING \u2014 hit-rate > 50% and positive signal return"
   },
   "by_horizon": {
     "86400": {
       "horizon_days": 1.0,
-      "scored": 2139,
-      "directional": 1408,
-      "ties": 731,
+      "scored": 2141,
+      "directional": 1409,
+      "ties": 732,
       "hit_rate": 0.526,
-      "avg_signal_return_pct": 0.369
+      "avg_signal_return_pct": 0.37
     },
     "259200": {
       "horizon_days": 3.0,
-      "scored": 2091,
-      "directional": 1683,
+      "scored": 2093,
+      "directional": 1685,
       "ties": 408,
-      "hit_rate": 0.498,
+      "hit_rate": 0.499,
       "avg_signal_return_pct": 0.455
     },
     "604800": {
       "horizon_days": 7.0,
-      "scored": 2029,
-      "directional": 1615,
+      "scored": 2031,
+      "directional": 1617,
       "ties": 414,
-      "hit_rate": 0.486,
-      "avg_signal_return_pct": 0.474
+      "hit_rate": 0.485,
+      "avg_signal_return_pct": 0.47
     }
   },
   "calibration": [
@@ -66,11 +66,11 @@
     {
       "symbol": "ETH/USDT",
       "horizon_days": 1.0,
-      "n": 596,
-      "wins": 305,
-      "hit_shrunk": 0.5115,
-      "avg_signed_return_pct": 0.402,
-      "multiplier": 0.5576
+      "n": 597,
+      "wins": 306,
+      "hit_shrunk": 0.5123,
+      "avg_signed_return_pct": 0.405,
+      "multiplier": 0.5616
     },
     {
       "symbol": "NVDA",
@@ -102,7 +102,7 @@
   ],
   "counts": {
     "predictions": 200,
-    "scored": 2139,
+    "scored": 2141,
     "pending": 21
   },
   "billing": {
