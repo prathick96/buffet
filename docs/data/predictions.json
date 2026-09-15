@@ -1,5 +1,31 @@
 [
   {
+    "id": 2186,
+    "time": "2026-09-15T17:56:58+00:00",
+    "symbol": "ETH/USDT",
+    "price": 2438.41,
+    "action": "SELL",
+    "conviction": 0.529,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 2185,
+    "time": "2026-09-15T17:56:55+00:00",
+    "symbol": "BTC/USDT",
+    "price": 77001.0,
+    "action": "BUY",
+    "conviction": 0.392,
+    "sentiment": "BULLISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 2184,
     "time": "2026-09-15T13:59:12+00:00",
     "symbol": "NVDA",
@@ -215,10 +241,10 @@
     "action": "SELL",
     "conviction": 0.463,
     "sentiment": "BEARISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 2425.14,
+    "fwd_return_pct": -3.132,
+    "correct": true
   },
   {
     "id": 2167,
@@ -228,10 +254,10 @@
     "action": "BUY",
     "conviction": 0.431,
     "sentiment": "NEUTRAL",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 76570.1,
+    "fwd_return_pct": -2.435,
+    "correct": false
   },
   {
     "id": 2166,
@@ -2572,31 +2598,5 @@
     "exit_price": 316.06500244140625,
     "fwd_return_pct": -1.507,
     "correct": false
-  },
-  {
-    "id": 1986,
-    "time": "2026-09-04T16:39:52+00:00",
-    "symbol": "ETH/USDT",
-    "price": 2457.14,
-    "action": "SELL",
-    "conviction": 0.49,
-    "sentiment": "NEUTRAL",
-    "scored": true,
-    "exit_price": 2472.26,
-    "fwd_return_pct": 0.615,
-    "correct": null
-  },
-  {
-    "id": 1985,
-    "time": "2026-09-04T16:39:48+00:00",
-    "symbol": "BTC/USDT",
-    "price": 79726.9,
-    "action": "SELL",
-    "conviction": 0.329,
-    "sentiment": "NEUTRAL",
-    "scored": true,
-    "exit_price": 80044.1,
-    "fwd_return_pct": 0.398,
-    "correct": null
   }
 ]
