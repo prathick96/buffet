@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-18T02:11:41+00:00",
+  "updated": "2026-09-18T07:45:11+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,39 +9,39 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 2211,
-    "directional": 1461,
+    "scored": 2215,
+    "directional": 1464,
     "ties": 563,
-    "pending": 19,
+    "pending": 20,
     "hit_rate": 0.525,
-    "avg_signal_return_pct": 0.358,
-    "sample": 1461,
+    "avg_signal_return_pct": 0.36,
+    "sample": 1464,
     "verdict": "EDGE FORMING \u2014 hit-rate > 50% and positive signal return"
   },
   "by_horizon": {
     "86400": {
       "horizon_days": 1.0,
-      "scored": 2211,
-      "directional": 1463,
-      "ties": 748,
+      "scored": 2215,
+      "directional": 1466,
+      "ties": 749,
       "hit_rate": 0.526,
-      "avg_signal_return_pct": 0.36
+      "avg_signal_return_pct": 0.363
     },
     "259200": {
       "horizon_days": 3.0,
-      "scored": 2177,
-      "directional": 1755,
+      "scored": 2180,
+      "directional": 1758,
       "ties": 422,
       "hit_rate": 0.495,
-      "avg_signal_return_pct": 0.412
+      "avg_signal_return_pct": 0.414
     },
     "604800": {
       "horizon_days": 7.0,
-      "scored": 2111,
-      "directional": 1669,
+      "scored": 2116,
+      "directional": 1674,
       "ties": 442,
-      "hit_rate": 0.487,
-      "avg_signal_return_pct": 0.449
+      "hit_rate": 0.489,
+      "avg_signal_return_pct": 0.455
     }
   },
   "calibration": [
@@ -75,11 +75,11 @@
     {
       "symbol": "NVDA",
       "horizon_days": 1.0,
-      "n": 67,
+      "n": 68,
       "wins": 31,
-      "hit_shrunk": 0.4684,
-      "avg_signed_return_pct": 0.558,
-      "multiplier": 0.3418
+      "hit_shrunk": 0.4625,
+      "avg_signed_return_pct": 0.512,
+      "multiplier": 0.3125
     },
     {
       "symbol": "RELIANCE.BO",
@@ -93,17 +93,17 @@
     {
       "symbol": "TCS.NS",
       "horizon_days": 1.0,
-      "n": 100,
-      "wins": 56,
-      "hit_shrunk": 0.5536,
-      "avg_signed_return_pct": 0.344,
-      "multiplier": 0.7679
+      "n": 102,
+      "wins": 58,
+      "hit_shrunk": 0.5614,
+      "avg_signed_return_pct": 0.406,
+      "multiplier": 0.807
     }
   ],
   "counts": {
     "predictions": 200,
-    "scored": 2211,
-    "pending": 19
+    "scored": 2215,
+    "pending": 20
   },
   "billing": {
     "model": "claude-opus-4-8",
