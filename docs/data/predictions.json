@@ -1,5 +1,31 @@
 [
   {
+    "id": 2257,
+    "time": "2026-09-19T09:57:26+00:00",
+    "symbol": "ETH/USDT",
+    "price": 2642.37,
+    "action": "HOLD",
+    "conviction": 0.401,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 2256,
+    "time": "2026-09-19T09:57:23+00:00",
+    "symbol": "BTC/USDT",
+    "price": 81323.2,
+    "action": "HOLD",
+    "conviction": 0.161,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 2255,
     "time": "2026-09-19T05:17:39+00:00",
     "symbol": "NVDA",
@@ -306,10 +332,10 @@
     "action": "BUY",
     "conviction": 0.638,
     "sentiment": "BULLISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 2627.27,
+    "fwd_return_pct": 5.429,
+    "correct": true
   },
   {
     "id": 2231,
@@ -319,10 +345,10 @@
     "action": "BUY",
     "conviction": 0.641,
     "sentiment": "BULLISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 81119.1,
+    "fwd_return_pct": 4.202,
+    "correct": true
   },
   {
     "id": 2230,
@@ -2571,32 +2597,6 @@
     "scored": true,
     "exit_price": 2464.76,
     "fwd_return_pct": -0.834,
-    "correct": false
-  },
-  {
-    "id": 2057,
-    "time": "2026-09-08T19:40:07+00:00",
-    "symbol": "BTC/USDT",
-    "price": 78466.3,
-    "action": "SELL",
-    "conviction": 0.216,
-    "sentiment": "BEARISH",
-    "scored": true,
-    "exit_price": 78219.9,
-    "fwd_return_pct": -0.314,
-    "correct": true
-  },
-  {
-    "id": 2056,
-    "time": "2026-09-08T16:55:13+00:00",
-    "symbol": "NVDA",
-    "price": 225.97999572753906,
-    "action": "BUY",
-    "conviction": 0.678,
-    "sentiment": "NEUTRAL",
-    "scored": true,
-    "exit_price": 224.1999969482422,
-    "fwd_return_pct": -0.788,
     "correct": false
   }
 ]
