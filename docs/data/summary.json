@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-20T02:23:11+00:00",
+  "updated": "2026-09-20T08:04:13+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,39 +9,39 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 2246,
-    "directional": 1484,
+    "scored": 2248,
+    "directional": 1485,
     "ties": 568,
     "pending": 23,
     "hit_rate": 0.528,
-    "avg_signal_return_pct": 0.371,
-    "sample": 1484,
+    "avg_signal_return_pct": 0.372,
+    "sample": 1485,
     "verdict": "EDGE FORMING \u2014 hit-rate > 50% and positive signal return"
   },
   "by_horizon": {
     "86400": {
       "horizon_days": 1.0,
-      "scored": 2246,
-      "directional": 1486,
-      "ties": 760,
-      "hit_rate": 0.528,
+      "scored": 2248,
+      "directional": 1487,
+      "ties": 761,
+      "hit_rate": 0.529,
       "avg_signal_return_pct": 0.374
     },
     "259200": {
       "horizon_days": 3.0,
-      "scored": 2206,
-      "directional": 1783,
-      "ties": 423,
-      "hit_rate": 0.492,
-      "avg_signal_return_pct": 0.367
+      "scored": 2208,
+      "directional": 1784,
+      "ties": 424,
+      "hit_rate": 0.493,
+      "avg_signal_return_pct": 0.37
     },
     "604800": {
       "horizon_days": 7.0,
-      "scored": 2148,
-      "directional": 1702,
+      "scored": 2150,
+      "directional": 1704,
       "ties": 446,
-      "hit_rate": 0.488,
-      "avg_signal_return_pct": 0.432
+      "hit_rate": 0.487,
+      "avg_signal_return_pct": 0.427
     }
   },
   "calibration": [
@@ -57,11 +57,11 @@
     {
       "symbol": "BTC/USDT",
       "horizon_days": 1.0,
-      "n": 617,
-      "wins": 331,
-      "hit_shrunk": 0.5358,
-      "avg_signed_return_pct": 0.367,
-      "multiplier": 0.6789
+      "n": 618,
+      "wins": 332,
+      "hit_shrunk": 0.5365,
+      "avg_signed_return_pct": 0.368,
+      "multiplier": 0.6825
     },
     {
       "symbol": "ETH/USDT",
@@ -102,7 +102,7 @@
   ],
   "counts": {
     "predictions": 200,
-    "scored": 2246,
+    "scored": 2248,
     "pending": 23
   },
   "billing": {

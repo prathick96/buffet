@@ -1,5 +1,31 @@
 [
   {
+    "id": 2271,
+    "time": "2026-09-20T08:04:04+00:00",
+    "symbol": "ETH/USDT",
+    "price": 2582.54,
+    "action": "SELL",
+    "conviction": 0.43,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 2270,
+    "time": "2026-09-20T08:04:01+00:00",
+    "symbol": "BTC/USDT",
+    "price": 80430.5,
+    "action": "SELL",
+    "conviction": 0.35,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 2269,
     "time": "2026-09-20T02:23:03+00:00",
     "symbol": "ETH/USDT",
@@ -215,9 +241,9 @@
     "action": "HOLD",
     "conviction": 0.171,
     "sentiment": "BEARISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
+    "scored": true,
+    "exit_price": 2578.4,
+    "fwd_return_pct": -1.793,
     "correct": null
   },
   {
@@ -228,10 +254,10 @@
     "action": "SELL",
     "conviction": 0.476,
     "sentiment": "BEARISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 80490.7,
+    "fwd_return_pct": -0.684,
+    "correct": true
   },
   {
     "id": 2251,
@@ -2572,31 +2598,5 @@
     "exit_price": 2192.800048828125,
     "fwd_return_pct": -0.386,
     "correct": null
-  },
-  {
-    "id": 2071,
-    "time": "2026-09-09T05:33:23+00:00",
-    "symbol": "RELIANCE.BO",
-    "price": 1284.300048828125,
-    "action": "HOLD",
-    "conviction": 0.1,
-    "sentiment": "NEUTRAL",
-    "scored": true,
-    "exit_price": 1275.0,
-    "fwd_return_pct": -0.724,
-    "correct": null
-  },
-  {
-    "id": 2070,
-    "time": "2026-09-09T05:33:23+00:00",
-    "symbol": "NVDA",
-    "price": 225.72999572753906,
-    "action": "BUY",
-    "conviction": 0.763,
-    "sentiment": "BULLISH",
-    "scored": true,
-    "exit_price": 224.1999969482422,
-    "fwd_return_pct": -0.678,
-    "correct": false
   }
 ]
