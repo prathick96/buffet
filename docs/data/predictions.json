@@ -1,5 +1,44 @@
 [
   {
+    "id": 2293,
+    "time": "2026-09-21T21:24:25+00:00",
+    "symbol": "TCS.NS",
+    "price": 2105.0,
+    "action": "SELL",
+    "conviction": 0.87,
+    "sentiment": "BULLISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 2292,
+    "time": "2026-09-21T21:24:22+00:00",
+    "symbol": "ETH/USDT",
+    "price": 2766.11,
+    "action": "BUY",
+    "conviction": 0.459,
+    "sentiment": "BULLISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 2291,
+    "time": "2026-09-21T21:24:19+00:00",
+    "symbol": "BTC/USDT",
+    "price": 86594.9,
+    "action": "BUY",
+    "conviction": 0.52,
+    "sentiment": "BULLISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 2290,
     "time": "2026-09-21T17:25:45+00:00",
     "symbol": "NVDA",
@@ -176,10 +215,10 @@
     "action": "BUY",
     "conviction": 0.674,
     "sentiment": "BULLISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 2762.53,
+    "fwd_return_pct": 4.929,
+    "correct": true
   },
   {
     "id": 2276,
@@ -189,10 +228,10 @@
     "action": "BUY",
     "conviction": 0.44,
     "sentiment": "BULLISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 86553.7,
+    "fwd_return_pct": 6.63,
+    "correct": true
   },
   {
     "id": 2275,
@@ -2559,44 +2598,5 @@
     "exit_price": 2510.35,
     "fwd_return_pct": 2.178,
     "correct": false
-  },
-  {
-    "id": 2093,
-    "time": "2026-09-10T12:29:40+00:00",
-    "symbol": "BTC/USDT",
-    "price": 77720.2,
-    "action": "SELL",
-    "conviction": 0.574,
-    "sentiment": "BEARISH",
-    "scored": true,
-    "exit_price": 78025.4,
-    "fwd_return_pct": 0.393,
-    "correct": null
-  },
-  {
-    "id": 2092,
-    "time": "2026-09-10T07:38:01+00:00",
-    "symbol": "TCS.NS",
-    "price": 2192.800048828125,
-    "action": "SELL",
-    "conviction": 0.69,
-    "sentiment": "BULLISH",
-    "scored": true,
-    "exit_price": 2206.60009765625,
-    "fwd_return_pct": 0.629,
-    "correct": false
-  },
-  {
-    "id": 2091,
-    "time": "2026-09-10T07:38:00+00:00",
-    "symbol": "RELIANCE.BO",
-    "price": 1275.0,
-    "action": "HOLD",
-    "conviction": 0.19,
-    "sentiment": "BULLISH",
-    "scored": true,
-    "exit_price": 1257.0,
-    "fwd_return_pct": -1.412,
-    "correct": null
   }
 ]
