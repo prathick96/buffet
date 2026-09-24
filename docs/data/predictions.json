@@ -1,5 +1,31 @@
 [
   {
+    "id": 2340,
+    "time": "2026-09-24T13:07:16+00:00",
+    "symbol": "ETH/USDT",
+    "price": 2653.79,
+    "action": "SELL",
+    "conviction": 0.628,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 2339,
+    "time": "2026-09-24T13:07:13+00:00",
+    "symbol": "BTC/USDT",
+    "price": 83749.1,
+    "action": "SELL",
+    "conviction": 0.317,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 2338,
     "time": "2026-09-24T07:57:37+00:00",
     "symbol": "TCS.NS",
@@ -202,10 +228,10 @@
     "action": "SELL",
     "conviction": 0.398,
     "sentiment": "NEUTRAL",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 2649.17,
+    "fwd_return_pct": -2.792,
+    "correct": true
   },
   {
     "id": 2322,
@@ -215,10 +241,10 @@
     "action": "SELL",
     "conviction": 0.551,
     "sentiment": "BULLISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 83652.3,
+    "fwd_return_pct": -2.236,
+    "correct": true
   },
   {
     "id": 2321,
@@ -2572,31 +2598,5 @@
     "exit_price": 77270.9,
     "fwd_return_pct": -0.119,
     "correct": null
-  },
-  {
-    "id": 2140,
-    "time": "2026-09-12T13:15:01+00:00",
-    "symbol": "ETH/USDT",
-    "price": 2540.6,
-    "action": "BUY",
-    "conviction": 0.387,
-    "sentiment": "NEUTRAL",
-    "scored": true,
-    "exit_price": 2478.88,
-    "fwd_return_pct": -2.429,
-    "correct": false
-  },
-  {
-    "id": 2139,
-    "time": "2026-09-12T13:14:58+00:00",
-    "symbol": "BTC/USDT",
-    "price": 77313.6,
-    "action": "BUY",
-    "conviction": 0.105,
-    "sentiment": "NEUTRAL",
-    "scored": true,
-    "exit_price": 76852.9,
-    "fwd_return_pct": -0.596,
-    "correct": false
   }
 ]
