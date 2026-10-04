@@ -1,5 +1,31 @@
 [
   {
+    "id": 2495,
+    "time": "2026-10-04T18:28:23+00:00",
+    "symbol": "ETH/USDT",
+    "price": 2700.98,
+    "action": "BUY",
+    "conviction": 0.12,
+    "sentiment": "NEUTRAL",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 2494,
+    "time": "2026-10-04T18:28:20+00:00",
+    "symbol": "BTC/USDT",
+    "price": 85323.2,
+    "action": "BUY",
+    "conviction": 0.135,
+    "sentiment": "NEUTRAL",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 2493,
     "time": "2026-10-04T14:38:04+00:00",
     "symbol": "ETH/USDT",
@@ -137,10 +163,10 @@
     "action": "SELL",
     "conviction": 0.312,
     "sentiment": "BEARISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 2702.88,
+    "fwd_return_pct": 0.804,
+    "correct": false
   },
   {
     "id": 2482,
@@ -150,10 +176,10 @@
     "action": "BUY",
     "conviction": 0.181,
     "sentiment": "NEUTRAL",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 85378.6,
+    "fwd_return_pct": 0.608,
+    "correct": true
   },
   {
     "id": 2481,
@@ -2572,31 +2598,5 @@
     "exit_price": 338.9800109863281,
     "fwd_return_pct": 0.848,
     "correct": true
-  },
-  {
-    "id": 2295,
-    "time": "2026-09-22T00:23:59+00:00",
-    "symbol": "ETH/USDT",
-    "price": 2773.93,
-    "action": "BUY",
-    "conviction": 0.359,
-    "sentiment": "BULLISH",
-    "scored": true,
-    "exit_price": 2759.88,
-    "fwd_return_pct": -0.507,
-    "correct": null
-  },
-  {
-    "id": 2294,
-    "time": "2026-09-22T00:23:56+00:00",
-    "symbol": "BTC/USDT",
-    "price": 86419.0,
-    "action": "BUY",
-    "conviction": 0.239,
-    "sentiment": "BULLISH",
-    "scored": true,
-    "exit_price": 86462.7,
-    "fwd_return_pct": 0.051,
-    "correct": null
   }
 ]
