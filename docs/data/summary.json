@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-04T02:15:16+00:00",
+  "updated": "2026-10-04T08:58:57+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,39 +9,39 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 2470,
-    "directional": 1627,
+    "scored": 2472,
+    "directional": 1629,
     "ties": 640,
     "pending": 19,
     "hit_rate": 0.521,
     "avg_signal_return_pct": 0.351,
-    "sample": 1627,
+    "sample": 1629,
     "verdict": "EDGE FORMING \u2014 hit-rate > 50% and positive signal return"
   },
   "by_horizon": {
     "86400": {
       "horizon_days": 1.0,
-      "scored": 2470,
-      "directional": 1629,
+      "scored": 2472,
+      "directional": 1631,
       "ties": 841,
       "hit_rate": 0.521,
-      "avg_signal_return_pct": 0.354
+      "avg_signal_return_pct": 0.353
     },
     "259200": {
       "horizon_days": 3.0,
-      "scored": 2436,
-      "directional": 1962,
+      "scored": 2438,
+      "directional": 1964,
       "ties": 474,
       "hit_rate": 0.492,
-      "avg_signal_return_pct": 0.351
+      "avg_signal_return_pct": 0.35
     },
     "604800": {
       "horizon_days": 7.0,
-      "scored": 2381,
-      "directional": 1897,
+      "scored": 2383,
+      "directional": 1899,
       "ties": 484,
       "hit_rate": 0.496,
-      "avg_signal_return_pct": 0.357
+      "avg_signal_return_pct": 0.356
     }
   },
   "calibration": [
@@ -57,20 +57,20 @@
     {
       "symbol": "BTC/USDT",
       "horizon_days": 1.0,
-      "n": 667,
+      "n": 668,
       "wins": 350,
-      "hit_shrunk": 0.5243,
-      "avg_signed_return_pct": 0.351,
-      "multiplier": 0.6215
+      "hit_shrunk": 0.5235,
+      "avg_signed_return_pct": 0.349,
+      "multiplier": 0.6176
     },
     {
       "symbol": "ETH/USDT",
       "horizon_days": 1.0,
-      "n": 672,
-      "wins": 340,
-      "hit_shrunk": 0.5058,
+      "n": 673,
+      "wins": 341,
+      "hit_shrunk": 0.5066,
       "avg_signed_return_pct": 0.392,
-      "multiplier": 0.5292
+      "multiplier": 0.5328
     },
     {
       "symbol": "NVDA",
@@ -102,7 +102,7 @@
   ],
   "counts": {
     "predictions": 200,
-    "scored": 2470,
+    "scored": 2472,
     "pending": 19
   },
   "billing": {
