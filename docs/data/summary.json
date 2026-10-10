@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-10T20:22:52+00:00",
+  "updated": "2026-10-10T23:58:45+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,9 +9,9 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 2565,
+    "scored": 2567,
     "directional": 1700,
-    "ties": 656,
+    "ties": 658,
     "pending": 15,
     "hit_rate": 0.519,
     "avg_signal_return_pct": 0.341,
@@ -21,9 +21,9 @@
   "by_horizon": {
     "86400": {
       "horizon_days": 1.0,
-      "scored": 2565,
+      "scored": 2567,
       "directional": 1702,
-      "ties": 863,
+      "ties": 865,
       "hit_rate": 0.52,
       "avg_signal_return_pct": 0.343
     },
@@ -37,11 +37,11 @@
     },
     "604800": {
       "horizon_days": 7.0,
-      "scored": 2482,
-      "directional": 1988,
+      "scored": 2484,
+      "directional": 1990,
       "ties": 494,
       "hit_rate": 0.489,
-      "avg_signal_return_pct": 0.305
+      "avg_signal_return_pct": 0.302
     }
   },
   "calibration": [
@@ -102,7 +102,7 @@
   ],
   "counts": {
     "predictions": 200,
-    "scored": 2565,
+    "scored": 2567,
     "pending": 15
   },
   "billing": {
