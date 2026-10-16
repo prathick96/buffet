@@ -1,5 +1,31 @@
 [
   {
+    "id": 2654,
+    "time": "2026-10-16T12:50:59+00:00",
+    "symbol": "ETH/USDT",
+    "price": 2469.6,
+    "action": "BUY",
+    "conviction": 0.581,
+    "sentiment": "BULLISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 2653,
+    "time": "2026-10-16T12:50:56+00:00",
+    "symbol": "BTC/USDT",
+    "price": 82115.9,
+    "action": "SELL",
+    "conviction": 0.078,
+    "sentiment": "NEUTRAL",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 2652,
     "time": "2026-10-16T07:40:44+00:00",
     "symbol": "TCS.NS",
@@ -202,10 +228,10 @@
     "action": "SELL",
     "conviction": 0.377,
     "sentiment": "BEARISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 2469.6,
+    "fwd_return_pct": 4.298,
+    "correct": false
   },
   {
     "id": 2636,
@@ -215,10 +241,10 @@
     "action": "SELL",
     "conviction": 0.421,
     "sentiment": "BEARISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 82115.9,
+    "fwd_return_pct": 1.307,
+    "correct": false
   },
   {
     "id": 2635,
@@ -2571,32 +2597,6 @@
     "scored": true,
     "exit_price": 84653.9,
     "fwd_return_pct": -0.326,
-    "correct": null
-  },
-  {
-    "id": 2454,
-    "time": "2026-10-01T20:41:11+00:00",
-    "symbol": "TCS.NS",
-    "price": 2050.60009765625,
-    "action": "SELL",
-    "conviction": 0.581,
-    "sentiment": "NEUTRAL",
-    "scored": true,
-    "exit_price": 2075.0,
-    "fwd_return_pct": 1.19,
-    "correct": false
-  },
-  {
-    "id": 2453,
-    "time": "2026-10-01T20:41:07+00:00",
-    "symbol": "ETH/USDT",
-    "price": 2698.74,
-    "action": "HOLD",
-    "conviction": 0.173,
-    "sentiment": "BEARISH",
-    "scored": true,
-    "exit_price": 2661.8,
-    "fwd_return_pct": -1.369,
     "correct": null
   }
 ]
