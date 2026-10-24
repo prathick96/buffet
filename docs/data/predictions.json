@@ -1,5 +1,31 @@
 [
   {
+    "id": 2795,
+    "time": "2026-10-24T19:09:55+00:00",
+    "symbol": "ETH/USDT",
+    "price": 2338.4,
+    "action": "SELL",
+    "conviction": 0.422,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 2794,
+    "time": "2026-10-24T19:09:52+00:00",
+    "symbol": "BTC/USDT",
+    "price": 80521.2,
+    "action": "BUY",
+    "conviction": 0.166,
+    "sentiment": "NEUTRAL",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 2793,
     "time": "2026-10-24T16:21:59+00:00",
     "symbol": "ETH/USDT",
@@ -215,10 +241,10 @@
     "action": "BUY",
     "conviction": 0.156,
     "sentiment": "NEUTRAL",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 2322.91,
+    "fwd_return_pct": -3.522,
+    "correct": false
   },
   {
     "id": 2776,
@@ -228,10 +254,10 @@
     "action": "SELL",
     "conviction": 0.36,
     "sentiment": "BEARISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 80255.2,
+    "fwd_return_pct": -1.69,
+    "correct": true
   },
   {
     "id": 2775,
@@ -2571,32 +2597,6 @@
     "scored": true,
     "exit_price": 83390.6,
     "fwd_return_pct": 0.573,
-    "correct": false
-  },
-  {
-    "id": 2595,
-    "time": "2026-10-12T06:46:29+00:00",
-    "symbol": "TCS.NS",
-    "price": 2154.10009765625,
-    "action": "BUY",
-    "conviction": 0.877,
-    "sentiment": "BULLISH",
-    "scored": true,
-    "exit_price": 2237.300048828125,
-    "fwd_return_pct": 3.862,
-    "correct": true
-  },
-  {
-    "id": 2594,
-    "time": "2026-10-12T06:46:26+00:00",
-    "symbol": "ETH/USDT",
-    "price": 2565.89,
-    "action": "BUY",
-    "conviction": 0.547,
-    "sentiment": "BULLISH",
-    "scored": true,
-    "exit_price": 2534.99,
-    "fwd_return_pct": -1.204,
     "correct": false
   }
 ]
