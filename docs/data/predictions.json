@@ -1,5 +1,31 @@
 [
   {
+    "id": 2789,
+    "time": "2026-10-24T07:44:51+00:00",
+    "symbol": "ETH/USDT",
+    "price": 2379.07,
+    "action": "SELL",
+    "conviction": 0.295,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 2788,
+    "time": "2026-10-24T07:44:48+00:00",
+    "symbol": "BTC/USDT",
+    "price": 80834.5,
+    "action": "SELL",
+    "conviction": 0.305,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 2787,
     "time": "2026-10-24T02:31:21+00:00",
     "symbol": "ETH/USDT",
@@ -228,10 +254,10 @@
     "action": "BUY",
     "conviction": 0.302,
     "sentiment": "NEUTRAL",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 2379.74,
+    "fwd_return_pct": -1.135,
+    "correct": false
   },
   {
     "id": 2769,
@@ -241,10 +267,10 @@
     "action": "BUY",
     "conviction": 0.292,
     "sentiment": "NEUTRAL",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 80769.8,
+    "fwd_return_pct": -1.374,
+    "correct": false
   },
   {
     "id": 2768,
@@ -2571,32 +2597,6 @@
     "scored": true,
     "exit_price": 2489.48,
     "fwd_return_pct": -1.715,
-    "correct": false
-  },
-  {
-    "id": 2589,
-    "time": "2026-10-11T21:13:52+00:00",
-    "symbol": "BTC/USDT",
-    "price": 83560.7,
-    "action": "BUY",
-    "conviction": 0.195,
-    "sentiment": "BULLISH",
-    "scored": true,
-    "exit_price": 82570.1,
-    "fwd_return_pct": -1.185,
-    "correct": false
-  },
-  {
-    "id": 2588,
-    "time": "2026-10-11T17:01:04+00:00",
-    "symbol": "ETH/USDT",
-    "price": 2543.07,
-    "action": "BUY",
-    "conviction": 0.666,
-    "sentiment": "BULLISH",
-    "scored": true,
-    "exit_price": 2512.45,
-    "fwd_return_pct": -1.204,
     "correct": false
   }
 ]
