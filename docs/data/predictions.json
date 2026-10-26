@@ -1,5 +1,31 @@
 [
   {
+    "id": 2813,
+    "time": "2026-10-26T00:52:33+00:00",
+    "symbol": "ETH/USDT",
+    "price": 2321.91,
+    "action": "SELL",
+    "conviction": 0.807,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 2812,
+    "time": "2026-10-26T00:52:30+00:00",
+    "symbol": "BTC/USDT",
+    "price": 80013.6,
+    "action": "SELL",
+    "conviction": 0.599,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 2811,
     "time": "2026-10-25T22:55:58+00:00",
     "symbol": "ETH/USDT",
@@ -163,10 +189,10 @@
     "action": "BUY",
     "conviction": 0.536,
     "sentiment": "NEUTRAL",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 2321.91,
+    "fwd_return_pct": -1.596,
+    "correct": false
   },
   {
     "id": 2798,
@@ -176,10 +202,10 @@
     "action": "BUY",
     "conviction": 0.384,
     "sentiment": "NEUTRAL",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 80013.6,
+    "fwd_return_pct": -1.075,
+    "correct": false
   },
   {
     "id": 2797,
@@ -2571,32 +2597,6 @@
     "scored": true,
     "exit_price": 2420.85,
     "fwd_return_pct": -3.106,
-    "correct": true
-  },
-  {
-    "id": 2613,
-    "time": "2026-10-13T23:31:30+00:00",
-    "symbol": "BTC/USDT",
-    "price": 83221.7,
-    "action": "SELL",
-    "conviction": 0.287,
-    "sentiment": "BEARISH",
-    "scored": true,
-    "exit_price": 81663.9,
-    "fwd_return_pct": -1.872,
-    "correct": true
-  },
-  {
-    "id": 2612,
-    "time": "2026-10-13T19:39:19+00:00",
-    "symbol": "TCS.NS",
-    "price": 2125.0,
-    "action": "BUY",
-    "conviction": 0.756,
-    "sentiment": "BULLISH",
-    "scored": true,
-    "exit_price": 2257.300048828125,
-    "fwd_return_pct": 6.226,
     "correct": true
   }
 ]
