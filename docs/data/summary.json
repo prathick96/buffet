@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-01T01:40:00+00:00",
+  "updated": "2026-11-01T08:24:31+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,39 +9,39 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 2884,
-    "directional": 1925,
+    "scored": 2886,
+    "directional": 1926,
     "ties": 740,
     "pending": 17,
     "hit_rate": 0.51,
-    "avg_signal_return_pct": 0.288,
-    "sample": 1925,
+    "avg_signal_return_pct": 0.287,
+    "sample": 1926,
     "verdict": "EDGE FORMING \u2014 hit-rate > 50% and positive signal return"
   },
   "by_horizon": {
     "86400": {
       "horizon_days": 1.0,
-      "scored": 2884,
-      "directional": 1927,
-      "ties": 957,
-      "hit_rate": 0.511,
-      "avg_signal_return_pct": 0.29
+      "scored": 2886,
+      "directional": 1928,
+      "ties": 958,
+      "hit_rate": 0.51,
+      "avg_signal_return_pct": 0.289
     },
     "259200": {
       "horizon_days": 3.0,
-      "scored": 2852,
-      "directional": 2278,
+      "scored": 2854,
+      "directional": 2280,
       "ties": 574,
-      "hit_rate": 0.491,
-      "avg_signal_return_pct": 0.294
+      "hit_rate": 0.492,
+      "avg_signal_return_pct": 0.296
     },
     "604800": {
       "horizon_days": 7.0,
-      "scored": 2796,
-      "directional": 2267,
+      "scored": 2798,
+      "directional": 2269,
       "ties": 529,
-      "hit_rate": 0.495,
-      "avg_signal_return_pct": 0.323
+      "hit_rate": 0.494,
+      "avg_signal_return_pct": 0.319
     }
   },
   "calibration": [
@@ -66,11 +66,11 @@
     {
       "symbol": "ETH/USDT",
       "horizon_days": 1.0,
-      "n": 774,
+      "n": 775,
       "wins": 388,
-      "hit_shrunk": 0.5013,
-      "avg_signed_return_pct": 0.324,
-      "multiplier": 0.5064
+      "hit_shrunk": 0.5006,
+      "avg_signed_return_pct": 0.322,
+      "multiplier": 0.5032
     },
     {
       "symbol": "NVDA",
@@ -102,7 +102,7 @@
   ],
   "counts": {
     "predictions": 200,
-    "scored": 2884,
+    "scored": 2886,
     "pending": 17
   },
   "billing": {
