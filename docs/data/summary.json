@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T08:45:38+00:00",
+  "updated": "2026-11-06T16:29:24+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,49 +9,49 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 2949,
-    "directional": 1973,
-    "ties": 754,
-    "pending": 14,
+    "scored": 2955,
+    "directional": 1976,
+    "ties": 756,
+    "pending": 12,
     "hit_rate": 0.511,
-    "avg_signal_return_pct": 0.282,
-    "sample": 1973,
+    "avg_signal_return_pct": 0.278,
+    "sample": 1976,
     "verdict": "EDGE FORMING \u2014 hit-rate > 50% and positive signal return"
   },
   "by_horizon": {
     "86400": {
       "horizon_days": 1.0,
-      "scored": 2949,
-      "directional": 1975,
-      "ties": 974,
-      "hit_rate": 0.512,
-      "avg_signal_return_pct": 0.284
+      "scored": 2955,
+      "directional": 1978,
+      "ties": 977,
+      "hit_rate": 0.511,
+      "avg_signal_return_pct": 0.28
     },
     "259200": {
       "horizon_days": 3.0,
-      "scored": 2924,
-      "directional": 2331,
+      "scored": 2928,
+      "directional": 2335,
       "ties": 593,
       "hit_rate": 0.491,
-      "avg_signal_return_pct": 0.287
+      "avg_signal_return_pct": 0.288
     },
     "604800": {
       "horizon_days": 7.0,
-      "scored": 2876,
-      "directional": 2332,
-      "ties": 544,
-      "hit_rate": 0.492,
-      "avg_signal_return_pct": 0.306
+      "scored": 2884,
+      "directional": 2337,
+      "ties": 547,
+      "hit_rate": 0.493,
+      "avg_signal_return_pct": 0.314
     }
   },
   "calibration": [
     {
       "symbol": "AAPL",
       "horizon_days": 1.0,
-      "n": 115,
+      "n": 116,
       "wins": 53,
-      "hit_shrunk": 0.4646,
-      "avg_signed_return_pct": -0.426,
+      "hit_shrunk": 0.4609,
+      "avg_signed_return_pct": -0.43,
       "multiplier": 0.25
     },
     {
@@ -75,11 +75,11 @@
     {
       "symbol": "NVDA",
       "horizon_days": 1.0,
-      "n": 118,
+      "n": 120,
       "wins": 61,
-      "hit_shrunk": 0.5154,
-      "avg_signed_return_pct": 0.7,
-      "multiplier": 0.5769
+      "hit_shrunk": 0.5076,
+      "avg_signed_return_pct": 0.637,
+      "multiplier": 0.5379
     },
     {
       "symbol": "RELIANCE.BO",
@@ -102,8 +102,8 @@
   ],
   "counts": {
     "predictions": 200,
-    "scored": 2949,
-    "pending": 14
+    "scored": 2955,
+    "pending": 12
   },
   "billing": {
     "model": "claude-opus-4-8",
