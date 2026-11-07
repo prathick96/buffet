@@ -1,5 +1,44 @@
 [
   {
+    "id": 2981,
+    "time": "2026-11-07T14:44:58+00:00",
+    "symbol": "TCS.NS",
+    "price": 2498.5,
+    "action": "BUY",
+    "conviction": 0.29,
+    "sentiment": "NEUTRAL",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 2980,
+    "time": "2026-11-07T14:44:55+00:00",
+    "symbol": "ETH/USDT",
+    "price": 2246.85,
+    "action": "BUY",
+    "conviction": 0.2,
+    "sentiment": "BULLISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 2979,
+    "time": "2026-11-07T14:44:51+00:00",
+    "symbol": "BTC/USDT",
+    "price": 75956.3,
+    "action": "SELL",
+    "conviction": 0.237,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 2978,
     "time": "2026-11-07T08:00:01+00:00",
     "symbol": "NVDA",
@@ -111,9 +150,9 @@
     "action": "BUY",
     "conviction": 0.333,
     "sentiment": "BULLISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
+    "scored": true,
+    "exit_price": 2498.5,
+    "fwd_return_pct": 0.112,
     "correct": null
   },
   {
@@ -2559,44 +2598,5 @@
     "exit_price": 2530.0,
     "fwd_return_pct": 0.921,
     "correct": true
-  },
-  {
-    "id": 2781,
-    "time": "2026-10-23T20:48:26+00:00",
-    "symbol": "ETH/USDT",
-    "price": 2401.95,
-    "action": "SELL",
-    "conviction": 0.361,
-    "sentiment": "BEARISH",
-    "scored": true,
-    "exit_price": 2347.8,
-    "fwd_return_pct": -2.254,
-    "correct": true
-  },
-  {
-    "id": 2780,
-    "time": "2026-10-23T20:48:23+00:00",
-    "symbol": "BTC/USDT",
-    "price": 81492.3,
-    "action": "SELL",
-    "conviction": 0.398,
-    "sentiment": "BEARISH",
-    "scored": true,
-    "exit_price": 80533.2,
-    "fwd_return_pct": -1.177,
-    "correct": true
-  },
-  {
-    "id": 2779,
-    "time": "2026-10-23T17:36:19+00:00",
-    "symbol": "NVDA",
-    "price": 211.61000061035156,
-    "action": "SELL",
-    "conviction": 0.788,
-    "sentiment": "BEARISH",
-    "scored": true,
-    "exit_price": 216.11000061035156,
-    "fwd_return_pct": 2.127,
-    "correct": false
   }
 ]
