@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T08:57:50+00:00",
+  "updated": "2026-11-10T16:45:30+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,49 +9,49 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 2999,
-    "directional": 1997,
+    "scored": 3003,
+    "directional": 2001,
     "ties": 779,
     "pending": 12,
     "hit_rate": 0.51,
-    "avg_signal_return_pct": 0.284,
-    "sample": 1997,
+    "avg_signal_return_pct": 0.288,
+    "sample": 2001,
     "verdict": "EDGE FORMING \u2014 hit-rate > 50% and positive signal return"
   },
   "by_horizon": {
     "86400": {
       "horizon_days": 1.0,
-      "scored": 2999,
-      "directional": 1999,
+      "scored": 3003,
+      "directional": 2003,
       "ties": 1000,
       "hit_rate": 0.511,
-      "avg_signal_return_pct": 0.286
+      "avg_signal_return_pct": 0.29
     },
     "259200": {
       "horizon_days": 3.0,
-      "scored": 2980,
-      "directional": 2380,
+      "scored": 2982,
+      "directional": 2382,
       "ties": 600,
       "hit_rate": 0.492,
-      "avg_signal_return_pct": 0.294
+      "avg_signal_return_pct": 0.291
     },
     "604800": {
       "horizon_days": 7.0,
-      "scored": 2919,
-      "directional": 2364,
+      "scored": 2923,
+      "directional": 2368,
       "ties": 555,
       "hit_rate": 0.492,
-      "avg_signal_return_pct": 0.31
+      "avg_signal_return_pct": 0.311
     }
   },
   "calibration": [
     {
       "symbol": "AAPL",
       "horizon_days": 1.0,
-      "n": 120,
+      "n": 122,
       "wins": 54,
-      "hit_shrunk": 0.4545,
-      "avg_signed_return_pct": -0.446,
+      "hit_shrunk": 0.4478,
+      "avg_signed_return_pct": -0.45,
       "multiplier": 0.25
     },
     {
@@ -75,11 +75,11 @@
     {
       "symbol": "NVDA",
       "horizon_days": 1.0,
-      "n": 124,
-      "wins": 64,
-      "hit_shrunk": 0.5147,
-      "avg_signed_return_pct": 0.715,
-      "multiplier": 0.5735
+      "n": 126,
+      "wins": 66,
+      "hit_shrunk": 0.5217,
+      "avg_signed_return_pct": 0.794,
+      "multiplier": 0.6087
     },
     {
       "symbol": "RELIANCE.BO",
@@ -102,7 +102,7 @@
   ],
   "counts": {
     "predictions": 200,
-    "scored": 2999,
+    "scored": 3003,
     "pending": 12
   },
   "billing": {
