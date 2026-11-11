@@ -1,5 +1,44 @@
 [
   {
+    "id": 3022,
+    "time": "2026-11-11T10:01:22+00:00",
+    "symbol": "TCS.NS",
+    "price": 2472.10009765625,
+    "action": "SELL",
+    "conviction": 0.226,
+    "sentiment": "NEUTRAL",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 3021,
+    "time": "2026-11-11T10:01:19+00:00",
+    "symbol": "ETH/USDT",
+    "price": 2058.25,
+    "action": "SELL",
+    "conviction": 0.36,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 3020,
+    "time": "2026-11-11T10:01:16+00:00",
+    "symbol": "BTC/USDT",
+    "price": 73800.3,
+    "action": "BUY",
+    "conviction": 0.131,
+    "sentiment": "NEUTRAL",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 3019,
     "time": "2026-11-11T02:23:21+00:00",
     "symbol": "ETH/USDT",
@@ -137,10 +176,10 @@
     "action": "SELL",
     "conviction": 0.541,
     "sentiment": "BEARISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 2058.56,
+    "fwd_return_pct": -2.708,
+    "correct": true
   },
   {
     "id": 3008,
@@ -150,10 +189,10 @@
     "action": "SELL",
     "conviction": 0.509,
     "sentiment": "BEARISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 73723.5,
+    "fwd_return_pct": -1.296,
+    "correct": true
   },
   {
     "id": 3007,
@@ -267,10 +306,10 @@
     "action": "SELL",
     "conviction": 0.669,
     "sentiment": "BEARISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 2472.10009765625,
+    "fwd_return_pct": 0.688,
+    "correct": false
   },
   {
     "id": 2998,
@@ -2558,45 +2597,6 @@
     "scored": true,
     "exit_price": 80919.9,
     "fwd_return_pct": 1.061,
-    "correct": false
-  },
-  {
-    "id": 2822,
-    "time": "2026-10-26T17:54:31+00:00",
-    "symbol": "NVDA",
-    "price": 216.11000061035156,
-    "action": "SELL",
-    "conviction": 0.547,
-    "sentiment": "BEARISH",
-    "scored": true,
-    "exit_price": 217.8800048828125,
-    "fwd_return_pct": 0.819,
-    "correct": false
-  },
-  {
-    "id": 2821,
-    "time": "2026-10-26T17:54:31+00:00",
-    "symbol": "AAPL",
-    "price": 342.8038024902344,
-    "action": "SELL",
-    "conviction": 0.118,
-    "sentiment": "NEUTRAL",
-    "scored": true,
-    "exit_price": 343.5799865722656,
-    "fwd_return_pct": 0.226,
-    "correct": null
-  },
-  {
-    "id": 2820,
-    "time": "2026-10-26T17:54:29+00:00",
-    "symbol": "ETH/USDT",
-    "price": 2323.08,
-    "action": "SELL",
-    "conviction": 0.248,
-    "sentiment": "BEARISH",
-    "scored": true,
-    "exit_price": 2346.19,
-    "fwd_return_pct": 0.995,
     "correct": false
   }
 ]
