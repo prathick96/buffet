@@ -1,5 +1,31 @@
 [
   {
+    "id": 3063,
+    "time": "2026-11-14T19:35:48+00:00",
+    "symbol": "ETH/USDT",
+    "price": 1828.99,
+    "action": "SELL",
+    "conviction": 0.76,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 3062,
+    "time": "2026-11-14T19:35:44+00:00",
+    "symbol": "BTC/USDT",
+    "price": 65572.4,
+    "action": "SELL",
+    "conviction": 0.65,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 3061,
     "time": "2026-11-14T14:38:46+00:00",
     "symbol": "ETH/USDT",
@@ -137,10 +163,10 @@
     "action": "SELL",
     "conviction": 0.427,
     "sentiment": "BEARISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 1830.72,
+    "fwd_return_pct": -5.765,
+    "correct": true
   },
   {
     "id": 3050,
@@ -150,10 +176,10 @@
     "action": "SELL",
     "conviction": 0.397,
     "sentiment": "BEARISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 65535.8,
+    "fwd_return_pct": -4.976,
+    "correct": true
   },
   {
     "id": 3049,
@@ -2571,32 +2597,6 @@
     "scored": true,
     "exit_price": 2235.51,
     "fwd_return_pct": -4.584,
-    "correct": false
-  },
-  {
-    "id": 2863,
-    "time": "2026-10-29T14:46:35+00:00",
-    "symbol": "BTC/USDT",
-    "price": 81193.2,
-    "action": "BUY",
-    "conviction": 0.599,
-    "sentiment": "NEUTRAL",
-    "scored": true,
-    "exit_price": 77176.2,
-    "fwd_return_pct": -4.947,
-    "correct": false
-  },
-  {
-    "id": 2862,
-    "time": "2026-10-29T07:48:38+00:00",
-    "symbol": "TCS.NS",
-    "price": 2473.89990234375,
-    "action": "SELL",
-    "conviction": 0.162,
-    "sentiment": "NEUTRAL",
-    "scored": true,
-    "exit_price": 2502.60009765625,
-    "fwd_return_pct": 1.16,
     "correct": false
   }
 ]
