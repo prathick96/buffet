@@ -1,5 +1,31 @@
 [
   {
+    "id": 3067,
+    "time": "2026-11-15T03:49:26+00:00",
+    "symbol": "ETH/USDT",
+    "price": 1820.89,
+    "action": "BUY",
+    "conviction": 0.768,
+    "sentiment": "BULLISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 3066,
+    "time": "2026-11-15T03:49:23+00:00",
+    "symbol": "BTC/USDT",
+    "price": 64975.5,
+    "action": "BUY",
+    "conviction": 0.608,
+    "sentiment": "BULLISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 3065,
     "time": "2026-11-14T23:30:20+00:00",
     "symbol": "ETH/USDT",
@@ -124,10 +150,10 @@
     "action": "SELL",
     "conviction": 0.28,
     "sentiment": "BEARISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 1741.25,
+    "fwd_return_pct": -9.945,
+    "correct": true
   },
   {
     "id": 3055,
@@ -137,10 +163,10 @@
     "action": "SELL",
     "conviction": 0.42,
     "sentiment": "BEARISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 63446.4,
+    "fwd_return_pct": -7.256,
+    "correct": true
   },
   {
     "id": 3054,
@@ -2571,32 +2597,6 @@
     "scored": true,
     "exit_price": 2238.17,
     "fwd_return_pct": -4.205,
-    "correct": true
-  },
-  {
-    "id": 2867,
-    "time": "2026-10-29T19:57:49+00:00",
-    "symbol": "BTC/USDT",
-    "price": 80866.8,
-    "action": "BUY",
-    "conviction": 0.447,
-    "sentiment": "BULLISH",
-    "scored": true,
-    "exit_price": 76872.8,
-    "fwd_return_pct": -4.939,
-    "correct": false
-  },
-  {
-    "id": 2866,
-    "time": "2026-10-29T14:46:40+00:00",
-    "symbol": "NVDA",
-    "price": 213.8300018310547,
-    "action": "SELL",
-    "conviction": 0.685,
-    "sentiment": "BEARISH",
-    "scored": true,
-    "exit_price": 204.72500610351562,
-    "fwd_return_pct": -4.258,
     "correct": true
   }
 ]
