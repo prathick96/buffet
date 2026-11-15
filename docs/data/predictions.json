@@ -1,5 +1,31 @@
 [
   {
+    "id": 3071,
+    "time": "2026-11-15T18:12:31+00:00",
+    "symbol": "ETH/USDT",
+    "price": 1815.34,
+    "action": "SELL",
+    "conviction": 0.439,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 3070,
+    "time": "2026-11-15T18:12:28+00:00",
+    "symbol": "BTC/USDT",
+    "price": 64553.6,
+    "action": "SELL",
+    "conviction": 0.674,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 3069,
     "time": "2026-11-15T11:39:21+00:00",
     "symbol": "ETH/USDT",
@@ -111,10 +137,10 @@
     "action": "SELL",
     "conviction": 0.782,
     "sentiment": "BEARISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 1806.81,
+    "fwd_return_pct": -2.341,
+    "correct": true
   },
   {
     "id": 3060,
@@ -124,10 +150,10 @@
     "action": "SELL",
     "conviction": 0.744,
     "sentiment": "BEARISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 64771.8,
+    "fwd_return_pct": -1.831,
+    "correct": true
   },
   {
     "id": 3059,
@@ -2571,32 +2597,6 @@
     "scored": true,
     "exit_price": 77089.0,
     "fwd_return_pct": -0.855,
-    "correct": true
-  },
-  {
-    "id": 2871,
-    "time": "2026-10-29T23:46:31+00:00",
-    "symbol": "ETH/USDT",
-    "price": 2255.47,
-    "action": "SELL",
-    "conviction": 0.873,
-    "sentiment": "BEARISH",
-    "scored": true,
-    "exit_price": 2244.0,
-    "fwd_return_pct": -0.509,
-    "correct": null
-  },
-  {
-    "id": 2870,
-    "time": "2026-10-29T23:46:27+00:00",
-    "symbol": "BTC/USDT",
-    "price": 78100.1,
-    "action": "SELL",
-    "conviction": 0.873,
-    "sentiment": "BEARISH",
-    "scored": true,
-    "exit_price": 77308.9,
-    "fwd_return_pct": -1.013,
     "correct": true
   }
 ]
