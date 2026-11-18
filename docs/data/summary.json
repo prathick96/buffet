@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-17T22:02:05+00:00",
+  "updated": "2026-11-18T03:57:27+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,39 +9,39 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 3083,
-    "directional": 2054,
-    "ties": 796,
-    "pending": 11,
+    "scored": 3085,
+    "directional": 2055,
+    "ties": 797,
+    "pending": 12,
     "hit_rate": 0.513,
-    "avg_signal_return_pct": 0.318,
-    "sample": 2054,
+    "avg_signal_return_pct": 0.319,
+    "sample": 2055,
     "verdict": "EDGE FORMING \u2014 hit-rate > 50% and positive signal return"
   },
   "by_horizon": {
     "86400": {
       "horizon_days": 1.0,
-      "scored": 3083,
-      "directional": 2056,
-      "ties": 1027,
+      "scored": 3085,
+      "directional": 2057,
+      "ties": 1028,
       "hit_rate": 0.514,
-      "avg_signal_return_pct": 0.32
+      "avg_signal_return_pct": 0.321
     },
     "259200": {
       "horizon_days": 3.0,
-      "scored": 3064,
-      "directional": 2454,
-      "ties": 610,
+      "scored": 3068,
+      "directional": 2456,
+      "ties": 612,
       "hit_rate": 0.5,
-      "avg_signal_return_pct": 0.38
+      "avg_signal_return_pct": 0.377
     },
     "604800": {
       "horizon_days": 7.0,
-      "scored": 3020,
-      "directional": 2455,
+      "scored": 3024,
+      "directional": 2459,
       "ties": 565,
-      "hit_rate": 0.498,
-      "avg_signal_return_pct": 0.421
+      "hit_rate": 0.499,
+      "avg_signal_return_pct": 0.433
     }
   },
   "calibration": [
@@ -93,17 +93,17 @@
     {
       "symbol": "TCS.NS",
       "horizon_days": 1.0,
-      "n": 168,
-      "wins": 93,
-      "hit_shrunk": 0.55,
-      "avg_signed_return_pct": 0.398,
-      "multiplier": 0.75
+      "n": 169,
+      "wins": 94,
+      "hit_shrunk": 0.5525,
+      "avg_signed_return_pct": 0.408,
+      "multiplier": 0.7624
     }
   ],
   "counts": {
     "predictions": 200,
-    "scored": 3083,
-    "pending": 11
+    "scored": 3085,
+    "pending": 12
   },
   "billing": {
     "model": "claude-opus-4-8",
