@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19T02:19:56+00:00",
+  "updated": "2026-11-19T10:55:21+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,39 +9,39 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 3093,
-    "directional": 2060,
-    "ties": 798,
-    "pending": 15,
+    "scored": 3099,
+    "directional": 2064,
+    "ties": 800,
+    "pending": 14,
     "hit_rate": 0.513,
-    "avg_signal_return_pct": 0.315,
-    "sample": 2060,
+    "avg_signal_return_pct": 0.316,
+    "sample": 2064,
     "verdict": "EDGE FORMING \u2014 hit-rate > 50% and positive signal return"
   },
   "by_horizon": {
     "86400": {
       "horizon_days": 1.0,
-      "scored": 3093,
-      "directional": 2062,
-      "ties": 1031,
-      "hit_rate": 0.513,
-      "avg_signal_return_pct": 0.317
+      "scored": 3099,
+      "directional": 2066,
+      "ties": 1033,
+      "hit_rate": 0.514,
+      "avg_signal_return_pct": 0.318
     },
     "259200": {
       "horizon_days": 3.0,
-      "scored": 3074,
-      "directional": 2460,
+      "scored": 3078,
+      "directional": 2464,
       "ties": 614,
       "hit_rate": 0.5,
-      "avg_signal_return_pct": 0.377
+      "avg_signal_return_pct": 0.38
     },
     "604800": {
       "horizon_days": 7.0,
-      "scored": 3034,
-      "directional": 2469,
+      "scored": 3039,
+      "directional": 2474,
       "ties": 565,
-      "hit_rate": 0.499,
-      "avg_signal_return_pct": 0.441
+      "hit_rate": 0.5,
+      "avg_signal_return_pct": 0.455
     }
   },
   "calibration": [
@@ -57,11 +57,11 @@
     {
       "symbol": "BTC/USDT",
       "horizon_days": 1.0,
-      "n": 816,
+      "n": 817,
       "wins": 423,
-      "hit_shrunk": 0.5181,
-      "avg_signed_return_pct": 0.299,
-      "multiplier": 0.5906
+      "hit_shrunk": 0.5175,
+      "avg_signed_return_pct": 0.296,
+      "multiplier": 0.5875
     },
     {
       "symbol": "ETH/USDT",
@@ -75,11 +75,11 @@
     {
       "symbol": "NVDA",
       "horizon_days": 1.0,
-      "n": 133,
-      "wins": 71,
-      "hit_shrunk": 0.531,
-      "avg_signed_return_pct": 0.843,
-      "multiplier": 0.6552
+      "n": 134,
+      "wins": 72,
+      "hit_shrunk": 0.5342,
+      "avg_signed_return_pct": 0.859,
+      "multiplier": 0.6712
     },
     {
       "symbol": "RELIANCE.BO",
@@ -93,17 +93,17 @@
     {
       "symbol": "TCS.NS",
       "horizon_days": 1.0,
-      "n": 169,
-      "wins": 94,
-      "hit_shrunk": 0.5525,
-      "avg_signed_return_pct": 0.408,
-      "multiplier": 0.7624
+      "n": 171,
+      "wins": 96,
+      "hit_shrunk": 0.5574,
+      "avg_signed_return_pct": 0.421,
+      "multiplier": 0.7869
     }
   ],
   "counts": {
     "predictions": 200,
-    "scored": 3093,
-    "pending": 15
+    "scored": 3099,
+    "pending": 14
   },
   "billing": {
     "model": "claude-opus-4-8",
