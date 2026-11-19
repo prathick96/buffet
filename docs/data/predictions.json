@@ -1,5 +1,57 @@
 [
   {
+    "id": 3108,
+    "time": "2026-11-19T02:19:50+00:00",
+    "symbol": "NVDA",
+    "price": 155.4600067138672,
+    "action": "SELL",
+    "conviction": 0.78,
+    "sentiment": "BULLISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 3107,
+    "time": "2026-11-19T02:19:49+00:00",
+    "symbol": "AAPL",
+    "price": 351.9100036621094,
+    "action": "BUY",
+    "conviction": 0.417,
+    "sentiment": "BULLISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 3106,
+    "time": "2026-11-19T02:19:48+00:00",
+    "symbol": "ETH/USDT",
+    "price": 1774.37,
+    "action": "BUY",
+    "conviction": 0.289,
+    "sentiment": "NEUTRAL",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 3105,
+    "time": "2026-11-19T02:19:45+00:00",
+    "symbol": "BTC/USDT",
+    "price": 62772.3,
+    "action": "SELL",
+    "conviction": 0.328,
+    "sentiment": "BEARISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 3104,
     "time": "2026-11-18T20:59:52+00:00",
     "symbol": "TCS.NS",
@@ -176,10 +228,10 @@
     "action": "BUY",
     "conviction": 0.255,
     "sentiment": "NEUTRAL",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 1756.09,
+    "fwd_return_pct": -2.611,
+    "correct": false
   },
   {
     "id": 3090,
@@ -189,10 +241,10 @@
     "action": "BUY",
     "conviction": 0.199,
     "sentiment": "NEUTRAL",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
-    "correct": null
+    "scored": true,
+    "exit_price": 62286.7,
+    "fwd_return_pct": -3.149,
+    "correct": false
   },
   {
     "id": 3089,
@@ -2546,57 +2598,5 @@
     "exit_price": 2253.2,
     "fwd_return_pct": -0.678,
     "correct": false
-  },
-  {
-    "id": 2908,
-    "time": "2026-11-01T23:22:24+00:00",
-    "symbol": "BTC/USDT",
-    "price": 78082.1,
-    "action": "BUY",
-    "conviction": 0.294,
-    "sentiment": "BULLISH",
-    "scored": true,
-    "exit_price": 76807.7,
-    "fwd_return_pct": -1.632,
-    "correct": false
-  },
-  {
-    "id": 2907,
-    "time": "2026-11-01T19:58:35+00:00",
-    "symbol": "ETH/USDT",
-    "price": 2258.92,
-    "action": "SELL",
-    "conviction": 0.38,
-    "sentiment": "BEARISH",
-    "scored": true,
-    "exit_price": 2250.38,
-    "fwd_return_pct": -0.378,
-    "correct": true
-  },
-  {
-    "id": 2906,
-    "time": "2026-11-01T19:58:32+00:00",
-    "symbol": "BTC/USDT",
-    "price": 77738.4,
-    "action": "SELL",
-    "conviction": 0.351,
-    "sentiment": "BEARISH",
-    "scored": true,
-    "exit_price": 77053.0,
-    "fwd_return_pct": -0.882,
-    "correct": true
-  },
-  {
-    "id": 2905,
-    "time": "2026-11-01T15:35:44+00:00",
-    "symbol": "ETH/USDT",
-    "price": 2269.46,
-    "action": "SELL",
-    "conviction": 0.198,
-    "sentiment": "BEARISH",
-    "scored": true,
-    "exit_price": 2273.44,
-    "fwd_return_pct": 0.175,
-    "correct": null
   }
 ]
