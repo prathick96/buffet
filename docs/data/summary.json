@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-22T01:47:58+00:00",
+  "updated": "2026-11-22T09:02:35+00:00",
   "mode": "paper",
   "goal": {
     "start": 20.0,
@@ -9,39 +9,39 @@
     "current_capital": 20.0
   },
   "forward_test": {
-    "scored": 3130,
-    "directional": 2091,
+    "scored": 3132,
+    "directional": 2092,
     "ties": 803,
     "pending": 13,
-    "hit_rate": 0.513,
-    "avg_signal_return_pct": 0.316,
-    "sample": 2091,
+    "hit_rate": 0.512,
+    "avg_signal_return_pct": 0.315,
+    "sample": 2092,
     "verdict": "EDGE FORMING \u2014 hit-rate > 50% and positive signal return"
   },
   "by_horizon": {
     "86400": {
       "horizon_days": 1.0,
-      "scored": 3130,
-      "directional": 2093,
-      "ties": 1037,
+      "scored": 3132,
+      "directional": 2094,
+      "ties": 1038,
       "hit_rate": 0.513,
-      "avg_signal_return_pct": 0.318
+      "avg_signal_return_pct": 0.317
     },
     "259200": {
       "horizon_days": 3.0,
-      "scored": 3102,
-      "directional": 2484,
+      "scored": 3104,
+      "directional": 2486,
       "ties": 618,
       "hit_rate": 0.5,
-      "avg_signal_return_pct": 0.374
+      "avg_signal_return_pct": 0.373
     },
     "604800": {
       "horizon_days": 7.0,
-      "scored": 3066,
-      "directional": 2498,
+      "scored": 3068,
+      "directional": 2500,
       "ties": 568,
       "hit_rate": 0.504,
-      "avg_signal_return_pct": 0.537
+      "avg_signal_return_pct": 0.529
     }
   },
   "calibration": [
@@ -57,11 +57,11 @@
     {
       "symbol": "BTC/USDT",
       "horizon_days": 1.0,
-      "n": 824,
+      "n": 825,
       "wins": 427,
-      "hit_shrunk": 0.5179,
-      "avg_signed_return_pct": 0.298,
-      "multiplier": 0.5897
+      "hit_shrunk": 0.5173,
+      "avg_signed_return_pct": 0.296,
+      "multiplier": 0.5866
     },
     {
       "symbol": "ETH/USDT",
@@ -102,7 +102,7 @@
   ],
   "counts": {
     "predictions": 200,
-    "scored": 3130,
+    "scored": 3132,
     "pending": 13
   },
   "billing": {
