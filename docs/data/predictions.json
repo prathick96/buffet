@@ -1,5 +1,44 @@
 [
   {
+    "id": 3176,
+    "time": "2026-11-25T23:53:57+00:00",
+    "symbol": "TCS.NS",
+    "price": 2460.0,
+    "action": "BUY",
+    "conviction": 0.757,
+    "sentiment": "BULLISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 3175,
+    "time": "2026-11-25T23:53:52+00:00",
+    "symbol": "ETH/USDT",
+    "price": 1693.43,
+    "action": "BUY",
+    "conviction": 0.682,
+    "sentiment": "BULLISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
+    "id": 3174,
+    "time": "2026-11-25T23:53:48+00:00",
+    "symbol": "BTC/USDT",
+    "price": 60472.6,
+    "action": "BUY",
+    "conviction": 0.735,
+    "sentiment": "BULLISH",
+    "scored": false,
+    "exit_price": null,
+    "fwd_return_pct": null,
+    "correct": null
+  },
+  {
     "id": 3173,
     "time": "2026-11-25T15:09:13+00:00",
     "symbol": "NVDA",
@@ -124,9 +163,9 @@
     "action": "SELL",
     "conviction": 0.293,
     "sentiment": "BEARISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
+    "scored": true,
+    "exit_price": 1686.21,
+    "fwd_return_pct": 0.359,
     "correct": null
   },
   {
@@ -137,9 +176,9 @@
     "action": "SELL",
     "conviction": 0.256,
     "sentiment": "BEARISH",
-    "scored": false,
-    "exit_price": null,
-    "fwd_return_pct": null,
+    "scored": true,
+    "exit_price": 60269.5,
+    "fwd_return_pct": 0.68,
     "correct": null
   },
   {
@@ -2558,45 +2597,6 @@
     "scored": true,
     "exit_price": 349.3699951171875,
     "fwd_return_pct": 2.045,
-    "correct": false
-  },
-  {
-    "id": 2976,
-    "time": "2026-11-07T07:59:59+00:00",
-    "symbol": "ETH/USDT",
-    "price": 2246.57,
-    "action": "BUY",
-    "conviction": 0.158,
-    "sentiment": "NEUTRAL",
-    "scored": true,
-    "exit_price": 2241.48,
-    "fwd_return_pct": -0.227,
-    "correct": null
-  },
-  {
-    "id": 2975,
-    "time": "2026-11-07T07:59:56+00:00",
-    "symbol": "BTC/USDT",
-    "price": 76113.0,
-    "action": "BUY",
-    "conviction": 0.21,
-    "sentiment": "NEUTRAL",
-    "scored": true,
-    "exit_price": 75981.4,
-    "fwd_return_pct": -0.173,
-    "correct": null
-  },
-  {
-    "id": 2974,
-    "time": "2026-11-07T01:27:05+00:00",
-    "symbol": "NVDA",
-    "price": 181.60000610351562,
-    "action": "SELL",
-    "conviction": 0.6,
-    "sentiment": "NEUTRAL",
-    "scored": true,
-    "exit_price": 186.63999938964844,
-    "fwd_return_pct": 2.775,
     "correct": false
   }
 ]
